@@ -189,7 +189,7 @@ const TextContainer = styled.div`
 const Div = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: absolute;
   bottom: 24px;
   right: 20px;
