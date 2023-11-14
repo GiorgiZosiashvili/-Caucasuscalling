@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
-import ImageSlider from '../../components/ImageSlider';
-import ItemsSlider from '../../components/ItemsSlider';
-import { toursData } from '../../data/data';
+import DestinationsSlider from '../../components/sliders/DestinationsSlider';
+import ImageSlider from '../../components/sliders/ImageSlider';
+import ItemsSlider from '../../components/sliders/ItemsSlider';
+import { destinationsData, servicesData, toursData } from '../../data/data';
 import AboutUS from './AboutUs';
+import Services from './Services';
 
 import Languages from 'components/Languages';
 import Header from 'components/reusable/Header';
@@ -24,6 +26,18 @@ const HomePage = () => {
         description={
           'Most popular destinations around the world, from historical places to natural wonders.'
         }
+      />
+      <DestinationsSlider
+        title="Popular Destinations"
+        description={
+          'Most popular destinations around the world, from historical places to natural wonders.'
+        }
+        data={destinationsData}
+      />
+      <Services
+        data={servicesData}
+        title="Let’s Enjoy Your Vacation with us"
+        description={'Elevate your travel experience with our premium services'}
       />
     </MainContainer>
   );

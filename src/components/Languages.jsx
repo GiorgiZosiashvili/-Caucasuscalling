@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 import arrow_down from '../assets/images/arrow-down.png';
@@ -9,33 +9,46 @@ import usIcon from '../assets/images/us.png';
 import zhIcon from '../assets/images/zh.png';
 
 const languages = [
-  {
-    name: 'Georgian',
-    icon: geIcon,
-  },
-  {
-    name: 'English',
-    icon: usIcon,
-  },
-  { name: 'Russian', icon: ruIcon },
-  {
-    name: 'Chinese',
-    icon: zhIcon,
-  },
+  { name: 'Georgian', icon: geIcon, code: 'ka' },
+  { name: 'English', icon: usIcon, code: 'en' },
+  { name: 'Russian', icon: ruIcon, code: 'ru' },
+  { name: 'Chinese', icon: zhIcon, code: 'zh' },
 ];
 
 const Languages = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(languages[0]);
 
+  useEffect(() => {
+    const googleTranslateScript = document.createElement('script');
+    googleTranslateScript.type = 'text/javascript';
+    googleTranslateScript.async = true;
+    googleTranslateScript.src =
+      '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    document.body.appendChild(googleTranslateScript);
+    window.googleTranslateElementInit = () => {
+      new window.google.translate.TranslateElement(
+        {
+          pageLanguage: 'en',
+          includedLanguages: 'ka,en,ru,zh-CN',
+          layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+        },
+        'google_translate_element',
+      );
+    };
+  }, []);
+
   const handleSelect = (option) => {
     setSelectedOption(option);
     setIsOpen(false);
+
+    const translate = document.querySelector('.goog-te-combo');
+    if (translate) translate.value = option.code;
   };
-  console.log(isOpen);
+
   return (
     <Container>
-      <DropdownContainer>
+      {/* <DropdownContainer>
         <DropdownButton onClick={() => setIsOpen(!isOpen)}>
           <LanguageIcon src={selectedOption.icon} alt={`${selectedOption.name} icon`} />
           {selectedOption.name}
@@ -49,15 +62,19 @@ const Languages = () => {
             </DropdownItem>
           ))}
         </DropdownList>
-      </DropdownContainer>
+      </DropdownContainer> */}
+      <div id="google_translate_element"></div>
     </Container>
   );
 };
+
 const Container = styled.div`
   width: 100%;
   height: 65px;
   display: flex;
+  align-items: center;
   justify-content: right;
+  padding-right: 40px;
 `;
 
 const DropdownContainer = styled.div`

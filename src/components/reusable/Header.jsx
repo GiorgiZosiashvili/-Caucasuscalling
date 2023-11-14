@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styled } from 'styled-components';
@@ -14,11 +15,11 @@ function Header({ page }) {
       page: '/Destination',
     },
     {
-      name: 'Tours',
+      name: 'Tour Packages',
       page: '/Tours',
     },
     {
-      name: 'Health',
+      name: 'Health Programs',
       page: '/Health',
     },
     {
