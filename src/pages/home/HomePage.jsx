@@ -1,9 +1,17 @@
 import styled from 'styled-components';
 
+import Footer from '../../components/reusable/Footer';
 import DestinationsSlider from '../../components/sliders/DestinationsSlider';
 import ImageSlider from '../../components/sliders/ImageSlider';
-import ItemsSlider from '../../components/sliders/ItemsSlider';
-import { destinationsData, servicesData, toursData } from '../../data/data';
+import InformationSlider from '../../components/sliders/InformationSlider';
+import ToursSlider from '../../components/sliders/ToursSlider';
+import {
+  destinationsData,
+  homeBannerData,
+  infoData,
+  servicesData,
+  toursData,
+} from '../../data/data';
 import AboutUS from './AboutUs';
 import Services from './Services';
 
@@ -16,11 +24,11 @@ const HomePage = () => {
     <MainContainer>
       <Languages />
       <Div>
-        <ImageSlider />
+        <ImageSlider data={homeBannerData} />
         <Header page="/" />
       </Div>
       <AboutUS />
-      <ItemsSlider
+      <ToursSlider
         title="Explore Our Tours"
         data={toursData}
         description={
@@ -39,6 +47,14 @@ const HomePage = () => {
         title="Let’s Enjoy Your Vacation with us"
         description={'Elevate your travel experience with our premium services'}
       />
+      <InformationSlider
+        data={infoData}
+        title="Comprehensive Travel Planning Information"
+        description={
+          'Most popular destinations around the world, from historical places to natural wonders.'
+        }
+      />
+      <Footer />
     </MainContainer>
   );
 };

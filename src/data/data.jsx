@@ -1,15 +1,20 @@
 import Airplane from '../assets/images/airplane.png';
+import HealthBanner from '../assets/images/Borjomi.png';
 import Canyon from '../assets/images/Canyon.png';
+import Currency from '../assets/images/currency.png';
 import Hotel from '../assets/images/hotel.png';
 import Juta from '../assets/images/Juta.png';
 import Jvari_Monastery from '../assets/images/Jvari_Monastery.png';
 import Kakheti from '../assets/images/Kakheti.png';
 import Kazbegi from '../assets/images/Kazbegi.png';
+import Nature from '../assets/images/nature.png';
 import Old_Tbilisi from '../assets/images/Old_Tbilisi.png';
+import Passport from '../assets/images/passport.png';
 import Suitcase from '../assets/images/suitcase.png';
 import SUV from '../assets/images/suv.png';
 import Tbilisi from '../assets/images/Tbilisi.png';
 import Tsikhisdziri from '../assets/images/Tsikhisdziri.png';
+import HomeBanner from '../assets/images/upp.png';
 
 const toursData = [
   {
@@ -122,4 +127,63 @@ const servicesData = [
     image: SUV,
   },
 ];
-export { toursData, destinationsData, servicesData };
+const infoData = [
+  {
+    title: 'Visa Information',
+    image: Passport,
+    info: 'Perched high above the Aegean Sea in this magical place, privy to the island’s most emblematic views, is it any wonder that the picturesque sanctuary that is the Grace Hotel, Auberge Resorts Collection in Santorini, has come out on top of a poll of travel magazine readers as the Best Hotel in Greece and ranked as the second Best Hotel in the World?',
+  },
+  {
+    title: 'Climate In Georgia',
+    image: Nature,
+    info: 'Perched high above the Aegean Sea in this magical place, privy to the island’s most emblematic views, is it any wonder that the picturesque sanctuary that is the Grace Hotel, Auberge Resorts Collection in Santorini, has come out on top of a poll of travel magazine readers as the Best Hotel in Greece and ranked as the second Best Hotel in the World?',
+  },
+  {
+    title: 'Georgian Currency',
+    image: Currency,
+    info: 'Perched high above the Aegean Sea in this magical place, privy to the island’s most emblematic views, is it any wonder that the picturesque sanctuary that is the Grace Hotel, Auberge Resorts Collection in Santorini, has come out on top of a poll of travel magazine readers as the Best Hotel in Greece and ranked as the second Best Hotel in the World?',
+  },
+];
+const pagesData = [
+  {
+    name: 'Home',
+    page: '/',
+  },
+  {
+    name: 'Destination',
+    page: '/Destination',
+  },
+  {
+    name: 'Tour Packages',
+    page: '/Tours',
+  },
+  {
+    name: 'Health Programs',
+    page: '/Health',
+  },
+  {
+    name: 'Partnership',
+    page: '/Partnership',
+  },
+];
+const homeBannerData = [
+  { image: HomeBanner, text: 'Our Travel Agency Provides Individual and Group Tours' },
+  { image: HomeBanner, text: 'Our Travel Agency Provides Individual and Group Tours' },
+  { image: HomeBanner, text: 'Our Travel Agency Provides Individual and Group Tours' },
+  { image: HomeBanner, text: 'Our Travel Agency Provides Individual and Group Tours' },
+];
+const healthBannerData = [
+  { image: HealthBanner, text: 'Our Travel Agency Provides Individual and Group Tours' },
+  { image: HealthBanner, text: 'Our Travel Agency Provides Individual and Group Tours' },
+  { image: HealthBanner, text: 'Our Travel Agency Provides Individual and Group Tours' },
+  { image: HealthBanner, text: 'Our Travel Agency Provides Individual and Group Tours' },
+];
+export {
+  toursData,
+  destinationsData,
+  servicesData,
+  infoData,
+  pagesData,
+  homeBannerData,
+  healthBannerData,
+};

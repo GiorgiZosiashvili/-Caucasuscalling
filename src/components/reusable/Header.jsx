@@ -3,37 +3,18 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styled } from 'styled-components';
 
+import { pagesData } from '../../data/data';
+
 function Header({ page }) {
   const [currentPage, setCurrentPage] = useState('Home');
-  const pages = [
-    {
-      name: 'Home',
-      page: '/',
-    },
-    {
-      name: 'Destination',
-      page: '/Destination',
-    },
-    {
-      name: 'Tour Packages',
-      page: '/Tours',
-    },
-    {
-      name: 'Health Programs',
-      page: '/Health',
-    },
-    {
-      name: 'Partnership',
-      page: '/Partnership',
-    },
-  ];
+
   useEffect(() => {
     setCurrentPage(page);
   }, [page]);
   return (
     <Container>
       <NavigationContainer>
-        {pages.map((navigation, i) => {
+        {pagesData.map((navigation, i) => {
           const isSelected = currentPage === navigation.page;
           return (
             <LinkContainer style={{ textDecoration: 'none' }} key={i} to={navigation.page}>

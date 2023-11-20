@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const CustomText = styled.h4`
   font-size: ${(props) => props.fontSize || '16px'};
-  font-family: ${(props) => props.fontFamily || 'Montserrat, sans-serif'};
+  font-family: ${(props) => props.fontfamily || 'Montserrat, sans-serif'};
   color: ${(props) => props.color || 'white'};
   font-weight: ${(props) => props.fontWeight || 'normal'};
   text-align: ${(props) => props.textAlign || 'center'};

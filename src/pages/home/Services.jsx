@@ -27,7 +27,7 @@ const Services = ({ title, description, data }) => {
       <ContentContainer>
         {data.map((service, index) => {
           return (
-            <Content style={{ marginRight: index !== 3 && 15 }} key={index}>
+            <Content style={{ marginRight: index !== 3 && 10 }} key={index}>
               <Image src={service.image} />
               <CustomText
                 style={{ width: 232 }}
@@ -47,12 +47,17 @@ const Services = ({ title, description, data }) => {
   );
 };
 const Container = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0px auto 150px;
+  padding: 0px 112px;
 `;
 const ContentContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: center;
 `;
 const Content = styled.div`
   display: flex;

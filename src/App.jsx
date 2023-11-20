@@ -6,7 +6,9 @@ import AppRouter from './router/Router';
 function App() {
   return (
     <Container>
-      <MainLogo />
+      <LogoContainer>
+        <MainLogo />
+      </LogoContainer>
       <AppRouter />
     </Container>
   );
@@ -19,11 +21,18 @@ const Container = styled.div`
   display: flex;
   position: relative;
 `;
-const MainLogo = styled(Logo)`
+const LogoContainer = styled.div`
   position: absolute;
   z-index: 100;
   top: 5px;
   left: 22px;
+  width: 236px;
+  height: 103px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
+const MainLogo = styled(Logo)``;
 
 export default App;

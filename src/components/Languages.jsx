@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-import arrow_down from '../assets/images/arrow-down.png';
-import arrow_up from '../assets/images/arrow_up.png';
 import geIcon from '../assets/images/ge.png';
 import ruIcon from '../assets/images/ru.png';
 import usIcon from '../assets/images/us.png';

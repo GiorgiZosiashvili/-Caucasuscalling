@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import Image from 'assets/images/upp.png';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import styled from 'styled-components';
@@ -25,21 +24,14 @@ const responsive = {
   },
 };
 
-const items = [
-  { image: Image, text: 'Our Travel Agency Provides Individual and Group Tours' },
-  { image: Image, text: 'Our Travel Agency Provides Individual and Group Tours' },
-  { image: Image, text: 'Our Travel Agency Provides Individual and Group Tours' },
-  { image: Image, text: 'Our Travel Agency Provides Individual and Group Tours' },
-];
-
-const ImageSlider = () => {
+const ImageSlider = ({ data }) => {
   const CustomDot = ({ onClick, ...rest }) => {
-    const { active } = rest;
-    return <Dot onClick={() => onClick()} active={active} />;
+    const isActive = rest.active;
+    return <Dot onClick={() => onClick()} isactive={isActive} />;
   };
   return (
     <Carousel customDot={<CustomDot />} showDots={true} responsive={responsive} arrows={false}>
-      {items.map((item, index) => {
+      {data.map((item, index) => {
         return (
           <Container key={index}>
             <Photo src={item.image} />
@@ -51,7 +43,7 @@ const ImageSlider = () => {
                 fontWeight="500"
                 lineHeight="33.75px"
                 color="white">
-                Our Travel Agency <br /> Provides Individual and Group Tours
+                Our Travel Agency Provides Individual and Group Tours
               </CustomText>
             </SlideText>
           </Container>
@@ -64,7 +56,6 @@ const ImageSlider = () => {
 const Container = styled.div`
   width: 100%;
   height: 693px;
-  background-color: red;
   position: relative;
 `;
 const Photo = styled.img`
@@ -83,7 +74,7 @@ const Dot = styled.div`
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background-color: ${(props) => (props.active ? '#FF7757' : '#fff')};
+  background-color: ${(props) => (props.isactive ? '#FF7757' : '#fff')};
   margin: 0px 24px 23px;
   cursor: pointer;
 `;

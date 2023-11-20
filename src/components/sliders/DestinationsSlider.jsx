@@ -5,22 +5,28 @@ import styled from 'styled-components';
 
 import CustomText from '../reusable/Text';
 import { Arrow, Location } from '../SVG/Svgs';
+import './Carousel.css';
 
 const responsive = {
+  large_desktop: {
+    breakpoint: { max: 2500, min: 1550 },
+    items: 6,
+    slidesToSlide: 4, // optional, default to 1.
+  },
   desktop: {
-    breakpoint: { max: 2500, min: 1400 },
+    breakpoint: { max: 1550, min: 1300 },
     items: 4,
     slidesToSlide: 4, // optional, default to 1.
   },
   tablet: {
-    breakpoint: { max: 1400, min: 700 },
-    items: 4,
-    slidesToSlide: 2, // optional, default to 1.
+    breakpoint: { max: 1300, min: 700 },
+    items: 3,
+    slidesToSlide: 3, // optional, default to 1.
   },
   mobile: {
     breakpoint: { max: 700, min: 0 },
-    items: 3,
-    slidesToSlide: 3, // optional, default to 1.
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
   },
 };
 
@@ -49,7 +55,7 @@ const DestinationSlider = ({ data, title, description }) => {
         fontSize="24px"
         fontWeight="800"
         lineHeight="30px"
-        margin="0px 0px 16px"
+        margin="0px 22px 16px"
         color="#172432">
         {title}
       </CustomText>
@@ -59,17 +65,18 @@ const DestinationSlider = ({ data, title, description }) => {
         fontWeight="400"
         lineHeight="29px"
         color="#767E86"
-        margin="0px 0px 55px">
+        margin="0px 22px 55px">
         {description}
       </CustomText>
       <Carousel
         draggable={false}
+        containerClass="carousel-container"
+        itemClass="item-class"
         responsive={responsive}
         removeArrowOnDeviceType={['tablet', 'mobile']}
         arrows={false}
-        renderButtonGroupOutside={true}
-        customButtonGroup={<ButtonGroup />}
-        itemClass="carousel-item-padding-top-200-px">
+        renderButtonGroupOutside={false}
+        customButtonGroup={<ButtonGroup />}>
         {data.map((item, index) => (
           <SlideContent key={index}>
             <CustomText
@@ -102,20 +109,32 @@ const DestinationSlider = ({ data, title, description }) => {
 };
 
 const SliderContainer = styled.div`
-  width: 99.9%;
+  width: 100%;
   margin: 0px auto 150px;
-  padding: 0px 40px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   position: relative;
+  padding: 0px 40px;
 `;
 
+const CarouselButtonContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+`;
+const StyledArrow = styled(Arrow)`
+  &:hover {
+    stroke: #fff;
+  }
+`;
 const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 50px;
   background-color: #efefef;
   cursor: pointer;
@@ -131,30 +150,17 @@ const Button = styled.button`
   }
 `;
 
-const CarouselButtonContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  top: 35px;
-  right: 40px;
-  width: 105px;
-  position: absolute;
-`;
-const StyledArrow = styled(Arrow)`
-  &:hover {
-    stroke: #fff;
-  }
-`;
-
 const SlideContent = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 12px;
-  width: 298px;
+  width: 100%;
+  max-width: 380px;
   height: 400px;
   justify-content: flex-end;
   position: relative;
-  border-radius: 30px;
   overflow: hidden;
+  margin: 0px 10px;
 `;
 const LocationContainer = styled.div`
   display: flex;
@@ -162,11 +168,13 @@ const LocationContainer = styled.div`
   margin: 17px 0px 40px 24px;
 `;
 const Image = styled.img`
-  width: 298px;
+  width: 100%;
   height: 400px;
-  object-fit: cover;
+  object-fit: fill;
   position: absolute;
   z-index: -1;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
 `;
 
 export default DestinationSlider;

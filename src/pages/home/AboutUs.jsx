@@ -88,26 +88,33 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 630px;
+  height: 100%;
   position: relative;
+  padding: 93px 0px;
 `;
 const InfoContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 1140px;
-  height: 443px;
+  width: 75%;
+  height: 80%;
+  max-width: 1200px;
 `;
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 693px;
+  width: 100%;
+  max-width: 690px;
 `;
 
 const Image = styled.img`
-  width: 300px;
-  height: 400px;
+  width: 40%;
+  height: 70%;
+  object-fit: contain;
+  margin-right: 5%;
+  max-width: 300px;
+  max-height: 400px;
 `;
 const BackgroundImage = styled.img`
   width: 100%;
@@ -119,11 +126,11 @@ const Div = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: left;
-  width: 503px;
+  width: 80%;
   justify-content: space-between;
 `;
 const DetailsContainer = styled.div`
-  width: 90px;
+  max-width: 100px;
 `;
 const DetailsNumber = styled.h3`
   font-size: 28px;
