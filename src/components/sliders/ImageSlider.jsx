@@ -27,7 +27,9 @@ const responsive = {
 const ImageSlider = ({ data }) => {
   const CustomDot = ({ onClick, ...rest }) => {
     const isActive = rest.active;
-    return <Dot onClick={() => onClick()} isactive={isActive} />;
+    return (
+      <Dot style={{ backgroundColor: isActive ? '#FF7757' : '#fff' }} onClick={() => onClick()} />
+    );
   };
   return (
     <Carousel customDot={<CustomDot />} showDots={true} responsive={responsive} arrows={false}>
@@ -37,7 +39,7 @@ const ImageSlider = ({ data }) => {
             <Photo src={item.image} />
             <SlideText>
               <CustomText
-                style={{ letterSpacing: 7.5, width: 672 }}
+                style={{ letterSpacing: 7.5 }}
                 textAlign="center"
                 fontSize="22px"
                 fontWeight="500"
@@ -55,7 +57,8 @@ const ImageSlider = ({ data }) => {
 
 const Container = styled.div`
   width: 100%;
-  height: 693px;
+  min-height: 93vh;
+  height: 100%;
   position: relative;
 `;
 const Photo = styled.img`
@@ -74,7 +77,6 @@ const Dot = styled.div`
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background-color: ${(props) => (props.isactive ? '#FF7757' : '#fff')};
   margin: 0px 24px 23px;
   cursor: pointer;
 `;

@@ -61,7 +61,7 @@ const Info = () => {
       <Div>
         <MainLogo />
         <CustomText
-          style={{ width: 320 }}
+          style={{ maxWidth: 320 }}
           textAlign="left"
           fontSize="16px"
           fontWeight="500"
@@ -78,7 +78,7 @@ const Info = () => {
         </IconsContainer>
       </Div>
       <ContactsContainer>
-        <CustomText fontSize="16px" fontWeight="700" color="#6F6F70" margin="0px 0px 20px">
+        <CustomText fontSize="16px" fontWeight="700" color="#6F6F70">
           Contact Us
         </CustomText>
         {contacts.map((contact, index) => {
@@ -87,7 +87,6 @@ const Info = () => {
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                marginBottom: 20,
               }}
               key={index}>
               <Image src={contact?.icon} />
@@ -97,20 +96,10 @@ const Info = () => {
                 </CustomText>
               ) : (
                 <PhoneNumber>
-                  <CustomText
-                    fontSize="16px"
-                    fontWeight="500"
-                    lineHeight="26px"
-                    margin="0px 0px 5px"
-                    color="#0077B6">
+                  <CustomText fontSize="16px" fontWeight="500" lineHeight="26px" color="#0077B6">
                     +995 557 999 199
                   </CustomText>
-                  <CustomText
-                    fontSize="16px"
-                    fontWeight="500"
-                    lineHeight="26px"
-                    margin="0px 0px 0px"
-                    color="#0077B6">
+                  <CustomText fontSize="16px" fontWeight="500" lineHeight="26px" color="#0077B6">
                     +995 574 820 102
                   </CustomText>
                 </PhoneNumber>
@@ -120,13 +109,13 @@ const Info = () => {
         })}
       </ContactsContainer>
       <NavigationContainer>
-        <CustomText fontSize="16px" fontWeight="700" margin="0px 0px 20px" color="#6F6F70">
+        <CustomText fontSize="16px" fontWeight="700" color="#6F6F70">
           Links
         </CustomText>
         {pagesData.map((navigation, i) => {
           return (
             <LinkContainer key={i} to={navigation.page}>
-              <CustomText fontSize="14px" fontWeight="500" margin="0px 0px 10px" color="#666666">
+              <CustomText fontSize="14px" fontWeight="500" color="#666666">
                 {navigation.name}
               </CustomText>
             </LinkContainer>
@@ -134,13 +123,13 @@ const Info = () => {
         })}
       </NavigationContainer>
       <HelpContainer>
-        <CustomText fontSize="16px" fontWeight="700" color="#6F6F70" margin="0px 0px 20px">
+        <CustomText fontSize="16px" fontWeight="700" color="#6F6F70">
           Help
         </CustomText>
         {help.map((help, i) => {
           return (
             <LinkContainer key={i} to={help.page}>
-              <CustomText fontSize="14px" fontWeight="500" margin="0px 0px 10px" color="#666666">
+              <CustomText fontSize="14px" fontWeight="500" color="#666666">
                 {help.name}
               </CustomText>
             </LinkContainer>
@@ -183,13 +172,7 @@ const Partners = () => {
           {
             console.log(paymentMethods.length);
           }
-          return (
-            <PaymentImage
-              style={{ marginRight: paymentMethods.length - 1 !== index && 26 }}
-              key={index}
-              src={payment.image}
-            />
-          );
+          return <PaymentImage key={index} src={payment.image} />;
         })}
       </PaymentMethodContainer>
     </PartnersContainer>
@@ -198,21 +181,20 @@ const Partners = () => {
 const Footer = () => {
   return (
     <Container>
+      <Info />
+      <Partners />
       <CustomText
         fontSize="14px"
         fontWeight="400"
         margin="0px 0px 25px"
         color="#666666"
         style={{
-          position: 'absolute',
           bottom: 0,
           letterSpacing: 1,
           width: '100%',
         }}>
         Caucasuscalling © 2023 All Right Reserved
       </CustomText>
-      <Info />
-      <Partners />
     </Container>
   );
 };
@@ -221,7 +203,7 @@ const Container = styled.div`
   width: 100%;
   flex-direction: column;
   justify-content: space-between;
-  padding: 50px 40px;
+  padding: 50px 40px 0px;
   background-color: #f7f8fc;
   position: relative;
   align-items: center;
@@ -231,27 +213,38 @@ const InfoContainer = styled.div`
   width: 100%;
   max-width: 1400px;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
 const ContactsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
-  height: 184px;
+  max-height: 190px;
+  gap: 20px;
+  margin-bottom: 50px;
 `;
 
 const NavigationContainer = styled.ul`
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  gap: 20px;
+  margin-bottom: 50px;
 `;
 const LinkContainer = styled(Link)`
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
 `;
-const HelpContainer = styled.div``;
+const HelpContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
 
 const IconsContainer = styled.div`
   display: flex;
+  margin-bottom: 50px;
 `;
 const PhoneNumber = styled.div`
   display: flex;
@@ -274,30 +267,36 @@ const Image = styled.img`
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  object-fit: fill;
+  object-fit: cover;
 `;
 
 const PartnersContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   align-items: center;
   max-width: 1400px;
-  margin: 56px 0px 0px;
 `;
 const PartnersImageContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 50px;
 `;
 const PartnersImage = styled.img`
-  max-width: 108px;
-  max-height: 100px;
-  object-fit: fill;
-  margin-right: 10px;
+  object-fit: cover;
 `;
 const PaymentMethodContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 50px;
 `;
-const PaymentImage = styled.img``;
+const PaymentImage = styled.img`
+  object-fit: cover;
+`;
 
 export default Footer;

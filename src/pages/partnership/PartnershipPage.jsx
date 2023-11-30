@@ -6,7 +6,7 @@ import MainContainer from '../../components/reusable/MainContainer';
 const PartnershipPage = () => {
   return (
     <MainContainer>
-      <Header page={'/Partnership'} />
+      <Header backgroundColor="#346172" page={'/Partnership'} />
     </MainContainer>
   );
 };

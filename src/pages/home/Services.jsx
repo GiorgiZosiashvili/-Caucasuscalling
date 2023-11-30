@@ -11,7 +11,7 @@ const Services = ({ title, description, data }) => {
         fontSize="24px"
         fontWeight="800"
         lineHeight="30px"
-        margin="0px 0px 16px"
+        margin="0px 10px 16px"
         color="#172432">
         {title}
       </CustomText>
@@ -21,13 +21,13 @@ const Services = ({ title, description, data }) => {
         fontWeight="400"
         lineHeight="29px"
         color="#767E86"
-        margin="0px 0px 55px">
+        margin="0px 10px 55px">
         {description}
       </CustomText>
       <ContentContainer>
         {data.map((service, index) => {
           return (
-            <Content style={{ marginRight: index !== 3 && 10 }} key={index}>
+            <Content key={index}>
               <Image src={service.image} />
               <CustomText
                 style={{ width: 232 }}
@@ -51,13 +51,18 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0px auto 150px;
-  padding: 0px 112px;
+  max-width: 1156px;
+  @media screen and (max-width: 885px) {
+    padding: 0px 40px;
+  }
 `;
 const ContentContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
 `;
 const Content = styled.div`
   display: flex;

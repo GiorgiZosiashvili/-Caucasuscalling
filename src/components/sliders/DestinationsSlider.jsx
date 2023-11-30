@@ -8,23 +8,28 @@ import { Arrow, Location } from '../SVG/Svgs';
 import './Carousel.css';
 
 const responsive = {
-  large_desktop: {
-    breakpoint: { max: 2500, min: 1550 },
-    items: 6,
-    slidesToSlide: 4, // optional, default to 1.
-  },
   desktop: {
-    breakpoint: { max: 1550, min: 1300 },
+    breakpoint: { max: 2500, min: 1530 },
+    items: 5,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+  mini_desktop: {
+    breakpoint: { max: 1530, min: 1280 },
     items: 4,
-    slidesToSlide: 4, // optional, default to 1.
+    slidesToSlide: 1, // optional, default to 1.
   },
   tablet: {
-    breakpoint: { max: 1300, min: 700 },
+    breakpoint: { max: 1280, min: 800 },
     items: 3,
-    slidesToSlide: 3, // optional, default to 1.
+    slidesToSlide: 1, // optional, default to 1.
+  },
+  mini_tablet: {
+    breakpoint: { max: 800, min: 600 },
+    items: 2,
+    slidesToSlide: 1, // optional, default to 1.
   },
   mobile: {
-    breakpoint: { max: 700, min: 0 },
+    breakpoint: { max: 600, min: 0 },
     items: 1,
     slidesToSlide: 1, // optional, default to 1.
   },
@@ -55,7 +60,7 @@ const DestinationSlider = ({ data, title, description }) => {
         fontSize="24px"
         fontWeight="800"
         lineHeight="30px"
-        margin="0px 22px 16px"
+        margin="0px 10px 16px"
         color="#172432">
         {title}
       </CustomText>
@@ -65,7 +70,7 @@ const DestinationSlider = ({ data, title, description }) => {
         fontWeight="400"
         lineHeight="29px"
         color="#767E86"
-        margin="0px 22px 55px">
+        margin="0px 10px 55px">
         {description}
       </CustomText>
       <Carousel
@@ -170,7 +175,7 @@ const LocationContainer = styled.div`
 const Image = styled.img`
   width: 100%;
   height: 400px;
-  object-fit: fill;
+  object-fit: cover;
   position: absolute;
   z-index: -1;
   border-top-right-radius: 12px;

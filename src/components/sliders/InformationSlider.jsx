@@ -8,17 +8,17 @@ import { Arrow } from '../SVG/Svgs';
 const InformationSlider = ({ title, data, description }) => {
   const responsive = {
     desktop: {
-      breakpoint: { max: 2500, min: 1550 },
+      breakpoint: { max: 2500, min: 1530 },
       items: 3,
       slidesToSlide: 1, // optional, default to 1.
     },
     tablet: {
-      breakpoint: { max: 1550, min: 700 },
+      breakpoint: { max: 1530, min: 901 },
       items: 2,
       slidesToSlide: 1, // optional, default to 1.
     },
     mobile: {
-      breakpoint: { max: 700, min: 0 },
+      breakpoint: { max: 901, min: 0 },
       items: 1,
       slidesToSlide: 1, // optional, default to 1.
     },
@@ -46,7 +46,7 @@ const InformationSlider = ({ title, data, description }) => {
         fontSize="24px"
         fontWeight="800"
         lineHeight="30px"
-        margin="0px 30px 16px"
+        margin="0px 10px 16px"
         color="#172432">
         {title}
       </CustomText>
@@ -56,7 +56,7 @@ const InformationSlider = ({ title, data, description }) => {
         fontWeight="400"
         lineHeight="29px"
         color="#767E86"
-        margin="0px 30px 55px">
+        margin="0px 10px 55px">
         {description}
       </CustomText>
       <Carousel
@@ -75,7 +75,7 @@ const InformationSlider = ({ title, data, description }) => {
               fontSize="30px"
               fontWeight="600"
               lineHeight="36px"
-              margin="17px 0px 30px 24px"
+              margin="17px 10px 30px 24px"
               color="white">
               {item?.title}
             </CustomText>
@@ -151,7 +151,7 @@ const SlideContent = styled.div`
   flex-direction: column;
   border-radius: 12px;
   width: 95%;
-  height: 368px;
+
   position: relative;
   border-radius: 30px;
   overflow: hidden;
