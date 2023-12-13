@@ -89,7 +89,7 @@ const InfoContainer = styled.div`
   height: 100%;
   max-width: 1130px;
   flex-wrap: wrap;
-  padding: 40px 40px 0px;
+  padding: 20px 20px 20px;
   min-height: 630px;
   align-self: center;
 `;

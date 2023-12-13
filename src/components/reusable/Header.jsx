@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { styled } from 'styled-components';
 
 import { pagesData } from '../../data/data';
+import { Logo } from '../SVG/Svgs';
 
 function Header({ page, backgroundColor }) {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -14,10 +15,12 @@ function Header({ page, backgroundColor }) {
   useEffect(() => {
     setCurrentPage(page);
   }, [page]);
-  console.log(isMenuOpen);
   return (
     <Container
       style={{ backgroundColor: backgroundColor ? backgroundColor : 'rgba(0, 0, 0, 0.15)' }}>
+      <LogoContainer to={'/'}>
+        <MainLogo />
+      </LogoContainer>
       <NavigationContainer>
         {pagesData.map((navigation, i) => {
           const isSelected = currentPage === navigation.page;
@@ -61,9 +64,23 @@ const Container = styled.header`
   width: 100%;
   height: 80px;
   text-decoration: none;
-  z-index: 10;
+  z-index: 20;
   position: absolute;
   top: 0;
+`;
+const LogoContainer = styled(Link)`
+  position: absolute;
+  top: -55px;
+  left: 40px;
+  width: 236px;
+  height: 103px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+const MainLogo = styled(Logo)`
+  z-index: 1;
 `;
 const NavigationContainer = styled.ul`
   display: flex;
@@ -73,7 +90,7 @@ const NavigationContainer = styled.ul`
   max-width: 800px;
   text-decoration: none;
   margin-right: 40px;
-  @media screen and (max-width: 885px) {
+  @media screen and (max-width: 950px) {
     display: none;
   }
 `;
@@ -91,7 +108,7 @@ const Title = styled.li`
   font-family: 'Montserrat';
   font-weight: 500;
   line-height: 17.07px;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 950px) {
     background-color: ${(props) => (props.selected ? '#FF6B35' : 'none')};
     border-bottom: ${(props) => props.selected && 'none'};
     height: 49px;
@@ -103,7 +120,7 @@ const BurgerMenu = styled.div`
   position: relative;
   cursor: pointer;
   margin-right: 20px;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 950px) {
     display: flex;
     flex-direction: column;
     align-items: center;

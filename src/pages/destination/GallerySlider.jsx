@@ -1,26 +1,28 @@
 /* eslint-disable react/prop-types */
 import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import { styled } from 'styled-components';
 
-import CustomText from '../reusable/Text';
-import { Arrow } from '../SVG/Svgs';
+import CustomText from '../../components/reusable/Text';
+import { Arrow } from '../../components/SVG/Svgs';
 
-const InformationSlider = ({ title, data, description }) => {
+const GallerySlider = ({ data }) => {
   const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 2,
+    },
     desktop: {
-      breakpoint: { max: 2500, min: 1530 },
-      items: 3,
-      slidesToSlide: 1, // optional, default to 1.
+      breakpoint: { max: 3000, min: 1024 },
+      items: 2,
     },
     tablet: {
-      breakpoint: { max: 1530, min: 901 },
-      items: 2,
-      slidesToSlide: 1, // optional, default to 1.
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
     },
     mobile: {
-      breakpoint: { max: 901, min: 0 },
+      breakpoint: { max: 464, min: 0 },
       items: 1,
-      slidesToSlide: 1, // optional, default to 1.
     },
   };
   const ButtonGroup = ({ next, previous, ...rest }) => {
@@ -39,6 +41,7 @@ const InformationSlider = ({ title, data, description }) => {
       </CarouselButtonContainer>
     );
   };
+
   return (
     <SliderContainer>
       <CustomText
@@ -46,18 +49,9 @@ const InformationSlider = ({ title, data, description }) => {
         fontSize="24px"
         fontWeight="800"
         lineHeight="30px"
-        margin="0px 10px 16px"
+        margin="0px 0px 16px"
         color="#172432">
-        {title}
-      </CustomText>
-      <CustomText
-        textAlign="left"
-        fontSize="24px"
-        fontWeight="400"
-        lineHeight="29px"
-        color="#767E86"
-        margin="0px 10px 55px">
-        {description}
+        Gallery
       </CustomText>
       <Carousel
         draggable={false}
@@ -67,51 +61,25 @@ const InformationSlider = ({ title, data, description }) => {
         arrows={false}
         renderButtonGroupOutside={false}
         customButtonGroup={<ButtonGroup />}>
-        {data.map((item, index) => (
-          <SlideContent key={index}>
-            <Image src={item?.image} alt={item?.title} />
-            <CustomText
-              textAlign="left"
-              fontSize="30px"
-              fontWeight="600"
-              lineHeight="36px"
-              margin="17px 10px 30px 24px"
-              color="white">
-              {item?.title}
-            </CustomText>
-            <CustomText
-              textAlign="left"
-              fontSize="14px"
-              fontWeight="400"
-              lineHeight="21px"
-              margin="0px 24px 0px"
-              color="rgba(255, 255, 255, 0.9)">
-              {item.info}
-            </CustomText>
-            <ReadMore>
-              <CustomText
-                textAlign="center"
-                fontSize="16px"
-                fontWeight="500"
-                lineHeight="19.5px"
-                color="#007A33">
-                Read more
-              </CustomText>
-            </ReadMore>
-          </SlideContent>
-        ))}
+        {data.gallery.map((item, index) => {
+          return (
+            <SlideContent key={index}>
+              <Image src={item?.imageUrl} />
+            </SlideContent>
+          );
+        })}
       </Carousel>
     </SliderContainer>
   );
 };
 const SliderContainer = styled.div`
   width: 100%;
-  margin: 0px auto 150px;
+  max-width: 1156px;
+  margin: 80px auto 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  padding: 0px 20px;
 `;
 const Button = styled.button`
   display: flex;
@@ -151,6 +119,7 @@ const SlideContent = styled.div`
   flex-direction: column;
   border-radius: 12px;
   width: 95%;
+  height: 400px;
   position: relative;
   border-radius: 30px;
   overflow: hidden;
@@ -164,14 +133,5 @@ const Image = styled.img`
   position: absolute;
   z-index: -1;
 `;
-const ReadMore = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: white;
-  height: 48px;
-  cursor: pointer;
-  margin: 100px 24px 17px;
-`;
 
-export default InformationSlider;
+export default GallerySlider;

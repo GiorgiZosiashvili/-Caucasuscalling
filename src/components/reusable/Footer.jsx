@@ -169,9 +169,6 @@ const Partners = () => {
       </PartnersImageContainer>
       <PaymentMethodContainer>
         {paymentMethods.map((payment, index) => {
-          {
-            console.log(paymentMethods.length);
-          }
           return <PaymentImage key={index} src={payment.image} />;
         })}
       </PaymentMethodContainer>

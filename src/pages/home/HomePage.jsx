@@ -1,12 +1,6 @@
 import styled from 'styled-components';
 
 import Person from '../../assets/images/person.png';
-import Footer from '../../components/reusable/Footer';
-import Info from '../../components/reusable/info';
-import DestinationsSlider from '../../components/sliders/DestinationsSlider';
-import ImageSlider from '../../components/sliders/ImageSlider';
-import InformationSlider from '../../components/sliders/InformationSlider';
-import ToursSlider from '../../components/sliders/ToursSlider';
 import {
   details,
   homeBannerData,
@@ -18,8 +12,14 @@ import {
 import Services from './Services';
 
 import Languages from 'components/Languages';
+import Footer from 'components/reusable/Footer';
 import Header from 'components/reusable/Header';
+import Info from 'components/reusable/Info';
 import MainContainer from 'components/reusable/MainContainer';
+import DestinationsSlider from 'components/sliders/DestinationsSlider';
+import ImageSlider from 'components/sliders/ImageSlider';
+import InformationSlider from 'components/sliders/InformationSlider';
+import ToursSlider from 'components/sliders/ToursSlider';
 
 const HomePage = () => {
   return (

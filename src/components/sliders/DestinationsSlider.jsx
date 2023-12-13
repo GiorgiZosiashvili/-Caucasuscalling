@@ -120,7 +120,7 @@ const SliderContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  padding: 0px 40px;
+  padding: 0px 20px;
 `;
 
 const CarouselButtonContainer = styled.div`

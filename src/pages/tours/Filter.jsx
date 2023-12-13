@@ -74,7 +74,6 @@ const Image = styled.img`
   height: 100%;
   object-fit: cover;
   position: absolute;
-  z-index: -1;
 `;
 const SeasonsContainer = styled.div`
   display: flex;
@@ -82,6 +81,7 @@ const SeasonsContainer = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1286px;
+  z-index: 10;
 `;
 const ButtonContainer = styled.div`
   display: flex;
@@ -101,5 +101,6 @@ const SeasonsButton = styled.button`
   height: 60px;
   border-radius: 20px;
   transition: all 0.3s;
+  cursor: pointer;
 `;
 export default Filter;

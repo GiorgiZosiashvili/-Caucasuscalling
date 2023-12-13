@@ -11,6 +11,8 @@ import Juta from '../assets/images/Juta.png';
 import Jvari_Monastery from '../assets/images/Jvari_Monastery.png';
 import Kakheti from '../assets/images/Kakheti.png';
 import Kazbegi from '../assets/images/Kazbegi.png';
+import knowledge from '../assets/images/knowledge.png';
+import language from '../assets/images/laguage.png';
 import Mtsketa from '../assets/images/Mtsketa.png';
 import Nature from '../assets/images/nature.png';
 import Old_Tbilisi from '../assets/images/Old_Tbilisi.png';
@@ -18,6 +20,7 @@ import Passport from '../assets/images/passport.png';
 import Ru from '../assets/images/ru.png';
 import Samegrelo from '../assets/images/Samegrelo.png';
 import Suitcase from '../assets/images/suitcase.png';
+import support from '../assets/images/support.png';
 import SUV from '../assets/images/suv.png';
 import Svaneti from '../assets/images/Svaneti.png';
 import Tbilisi from '../assets/images/Tbilisi.png';
@@ -313,59 +316,584 @@ const healthPrograms = [
 const destinationsData = [
   {
     title: 'Tbilisi',
-    season: '',
     image: Old_Tbilisi,
-    description:
-      "Embark on a journey to Tbilisi, the heart and soul of Georgia, where ancient history dances with modern vibrancy, creating a captivating tapestry of experiences. Nestled at the crossroads of Europe and Asia, Tbilisi beckons travelers with its diverse charm, cultural richness, and warm hospitality. Wander through the cobblestone streets of the Old Town, where history unfolds in the form of centuries-old churches, charming courtyards, and vibrant markets. Narikala Fortress watches over the city, offering panoramic views of the Kura River winding through the urban landscape. Tbilisi is a city of contrasts, where the historic Rustaveli Avenue pulses with the energy of modern life. The futuristic design of the Bridge of Peace stands in harmony with the classical elegance of the State Opera House, reflecting the city's dynamic spirit. Culinary delights await at every turn, with traditional Georgian dishes such as khachapuri and khinkali inviting you to savor the rich flavors of the region. Tbilisi's diverse neighborhoods, from the bohemian vibes of Aghmashenebeli Avenue to the contemporary atmosphere of Fabrika, offer a glimpse into the city's multifaceted character. Art and culture thrive in Tbilisi, where galleries showcase contemporary works, and the streets are adorned with expressive murals. Music echoes through the city, from the haunting polyphonic harmonies to the rhythmic beats of vibrant street performances. As the sun sets, Tbilisi transforms into a city of lights, with the illuminated Peace Bridge casting reflections on the Kura River. The nightlife comes alive, offering a myriad of experiences, from cozy wine bars to lively clubs. Tbilisi is more than a destination; it's an immersive journey where past and present converge, creating an enchanting experience for every traveler. Let us guide you through the vibrant streets, hidden gems, and cultural wonders of Tbilisi – a city that invites you to explore, indulge, and embrace the spirit of Georgia.",
+    images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
+    sections: [
+      {
+        id: 'tbilisi',
+        title: 'Tbilisi - Capital of Georgia',
+        content:
+          "Embark on a journey to Tbilisi, the heart and soul of Georgia, where ancient history dances with modern vibrancy, creating a captivating tapestry of experiences. Nestled at the crossroads of Europe and Asia, Tbilisi beckons travelers with its diverse charm, cultural richness, and warm hospitality. Wander through the cobblestone streets of the Old Town, where history unfolds in the form of centuries-old churches, charming courtyards, and vibrant markets. As you step into the cobblestone streets of the Old Town, you'll feel like you've entered a living museum. This is where history unfolds in the most enchanting way. Centuries-old churches, each with its own unique story and architectural style, stand as witnesses to the passage of time.",
+        imageUrl: Tbilisi,
+      },
+      {
+        id: 'old-town',
+        title: 'Old Town',
+        content:
+          "Tbilisi's Old Town is a captivating district that transports you back in time with its rich history and charming atmosphere. Here are some key highlights and additional details:",
+        imageUrl: Jvari_Monastery,
+        details: [
+          {
+            header: 'Historic Significance:',
+            detail:
+              "The Old Town is the oldest part of Tbilisi and has been inhabited for centuries. It played a crucial role in the city's development and reflects the diverse cultural influences that have shaped Georgia over the years.",
+          },
+          {
+            header: 'Traditional Georgian Architecture:',
+            detail:
+              "As you wander through the maze of narrow streets, you'll encounter traditional Georgian architecture at its finest. The buildings are characterized by wooden balconies adorned with intricate carvings and vibrant, colorful facades. Many of these structures have been lovingly restored to their former glory.",
+          },
+          {
+            header: 'Courtyards and Hidden Gems:',
+            detail:
+              'One of the delights of exploring the Old Town is stumbling upon hidden courtyards and secret gardens tucked away behind the historic buildings. These quiet oases offer a peaceful escape from the bustling streets and are often home to small cafes, boutiques, or art galleries.',
+          },
+          {
+            header: 'Sioni Cathedral:',
+            detail:
+              'Located in the heart of the Old Town, Sioni Cathedral is a significant religious site. It features beautiful frescoes and has a tranquil atmosphere, making it a great place for reflection.',
+          },
+          {
+            header: 'Metekhi Church:',
+            detail:
+              'Overlooking the Kura River, the Metekhi Church is an iconic Tbilisi landmark. It provides a panoramic view of the Old Town and the city skyline. The area around the church is often used for open-air performances and cultural events.',
+          },
+          {
+            header: 'Sulphur Baths District:',
+            detail:
+              "Just a short walk from the Old Town, you'll find the famous sulphur baths in the Abanotubani district. These historic bathhouses are built in the traditional Georgian style and offer a unique bathing experience in naturally warm, sulfur-infused waters.",
+          },
+          {
+            header: 'Diverse Dining Options: ',
+            detail:
+              "The Old Town is a culinary paradise with numerous traditional Georgian restaurants, cozy cafes, and wine bars. Don't miss the opportunity to savor delicious Georgian cuisine, including khachapuri (cheese-filled bread) and khinkali (dumplings).",
+          },
+          {
+            header: 'Narikala Fortress Access:',
+            detail:
+              'The Old Town provides a starting point for those wishing to visit the Narikala Fortress. You can either take a leisurely walk up the cobblestone paths or use the cable car for a more convenient ascent.',
+          },
+        ],
+      },
+    ],
+    gallery: [{ imageUrl: Tbilisi }, { imageUrl: Tbilisi }, { imageUrl: Tbilisi }],
   },
   {
-    title: 'Mtsketa',
-    season: '',
+    title: 'Mtskheta',
     image: Mtsketa,
-    description:
-      "Embark on a journey to Mtskheta, a UNESCO World Heritage site and the ancient capital of Georgia, where history and spirituality converge amidst stunning landscapes. Nestled at the confluence of the Aragvi and Kura rivers, Mtskheta invites travelers to step into a realm where the past gracefully intertwines with the present. The focal point of Mtskheta's cultural heritage is the Svetitskhoveli Cathedral, a masterpiece of medieval architecture and a symbol of Georgia's Christian history. Adorned with intricate carvings and surrounded by an air of reverence, this sacred site is believed to house the robe of Christ. Jvari Monastery, perched on a hill overlooking Mtskheta, offers panoramic views of the picturesque landscapes. This ancient religious complex, dating back to the 6th century, holds significance not only for its architectural splendor but also for its role in shaping Georgia's spiritual identity. Mtskheta's cobblestone streets and traditional Georgian houses create a charming atmosphere as you explore the town. The Antiquity Street, lined with artisan shops and cozy cafes, invites you to discover local crafts, traditional souvenirs, and the warmth of Georgian hospitality. The nearby Samtavro Monastery, surrounded by lush gardens, beckons with a serene ambiance. Home to the tombs of Georgian royalty and the revered St. Nino, it provides a tranquil retreat into the region's religious history. Mtskheta isn't just a destination; it's a pilgrimage into the soul of Georgia. The ancient city resonates with stories of kings, saints, and a cultural legacy that has endured for centuries. Join us on a journey to Mtskheta, where each cobblestone tells a tale, and the spirit of Georgia's past whispers through the corridors of time.",
+    images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
+    sections: [
+      {
+        id: 'Mtsketa',
+        title: 'Mtskheta - The Spiritual Heart of Georgia',
+        content:
+          "Embark on a journey to Mtskheta, a UNESCO World Heritage site and the ancient capital of Georgia, where history and spirituality converge amidst stunning landscapes. Nestled at the confluence of the Aragvi and Kura rivers, Mtskheta invites travelers to step into a realm where the past gracefully intertwines with the present. The focal point of Mtskheta's cultural heritage is the Svetitskhoveli Cathedral, a masterpiece of medieval architecture and a symbol of Georgia's Christian history. Adorned with intricate carvings and surrounded by an air of reverence, this sacred site is believed to house the robe of Christ. Mtskheta isn't just a destination; it's a pilgrimage into the soul of Georgia.",
+        imageUrl: Mtsketa,
+      },
+      {
+        id: 'discovering Mtskheta',
+        title: 'Discovering Mtskheta',
+        content:
+          "Nestled amidst Georgia's picturesque landscape, Mtskheta stands as a living testament to the country's rich heritage. This ancient town beckons travelers to explore its historic streets and immerse themselves in its cultural tapestry.",
+        imageUrl: Mtsketa,
+        details: [
+          {
+            header: 'Svetitskhoveli Cathedral: ',
+            detail:
+              "At the heart of Mtskheta lies the Svetitskhoveli Cathedral, a UNESCO World Heritage Site and one of the holiest places in Georgia. This architectural marvel is not only a masterpiece of medieval design but also a revered pilgrimage site. Inside, marvel at its stunning frescoes and the legend of Christ's robe buried beneath its foundations.",
+          },
+          {
+            header: 'Jvari Monastery: ',
+            detail:
+              'Perched on a hill overlooking Mtskheta, the Jvari Monastery offers panoramic views of the confluence of the Mtkvari and Aragvi rivers. This 6th-century marvel is another UNESCO-listed gem, commemorating the dawn of Christianity in Georgia. Its simplicity and serene beauty make it a must-visit.',
+          },
+          {
+            header: 'Historic Streets: ',
+            detail:
+              "Wander through Mtskheta's historic streets lined with traditional Georgian houses, many adorned with wooden balconies and intricate carvings. These streets whisper tales of bygone eras and create an ambiance that transports you to a different time.",
+          },
+          {
+            header: 'Samtavro Monastery: ',
+            detail:
+              "This charming complex includes a Nunnery, a church, and a beautiful garden. Samtavro Monastery is not only a place of worship but also a peaceful oasis where visitors can reflect and connect with the town's spiritual essence.",
+          },
+          {
+            header: 'Shiomgvime Monastery: ',
+            detail:
+              "A short drive from Mtskheta leads to the serene Shiomgvime Monastery complex, nestled in a forested valley. It offers a peaceful retreat for those seeking solitude and a deeper connection with Georgia's religious history.",
+          },
+          {
+            header: 'Cultural Workshops: ',
+            detail:
+              'Explore local workshops and galleries to witness traditional Georgian craftsmanship in action. From textiles to ceramics, artisans continue to create masterpieces using time-honored techniques.',
+          },
+          {
+            header: 'Culinary Delights: ',
+            detail:
+              "Savor the flavors of Georgia in Mtskheta's traditional restaurants and cozy cafes. Don't miss the chance to taste local dishes like khachapuri, mtsvadi, and Churchkhela, a traditional Georgian sweet.",
+          },
+          {
+            header: 'Adventure Awaits: ',
+            detail:
+              "Beyond its historical and spiritual treasures, Mtskheta serves as a gateway to outdoor adventures. The surrounding countryside offers opportunities for hiking, rafting, and exploring caves, allowing you to connect with Georgia's natural wonders.",
+          },
+        ],
+      },
+    ],
+    gallery: [{ imageUrl: Mtsketa }, { imageUrl: Mtsketa }, { imageUrl: Mtsketa }],
   },
   {
     title: 'Kazbegi',
-    season: '',
     image: Svaneti,
-    description:
-      "Embark on an extraordinary odyssey to Kazbegi, a realm nestled within the towering embrace of the Greater Caucasus Mountains. This Georgian gem is a symphony of breathtaking landscapes, cultural wonders, and exhilarating adventures that promise to etch indelible memories. At the heart of Kazbegi's allure stands the iconic Gergeti Trinity Church, a celestial silhouette against the backdrop of Mount Kazbek's snow-capped peaks. This spiritual haven not only grants sweeping panoramic views but also invites introspection amidst awe-inspiring surroundings. For nature aficionados, Kazbegi unveils its treasures in Truso Valley—a sanctuary of pristine wilderness. Traverse emerald-green landscapes, uncover ancient ruins, and rejuvenate by bubbling mineral springs, all amidst the rugged beauty of the Caucasus. Winter transforms Kazbegi into a playground for snow enthusiasts. The Tetnuldi Ski Resort, with its challenging slopes and panoramic vistas, guarantees an adrenaline-fueled escape. Ski or snowboard against the backdrop of this alpine wonderland for an exhilarating experience. Stepantsminda, the central town of Kazbegi, is a charming nexus where alpine architecture converges with warm hospitality. Immerse yourself in local culture, savor traditional Georgian cuisine, and witness the timeless rhythm of mountain life. As the day unfolds, the Kazbegi sunset casts a magical glow over the landscapes, creating a canvas of colors that paint the perfect backdrop for relaxation and reflection. Our Kazbegi tours are meticulously designed to offer an authentic experience, seamlessly blending adventure with cultural immersion.",
+    images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
+    sections: [
+      {
+        id: 'Kazbegi',
+        title: "Kazbegi - Where Georgia's Majestic Peaks Beckon",
+        content:
+          "Embark on a journey to Kazbegi, a breathtaking region where nature's grandeur and ancient charm harmonize amidst the towering peaks of the Caucasus Mountains. Nestled at the foot of Mount Kazbek, Kazbegi welcomes adventurers to a realm where history and adventure intertwine seamlessly.  The iconic symbol of Kazbegi is the Gergeti Trinity Church, perched dramatically on a hilltop with Mount Kazbek as its backdrop. This 14th-century marvel is not only an architectural gem but also a spiritual sanctuary. Kazbegi isn't just a destination; it's an expedition into the heart of Georgia's wilderness.   Kazbegi, with its awe-inspiring landscapes, spiritual sanctuaries, and boundless adventures, invites you to embark on an unforgettable journey into the heart of the Caucasus Mountains. Each step through its rugged terrain reveals a new facet of Georgia's natural and cultural wonders.",
+        imageUrl: Kazbegi,
+      },
+      {
+        id: 'Exploring Kazbegi',
+        title: 'Exploring Kazbegi',
+        content:
+          "Nestled amidst the awe-inspiring Caucasus, Kazbegi stands as a gateway to Georgia's mountainous wonders, inviting travelers to embark on exhilarating adventures and immerse themselves in the region's rich culture.",
+        imageUrl: Kazbegi,
+        details: [
+          {
+            header: 'Gergeti Trinity Church: ',
+            detail:
+              'At the heart of Kazbegi lies the Gergeti Trinity Church, an iconic symbol of Georgian spirituality. Perched on a hill, it offers awe-inspiring views of Mount Kazbek and the surrounding landscape. This ancient sanctuary has been a site of pilgrimage for centuries.',
+          },
+          {
+            header: 'Trails and Treks: ',
+            detail:
+              'Kazbegi is a haven for hiking enthusiasts, with a network of trails that lead to alpine meadows, pristine lakes, and breathtaking viewpoints. Explore the rugged beauty of the region on foot and be rewarded with unparalleled vistas.',
+          },
+          {
+            header: 'Stepantsminda: ',
+            detail:
+              'The charming town of Stepantsminda, nestled in the Kazbegi valley, serves as a base for exploring the region. Experience Georgian hospitality in its cozy guesthouses and enjoy traditional cuisine, including khachapuri and khinkali.',
+          },
+          {
+            header: 'Mineral Springs: ',
+            detail:
+              "Discover the therapeutic properties of Kazbegi's natural mineral springs. Relax and rejuvenate in the warm, healing waters that flow from deep within the earth.",
+          },
+          {
+            header: 'Local Crafts: ',
+            detail:
+              'Explore the local craftsmanship of Kazbegi, where artisans continue age-old traditions in creating handmade textiles, pottery, and woodwork. Visit workshops to witness the skilled hands behind these intricate creations.',
+          },
+          {
+            header: 'Cultural Encounters: ',
+            detail:
+              'Immerse yourself in the rich cultural heritage of Kazbegi by engaging with the local communities. Participate in traditional rituals and celebrations to gain a deeper understanding of their way of life.',
+          },
+          {
+            header: 'Adventurous Pursuits: ',
+            detail:
+              "Beyond its spiritual and cultural offerings, Kazbegi is a playground for adventure seekers. Try your hand at mountaineering, mountain biking, or paragliding, and experience the thrill of Georgia's great outdoors.",
+          },
+        ],
+      },
+    ],
+    gallery: [{ imageUrl: Kazbegi }, { imageUrl: Kazbegi }, { imageUrl: Kazbegi }],
   },
   {
     title: 'Gori',
-    season: '',
     image: Gori,
-    description:
-      "Embark on a journey to Gori, a city in eastern Georgia with a rich historical tapestry that unfolds against the backdrop of the Caucasus Mountains. Gori, often recognized as the birthplace of Joseph Stalin, invites travelers to explore its diverse cultural heritage, ancient landmarks, and the warmth of Georgian hospitality. Begin your exploration at the heart of Gori with the Stalin Museum, a unique institution that sheds light on the life and times of the Soviet leader. The museum showcases Stalin's personal items, photographs, and even the house where he was born, providing insights into a significant chapter of modern history. The Gori Fortress, perched on a hill overlooking the city, is a testament to Gori's ancient roots. Dating back to the 7th century, the fortress offers panoramic views of the surrounding landscapes and serves as a historical centerpiece that connects the past to the present. Uplistsikhe, an ancient rock-hewn town located just a short distance from Gori, unveils a trove of archaeological wonders. Explore the caves, tunnels, and chambers of this ancient settlement, dating back to the early Iron Age, and witness the architectural prowess of the past. Gori's central market, with its vibrant colors and lively atmosphere, is a delightful place to immerse yourself in the local culture. From fresh produce to handmade crafts, the market offers a sensory experience that captures the essence of daily life in Gori. The Gori State Drama Theatre, a cultural hub in the city, provides an opportunity to enjoy local performances and immerse yourself in the artistic scene. The blend of traditional Georgian storytelling and contemporary expressions adds a dynamic touch to Gori's cultural landscape. As you explore Gori's streets, you'll encounter charming cafes, where you can savor traditional Georgian cuisine and hospitality. From khachapuri to khinkali, indulge in the flavors that make Georgian gastronomy a delightful journey for the taste buds. Join us on a journey to Gori, where history intertwines with contemporary life, and the cityscape is a canvas painted with stories of the past. Discover the cultural treasures, explore ancient landmarks, and let the spirit of Gori capture your imagination as you navigate through the captivating landscapes of eastern Georgia.",
+    images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
+    sections: [
+      {
+        id: 'gori',
+        title: "Gori - Unveiling Georgia's Historical Tapestry",
+        content:
+          "Embark on a journey to Gori, a city where layers of history unfold amidst the serene landscapes of the Shida Kartli region. Situated along the banks of the Kura River, Gori invites travelers to delve into a rich tapestry of Georgia's past, from ancient civilizations to the modern era. The city's focal point is the Stalin Museum, a testament to the life and times of Joseph Stalin, one of the 20th century's most influential figures. Gori isn't just a destination; it's a captivating exploration of Georgia's historical and cultural heritage. Gori, with its blend of history, culture, and natural beauty, beckons you to embark on a journey through Georgia's historical tapestry. Each corner of this city reveals a new chapter in the country's captivating story, inviting travelers to explore its layers of heritage.",
+        imageUrl: Gori,
+      },
+      {
+        id: 'discovering gori',
+        title: 'Discovering Gori',
+        content:
+          'Nestled within the tranquil landscapes of Shida Kartli, Gori offers a compelling blend of history, culture, and natural beauty, making it a unique destination for curious travelers.',
+        imageUrl: Gori,
+        details: [
+          {
+            header: 'Historic Significance:',
+            detail:
+              "The Old Town is the oldest part of Tbilisi and has been inhabited for centuries. It played a crucial role in the city's development and reflects the diverse cultural influences that have shaped Georgia over the years.",
+          },
+          {
+            header: 'Traditional Georgian Architecture:',
+            detail:
+              "As you wander through the maze of narrow streets, you'll encounter traditional Georgian architecture at its finest. The buildings are characterized by wooden balconies adorned with intricate carvings and vibrant, colorful facades. Many of these structures have been lovingly restored to their former glory.",
+          },
+          {
+            header: 'Courtyards and Hidden Gems:',
+            detail:
+              'One of the delights of exploring the Old Town is stumbling upon hidden courtyards and secret gardens tucked away behind the historic buildings. These quiet oases offer a peaceful escape from the bustling streets and are often home to small cafes, boutiques, or art galleries.',
+          },
+          {
+            header: 'Sioni Cathedral:',
+            detail:
+              'Located in the heart of the Old Town, Sioni Cathedral is a significant religious site. It features beautiful frescoes and has a tranquil atmosphere, making it a great place for reflection.',
+          },
+          {
+            header: 'Metekhi Church:',
+            detail:
+              'Overlooking the Kura River, the Metekhi Church is an iconic Tbilisi landmark. It provides a panoramic view of the Old Town and the city skyline. The area around the church is often used for open-air performances and cultural events.',
+          },
+          {
+            header: 'Sulphur Baths District:',
+            detail:
+              "Just a short walk from the Old Town, you'll find the famous sulphur baths in the Abanotubani district. These historic bathhouses are built in the traditional Georgian style and offer a unique bathing experience in naturally warm, sulfur-infused waters.",
+          },
+          {
+            header: 'Diverse Dining Options: ',
+            detail:
+              "The Old Town is a culinary paradise with numerous traditional Georgian restaurants, cozy cafes, and wine bars. Don't miss the opportunity to savor delicious Georgian cuisine, including khachapuri (cheese-filled bread) and khinkali (dumplings).",
+          },
+          {
+            header: 'Narikala Fortress Access:',
+            detail:
+              'The Old Town provides a starting point for those wishing to visit the Narikala Fortress. You can either take a leisurely walk up the cobblestone paths or use the cable car for a more convenient ascent.',
+          },
+        ],
+      },
+    ],
+    gallery: [{ imageUrl: Gori }, { imageUrl: Gori }, { imageUrl: Gori }],
   },
   {
     title: 'Samegrelo',
-    season: '',
     image: Samegrelo,
-    description:
-      "Embark on a captivating journey to Samegrelo, a region in western Georgia where lush landscapes, ancient traditions, and warm hospitality create a tapestry of unforgettable experiences. Nestled between the rolling hills and the Black Sea, Samegrelo invites travelers to explore its unique cultural heritage and natural wonders. Begin your adventure in Zugdidi, the regional center of Samegrelo, where the Dadiani Palace awaits. This 19th-century residence, surrounded by verdant gardens, offers a glimpse into the lives of the Georgian nobility and houses a fascinating museum with artifacts from various historical periods. Samegrelo is renowned for its distinctive cuisine, and Zugdidi's central market is a sensory delight. Stroll through the bustling aisles, where local farmers and vendors showcase a bounty of fresh produce, traditional spices, and culinary delights unique to the region. The Martvili Canyon, a natural wonder tucked away in Samegrelo's landscapes, beckons with its emerald-green waters cutting through limestone cliffs. Take a boat ride through the canyon, marvel at waterfalls, and immerse yourself in the pristine beauty of this enchanting location. Explore the ancient town of Mestia, known for its Svan towers that punctuate the skyline. These medieval stone structures, built for defense against invaders, are emblematic of the region's rich cultural and architectural heritage. Samegrelo's coastal town of Poti offers a retreat to the Black Sea, where sandy beaches and the refreshing sea breeze provide an ideal setting for relaxation. Take a leisurely stroll along the waterfront or indulge in fresh seafood at one of the local restaurants. Kobuleti, another coastal gem in Samegrelo, invites you to unwind on its palm-lined promenade and explore the vibrant botanical garden. The blend of subtropical flora and serene seaside vistas creates a tranquil escape along the Black Sea coast. Samegrelo's landscape is adorned with ancient churches, such as the Zugdidi Cathedral and the Martvili Monastery, each carrying echoes of the region's spiritual history. These sacred sites offer not only architectural marvels but also a connection to Samegrelo's deep-rooted traditions. Join us on a journey to Samegrelo, where the flavors are bold, the landscapes are lush, and the cultural heritage is rich. Discover the hidden gems, savor the warmth of local hospitality, and let Samegrelo unveil its treasures as you explore the diverse facets of this captivating region.",
+    images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
+    sections: [
+      {
+        id: 'samegrelo',
+        title: "Samegrelo - Exploring Georgia's Western Gem",
+        content:
+          'Embark on a captivating journey to Samegrelo, a region in western Georgia where lush landscapes, ancient traditions, and warm hospitality create a tapestry of unforgettable experiences. Nestled between the rolling hills and the Black Sea, Samegrelo invites travelers to explore its unique cultural heritage and natural wonders. Begin your adventure in Zugdidi, the regional center of Samegrelo, where the Dadiani Palace awaits. This 19th-century residence, surrounded by verdant gardens, offers a glimpse into the lives of the Georgian nobility and houses a fascinating museum with artifacts from various historical periods.',
+        imageUrl: Gori,
+      },
+      {
+        id: 'discovering samegrelo',
+        title: 'Discovering Samegrelo',
+        content:
+          'Nestled amidst the stunning landscapes of western Georgia, Samegrelo is a region of diverse experiences, inviting travelers to uncover its rich cultural tapestry and natural beauty.',
+        imageUrl: Samegrelo,
+        details: [
+          {
+            header: 'Dadiani Palace: ',
+            detail:
+              'Explore the historic Dadiani Palace in Zugdidi, once home to the influential Dadiani noble family. The palace houses an impressive collection of art, artifacts, and historical relics.',
+          },
+          {
+            header: 'Martvili Canyon: ',
+            detail:
+              'Embark on a scenic adventure through Martvili Canyon, a natural wonder adorned with turquoise waters, lush vegetation, and cascading waterfalls. Take a boat ride to fully immerse yourself in its beauty.',
+          },
+          {
+            header: 'Enguri Dam: ',
+            detail:
+              "Visit the Enguri Dam, one of the world's tallest concrete arch dams, and enjoy panoramic views of the Enguri River and the surrounding landscape from its observation deck.",
+          },
+          {
+            header: 'Mingrelia Cuisine: ',
+            detail:
+              "Savor the flavors of Samegrelo's unique cuisine, known for its rich, hearty dishes. Try local specialties like gebjalia (cheese with mint and garlic), mchadi (cornbread), and traditional Megrelian khachapuri.",
+          },
+          {
+            header: 'Zugdidi Botanical Garden: ',
+            detail:
+              'Wander through the lush Zugdidi Botanical Garden, a paradise for nature enthusiasts, featuring a wide variety of plants, trees, and exotic flora.',
+          },
+          {
+            header: 'Guria-Samegrelo Railway: ',
+            detail:
+              'Experience a picturesque train journey on the Guria-Samegrelo Railway, winding through scenic landscapes and charming villages.',
+          },
+          {
+            header: 'Abasha: The Town of Legends: ',
+            detail:
+              'Visit Abasha, a town steeped in legends and folklore, and explore its historical sites and vibrant local culture.',
+          },
+          {
+            header: 'Local Traditions: ',
+            detail:
+              'Engage with the warm-hearted locals and witness traditional Megrelian dances, music, and customs that have been passed down through generations.',
+          },
+        ],
+      },
+    ],
+    gallery: [{ imageUrl: Samegrelo }, { imageUrl: Samegrelo }, { imageUrl: Samegrelo }],
   },
   {
     title: 'Batumi',
-    season: '',
     image: Batumi,
-    description:
-      "Embark on a coastal adventure to Batumi, Georgia's gem on the Black Sea, where modernity meets seaside charm in a vibrant fusion. Nestled against the backdrop of the Caucasus Mountains, Batumi invites travelers with its contemporary architecture, lush gardens, and a lively atmosphere that makes it a perfect destination for both relaxation and exploration. Batumi's iconic Batumi Boulevard, a picturesque promenade along the Black Sea coast, sets the tone for your coastal escapade. Lined with palm trees, sculptures, and colorful flowerbeds, the boulevard is a delightful place for a leisurely stroll, offering breathtaking sea views and a refreshing sea breeze. The Ali and Nino Statue, a symbol of tragic love, graces Batumi's waterfront. The moving figures, representing a Muslim Azerbaijani boy and a Christian Georgian girl, add a touch of romance to the city's ambiance. Discover the lush beauty of the Batumi Botanical Garden, a verdant haven with a diverse collection of plant species. From exotic flowers to towering trees, the garden offers a tranquil retreat where nature's wonders unfold against the backdrop of the Black Sea. Marvel at the Alphabet Tower, a unique structure where each of the 33 letters of the Georgian alphabet is illuminated at night. This cultural landmark stands tall in Europe Square, reflecting Georgia's rich linguistic heritage. Batumi's Piazza Square, with its vibrant atmosphere, live music, and colorful architecture, is a hub of local life. Cafes, restaurants, and shops surround the square, creating a lively ambiance that captures the spirit of Batumi's social scene. Explore Europe Square, adorned with sculptures and surrounded by elegant buildings, showcasing Batumi's diverse architectural influences. The square is a testament to the city's connection to both European and Asian cultures. The Batumi Dolphinarium offers family-friendly entertainment with lively shows featuring dolphins, seals, and other marine creatures. The interactive performances provide a joyful experience for visitors of all ages. Admire the Medea Statue, a striking bronze sculpture depicting the legendary Colchian princess from Greek mythology. This artistic masterpiece adds a touch of mythology to Batumi's urban landscape. Batumi's beaches, with their sandy shores along the Black Sea, provide a perfect retreat for sunbathing, swimming, and enjoying the coastal ambiance. Whether you're seeking relaxation or adventure, Batumi's beaches offer a delightful seaside escape. Join us on a journey to Batumi, where the modern and the coastal blend seamlessly, creating a cityscape that invites exploration, relaxation, and an unforgettable experience along the shores of the Black Sea.",
+    images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
+    sections: [
+      {
+        id: 'batumi',
+        title: "Batumi - Georgia's Coastal Jewel",
+        content:
+          "Embark on a coastal adventure to Batumi, Georgia's gem on the Black Sea, where modernity meets seaside charm in a vibrant fusion. Nestled against the backdrop of the Caucasus Mountains, Batumi invites travelers with its contemporary architecture, lush gardens, and a lively atmosphere that makes it a perfect destination for both relaxation and exploration. Batumi's iconic Batumi Boulevard, a picturesque promenade along the Black Sea coast, sets the tone for your coastal escapade. Lined with palm trees, sculptures, and colorful flowerbeds, the boulevard is a delightful place for a leisurely stroll, offering breathtaking sea views and a refreshing sea breeze.",
+        imageUrl: Batumi,
+      },
+      {
+        id: 'discovering batumi',
+        title: 'Discovering Batumi',
+        content:
+          "Batumi, with its captivating blend of natural beauty and urban sophistication, offers a wide array of experiences that cater to every traveler's preferences:",
+        imageUrl: Batumi,
+        details: [
+          {
+            header: 'Batumi Boulevard: ',
+            detail:
+              'Stroll along the Batumi Boulevard, a scenic promenade that hugs the Black Sea coast. Enjoy panoramic views of the sea, beautiful gardens, and art installations that create a relaxing atmosphere.',
+          },
+          {
+            header: 'Dolphinarium: ',
+            detail:
+              'Delight in a visit to the Batumi Dolphinarium, where you can witness mesmerizing dolphin and seal performances that entertain and educate visitors of all ages.',
+          },
+          {
+            header: 'Batumi Botanical Garden: ',
+            detail:
+              'Explore the Batumi Botanical Garden, a lush oasis featuring a diverse collection of plants and flora from around the world. Meander through themed sections, each with its own unique charm.',
+          },
+          {
+            header: 'Europe Square: ',
+            detail:
+              "Admire the modern architecture of Batumi's Europe Square, home to the astronomical clock tower, a symbol of the city's contemporary spirit. The square comes alive with vibrant cafes and cultural events.",
+          },
+          {
+            header: 'Alphabet Tower: ',
+            detail:
+              "Ascend the Alphabet Tower for panoramic views of the city and the surrounding landscape. The tower pays homage to Georgia's unique alphabet, showcasing its 33 letters.",
+          },
+          {
+            header: 'Beaches: ',
+            detail:
+              "Batumi's coastline boasts several beautiful beaches where you can soak up the sun, take a refreshing swim in the Black Sea, or enjoy water sports and beachside cafes.",
+          },
+          {
+            header: 'Piazza Square: ',
+            detail:
+              'Visit Piazza Square, a charming and artistic hub in the heart of Batumi, known for its Italian-inspired architecture, live music performances, and vibrant atmosphere.',
+          },
+          {
+            header: 'Cable Car Ride: ',
+            detail:
+              'Take a scenic cable car ride to Anuria Mountain and enjoy breathtaking vistas of Batumi and the coastline from above.',
+          },
+          {
+            header: 'Local Cuisine: ',
+            detail:
+              'Savor the flavors of Adjara cuisine at local restaurants, where you can indulge in khachapuri (cheese-filled bread), grilled meats, and fresh seafood.',
+          },
+          {
+            header: 'Casino and Entertainment: ',
+            detail:
+              'Batumi offers a lively nightlife scene with casinos, bars, and clubs for those seeking evening entertainment.',
+          },
+        ],
+      },
+    ],
+    gallery: [{ imageUrl: Batumi }, { imageUrl: Batumi }, { imageUrl: Batumi }],
   },
   {
     title: 'Vardzia',
-    season: '',
     image: Vardzia,
-    description:
-      "Vardzia, a hidden marvel in the heart of Georgia, beckons adventurers to uncover its secrets within the rugged embrace of the Caucasus Mountains. Carved into the cliffs of the Erusheti Mountain, Vardzia stands as a testament to human ingenuity and spiritual devotion, offering a journey into the depths of history. The Cave Monastery complex at Vardzia is a mesmerizing architectural feat, seamlessly integrated into the rocky slopes. Its labyrinthine network of caves unfolds like a subterranean city, revealing chapels, dwellings, and tunnels that echo with the stories of centuries past. The Church of the Dormition, a jewel within Vardzia, showcases intricate frescoes that adorn its rocky walls. As sunlight filters through openings in the cliffs, the interior becomes a canvas of vibrant scenes, illustrating tales of faith and artistry. Queen Tamar's Hall, a regal chamber within Vardzia, adds a touch of grandeur to the complex. Believed to be a royal reception hall, its echoes resonate with the stories of a bygone era, providing a glimpse into the splendor that once graced this underground sanctuary. Natural beauty intertwines seamlessly with Vardzia's historical richness. Overlooking the Kura River Valley, the complex offers breathtaking views, and a short stroll leads to the Vardzia Waterfall—a serene oasis surrounded by lush greenery. The Queen Tamar Bridge, an elegant arch spanning the Kura River, connects the past with the present. Crossing its arches, visitors become part of a narrative that links the architectural wonders of Vardzia with the natural wonders of the region. Immerse yourself in the spiritual ambiance of Vardzia, where cave dwellings served as monastic cells, chapels, and storage rooms. The on-site Vardzia Museum provides deeper insights into the history and significance of this unique site, enriching the visitor's experience. Vardzia is not merely a destination; it's a journey through time, a pilgrimage into the depths of Georgian history, and an exploration of a mystical sanctuary carved into the very fabric of the Caucasus Mountains. Join us on an adventure to Vardzia, where every cavern holds a story, and the spirit of this ancient marvel captivates the soul.",
+    images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
+    sections: [
+      {
+        id: 'vardzia',
+        title: "Vardzia - Georgia's Enigmatic Cave City",
+        content:
+          'Vardzia, a hidden marvel in the heart of Georgia, beckons adventurers to uncover its secrets within the rugged embrace of the Caucasus Mountains. Carved into the cliffs of the Erusheti Mountain, Vardzia stands as a testament to human ingenuity and spiritual devotion, offering a journey into the depths of history. The Cave Monastery complex at Vardzia is a mesmerizing architectural feat, seamlessly integrated into the rocky slopes. Its labyrinthine network of caves unfolds like a subterranean city, revealing chapels, dwellings, and tunnels that echo with the stories of centuries past. The Church of the Dormition, a jewel within Vardzia, showcases intricate frescoes that adorn its rocky walls. ',
+        imageUrl: Vardzia,
+      },
+      {
+        id: 'discovering vardzia',
+        title: 'Discovering Vardzia',
+        content:
+          'Vardzia, with its otherworldly cave dwellings and historical significance, promises a journey of exploration and wonder:',
+        imageUrl: Vardzia,
+        details: [
+          {
+            header: 'Cave Monastery Complex: ',
+            detail:
+              'The centerpiece of Vardzia is its extraordinary cave monastery complex, a marvel carved into the cliffs of the Erusheti Mountain. Explore the labyrinthine tunnels, chambers, and cave churches that once served as a sanctuary for monks and pilgrims.',
+          },
+          {
+            header: 'Ancient Frescoes: ',
+            detail:
+              'Admire the well-preserved frescoes that adorn the cave walls, showcasing intricate religious artwork and providing insight into the spiritual life of medieval Georgia.',
+          },
+          {
+            header: 'The Church of the Dormition: ',
+            detail:
+              'Visit the Church of the Dormition, a remarkable cave church with an iconic domed roof. Its interior is adorned with breathtaking frescoes, making it a spiritual and artistic treasure.',
+          },
+          {
+            header: 'Historical Significance: ',
+            detail:
+              "Learn about Vardzia's historical importance, as it played a crucial role in Georgia's defense against invaders. Discover how this cave city served as a refuge and spiritual center during turbulent times.",
+          },
+          {
+            header: 'Panoramic Views: ',
+            detail:
+              'Hike up to the observation point overlooking Vardzia, where you can enjoy panoramic views of the Kura River valley and the stunning landscapes that surround this hidden gem.',
+          },
+          {
+            header: 'Ancient Tunnels: ',
+            detail:
+              "Explore the intricate network of tunnels and secret passages that connect the cave dwellings, providing a fascinating glimpse into the city's architectural design.",
+          },
+          {
+            header: 'Natural Beauty: ',
+            detail:
+              "Vardzia is set amidst picturesque landscapes, with the Kura River flowing nearby and rolling hills covered in lush greenery. It's an ideal location for nature enthusiasts and photographers.",
+          },
+          {
+            header: 'Local Traditions: ',
+            detail:
+              'Immerse yourself in the local culture by interacting with the friendly residents of nearby villages. Experience traditional Georgian hospitality and taste local dishes and wines.',
+          },
+        ],
+      },
+    ],
+    gallery: [{ imageUrl: Vardzia }, { imageUrl: Vardzia }, { imageUrl: Vardzia }],
   },
   {
     title: 'Borjomi',
-    season: '',
     image: Borjomi,
-    description:
-      "Embark on a rejuvenating journey to Borjomi, a town nestled in the picturesque Borjomi Gorge of Georgia, where lush landscapes and healing mineral waters create a haven for relaxation and exploration. Known for its world-renowned mineral springs and breathtaking scenery, Borjomi invites travelers to immerse themselves in the soothing embrace of nature.At the heart of Borjomi's allure lies the Borjomi-Kharagauli National Park, one of the largest protected areas in Europe. This vast wilderness, adorned with dense forests, alpine meadows, and diverse flora and fauna, offers a sanctuary for nature enthusiasts and hikers seeking an escape into the pristine beauty of the Caucasus.Borjomi's mineral springs have been renowned for their therapeutic properties for centuries. The Central Park in the heart of the town features a sparkling fountain, where visitors can taste the naturally carbonated Borjomi mineral water straight from the source. The park itself is a tranquil oasis, perfect for leisurely strolls and picnics.Discover the historic charms of Borjomi at the Romanov Palace, a 19th-century residence commissioned by the Russian imperial family. Surrounded by scenic gardens, the palace showcases a blend of architectural elegance and royal history, providing a glimpse into a bygone era.Ride the Borjomi-Bakuriani narrow-gauge railway for a scenic journey through the mountains. The route offers breathtaking views of the Borjomi Gorge, meandering alongside the Kura River and passing through tunnels and viaducts, creating a memorable and picturesque experience.For adventure seekers, Bakuriani, a nearby ski resort, transforms into a winter wonderland during the snowy months. Ski down the slopes, enjoy winter sports, and relish the alpine charm of this mountain retreat.Borjomi's vibrant food scene invites you to savor the flavors of Georgian cuisine. Indulge in local delicacies, including khachapuri and khinkali, at traditional restaurants or explore the bustling food markets to experience the diverse culinary offerings of the region.Join us on a journey to Borjomi, where nature's healing touch meets the rich tapestry of history. Whether you seek relaxation, adventure, or a taste of Georgian hospitality, Borjomi promises an unforgettable retreat in the embrace of the Caucasus Mountains.Embark on a sensory journey to Kakheti, Georgia's renowned wine region, where rolling vineyards, ancient winemaking traditions, and cultural riches converge to create an immersive experience for every traveler. Nestled in the country's eastern landscapes, Kakheti invites you to savor the essence of Georgia's winemaking heritage and explore the rich tapestry of its rural charm.The Alaverdi Monastery, a spiritual haven nestled in the Alazani Valley, is a captivating starting point for your Kakheti adventure. This UNESCO-listed site, with its ancient wine cellar and traditional winemaking methods, offers a glimpse into the deep-rooted connection between spirituality and viticulture.Sighnaghi, the 'City of Love,' unfolds like a storybook setting perched on a hill overlooking the Alazani Valley. The cobblestone streets, pastel-colored buildings, and panoramic views create an enchanting ambiance, inviting visitors to stroll through its romantic charm.Wine enthusiasts will find joy in the vine-covered landscapes of Tsinandali, home to the historic Tsinandali Estate. This winemaking legacy dates back to the 19th century and showcases the fusion of European and Georgian winemaking traditions, providing a delightful tasting experience.The Bodbe Monastery, surrounded by lush gardens and overlooking the Alazani Valley, adds a touch of serenity to your Kakheti exploration. This sacred site, believed to be the burial place of St. Nino, offers a tranquil retreat into spiritual reflection.Kakheti is not just about wine; it's a culinary journey that unfolds in the vibrant bazaars and local eateries. Delight in the flavors of Kakhetian cuisine, from succulent grilled meats to the iconic khachapuri, complemented by the warm hospitality of the locals.Venture into the romantic landscapes of the Tsinandali Gardens, a verdant oasis that combines botanical wonders with sculptures, creating a peaceful retreat for nature lovers and art enthusiasts alike.Kakheti's traditional wine cellars, known as maranis, are a must-visit for those eager to delve into the secrets of Georgian winemaking. Enjoy wine tastings and learn about the qvevri, clay vessels buried underground, where the magic of fermentation unfolds.As the sun sets over the Alazani Valley, enjoy a panoramic view from the hilltops of Sighnaghi or relish a leisurely evening in a local winery, where the golden hues of sunset are mirrored in your wine glass.Join us on a journey to Kakheti, where each vine tells a story, each monastery whispers history, and the spirit of Georgian hospitality awaits in every glass of wine. Discover the charm of Kakheti, where tradition meets modernity, and the landscapes are painted with the hues of both vineyards and history.",
+    images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
+    sections: [
+      {
+        id: 'borjomi',
+        title: "Borjomi - Georgia's Healing Oasis",
+        content:
+          "Embark on a rejuvenating journey to Borjomi, a town nestled in the picturesque Borjomi Gorge of Georgia, where lush landscapes and healing mineral waters create a haven for relaxation and exploration. Known for its world-renowned mineral springs and breathtaking scenery, Borjomi invites travelers to immerse themselves in the soothing embrace of nature. At the heart of Borjomi's allure lies the Borjomi-Kharagauli National Park, one of the largest protected areas in Europe. This vast wilderness, adorned with dense forests, alpine meadows, and diverse flora and fauna, offers a sanctuary for nature enthusiasts and hikers seeking an escape into the pristine beauty of the Caucasus.",
+        imageUrl: Borjomi,
+      },
+      {
+        id: 'discovering borjomi',
+        title: 'Discovering Borjomi',
+        content:
+          'Borjomi, with its natural wonders and therapeutic springs, offers a myriad of experiences that cater to those seeking rejuvenation and connection with nature:',
+        imageUrl: Borjomi,
+        details: [
+          {
+            header: 'Borjomi Mineral Water: ',
+            detail:
+              "Discover the healing properties of Borjomi's famous mineral water, known for its therapeutic benefits. Visit the Borjomi Mineral Water Park, where you can taste the natural springs and enjoy leisurely strolls among lush greenery.",
+          },
+          {
+            header: 'Borjomi-Kharagauli National Park: ',
+            detail:
+              "Explore the Borjomi-Kharagauli National Park, one of Georgia's largest protected areas, featuring diverse flora and fauna. Hike through pristine forests, traverse scenic trails, and enjoy the tranquility of nature.",
+          },
+          {
+            header: 'Borjomi Central Park: ',
+            detail:
+              'Spend leisurely hours in Borjomi Central Park, an enchanting urban park with walking paths, playgrounds, and charming bridges that span the Borjomula River.',
+          },
+          {
+            header: 'Sulphur Baths: ',
+            detail:
+              "Experience the therapeutic benefits of Borjomi's sulphur baths, which have been cherished for their healing properties for centuries. Soak in naturally warm, mineral-infused waters to relax and rejuvenate.",
+          },
+          {
+            header: 'Borjomi Historical and Ethnographic Museum: ',
+            detail:
+              "Discover the history and culture of the region at the Borjomi Historical and Ethnographic Museum, where artifacts, exhibits, and traditional Georgian crafts offer insights into Borjomi's heritage.",
+          },
+          {
+            header: 'Borjomi-Kharagauli Nature Reserve: ',
+            detail:
+              'For nature enthusiasts and adventure seekers, the Borjomi-Kharagauli Nature Reserve offers hiking, horseback riding, and wildlife observation in a pristine wilderness setting.',
+          },
+          {
+            header: 'Local Cuisine: ',
+            detail:
+              "Savor the flavors of Borjomi and Georgia's culinary delights at local restaurants and cafes. Don't miss the opportunity to taste traditional Georgian dishes and wines.",
+          },
+          {
+            header: 'Cable Car Ride: ',
+            detail:
+              'Take a cable car ride to the scenic plateau of Tsero Minda, where you can enjoy panoramic views of Borjomi and the surrounding landscapes.',
+          },
+        ],
+      },
+    ],
+    gallery: [{ imageUrl: Borjomi }, { imageUrl: Borjomi }, { imageUrl: Borjomi }],
+  },
+  {
+    title: 'Kakheti',
+    image: Kakheti,
+    images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
+    sections: [
+      {
+        id: 'akheti',
+        title: "Kakheti - Georgia's Land of Wine and Rich Heritage",
+        content:
+          "Embark on a sensory journey to Kakheti, Georgia's renowned wine region, where rolling vineyards, ancient winemaking traditions, and cultural riches converge to create an immersive experience for every traveler. Nestled in the country's eastern landscapes, Kakheti invites you to savor the essence of Georgia's winemaking heritage and explore the rich tapestry of its rural charm. This captivating region invites travelers to explore its wineries, discover ancient traditions, and immerse themselves in the rich cultural heritage that defines Kakheti. Kakheti, with its vineyards, monasteries, and cultural richness, invites you to experience the heart of Georgia's wine country.",
+        imageUrl: Kakheti,
+      },
+      {
+        id: 'discovering kakheti',
+        title: 'Discovering Kakheti',
+        content:
+          "Kakheti, with its vine-covered landscapes and cultural treasures, offers a range of experiences that showcase the region's unique charm:",
+        imageUrl: Kakheti,
+        details: [
+          {
+            header: 'Wine Tasting: ',
+            detail:
+              "Kakheti is synonymous with wine, and a visit wouldn't be complete without indulging in wine tasting at local wineries. Try traditional Georgian wines, such as Saperavi and Rkatsiteli, and learn about the ancient winemaking techniques.",
+          },
+          {
+            header: 'Alaverdi Monastery: ',
+            detail:
+              "Explore the Alaverdi Monastery, a majestic 6th-century complex that houses impressive frescoes, a towering cathedral, and a working winery. The monastery's wine cellars produce some of Georgia's finest wines.",
+          },
+          {
+            header: 'Signagi: ',
+            detail:
+              'Visit the charming town of Signagi, known as the "City of Love" for its romantic ambiance. Stroll through cobbled streets, admire the stunning views of the Alazani Valley, and explore its art galleries and local crafts.',
+          },
+          {
+            header: 'David Gareja Monastery: ',
+            detail:
+              'Discover the David Gareja Monastery, a unique cave complex that spans the border between Georgia and Azerbaijan. Explore its ancient cells, frescoes, and dramatic desert landscapes.',
+          },
+          {
+            header: 'Tsinandali Estate: ',
+            detail:
+              "Immerse yourself in the cultural heritage of Kakheti at the Tsinandali Estate, a historic mansion with beautiful gardens, a museum, and a winery. It's a place where art, literature, and wine converge.",
+          },
+          {
+            header: 'Bodbe Monastery: ',
+            detail:
+              'Visit the Bodbe Monastery, a sacred site believed to be the final resting place of Saint Nino, who brought Christianity to Georgia. Explore its picturesque surroundings and serene atmosphere.',
+          },
+          {
+            header: 'Traditional Kakhetian Cuisine: ',
+            detail:
+              "Savor traditional Kakhetian dishes, including succulent grilled meats, aromatic stews, and khachapuri variations. The region's cuisine is a delightful fusion of flavors.",
+          },
+          {
+            header: 'Local Festivals: ',
+            detail:
+              "Time your visit to coincide with one of Kakheti's lively festivals, such as the Rtveli (grape harvest) celebrations, where you can participate in traditional rituals and festivities.",
+          },
+        ],
+      },
+    ],
+    gallery: [{ imageUrl: Kakheti }, { imageUrl: Kakheti }, { imageUrl: Kakheti }],
   },
 ];
 const seasonsData = [
@@ -377,71 +905,311 @@ const seasonsData = [
 ];
 const tourPackagesData = [
   {
-    title: 'Georgia with Svaneti and the Black Sea',
+    title: 'Black Sea Bliss Escape',
+    season: '',
     length: '14-day cultural and hiking trip in the Greater Caucasus',
     price: '500$',
     image: Canyon,
-    location: 'Tbilisi, Mtskheta ,Kazbegi ,Kutaisi, Mestia, Batumi',
+    location: 'Tbilisi, Mtskheta, Kazbegi, Kutaisi, Mestia, Batumi',
+    images: [Batumi, Tbilisi, Vardzia, Kakheti],
+    trip: [
+      { day: 'Day 1: ', title: 'Flight to Georgia', info: ['Hotel Check in'] },
+      {
+        day: 'Day 2: ',
+        title: "Tbilisi on Foot'",
+        info: [
+          'After arriving in Tbilisi, the capital of Georgia, we will go to your city hotel, where you can check in and rest a bit.',
+          "Sightseeing in the Georgian capital. All interesting architectural monuments are close to each other in the old town, so we can explore the sights with a nice walk. First, we visit the Narikala Fortress and the equestrian statue of the city's founder, Vakhtang Gorgasali. We take the cable car to the Mother of Georgia. From here, we have a great view of the entire city of Tbilisi.A very pleasant walk through the park over the Peace Bridge to the Puppet Theater.",
+          'Overnight in Tbilisi',
+        ],
+      },
+      {
+        day: 'Day 3: ',
+        title: 'To the Greater Caucasus',
+        info: [
+          'Hike to Gergeti Church on Mount Kazbek at an altitude of 2,170 m.Moderate hike (Walking time about 3-4 hours, about 12 km, elevation gain: +420 m, -420 m). We drive along the Georgian Military Road to Gudauri through a very scenic area in the higher elevations of the Greater Caucasus.',
+          "On the way, we visit the old capital Mtskheta and the religious center of Georgia with the Jvari Church (6th century) and the Svetitskhoveli Cathedral (11th century), where Christ's robe is said to be kept. Continue to Kazbek. A beautiful hike to Gergeti Church. The path leads us through the village of Gergeti up to the Zminda Sameba Church (Trinity Church), also known as Gergeti Church, located at an altitude of 2,170 meters. From here, you can see the Terek Valley and the Kasbek settlement. If the weather is clear, you may catch a glimpse of one of the highest peaks in the Caucasus, Mount Kasbek (5047 m).",
+          'Overnight in Kazbegi',
+        ],
+      },
+      {
+        day: 'Day 4: ',
+
+        title: 'Unique Mountain Village and Hike through Impressive Landscape',
+        info: [
+          'Hike to the Georgian Alps',
+          'Moderate hike',
+          '(Walking time about 4 hours, about 10 km, elevation gain: +350 m, -350 m)',
+          'Drive (about 30 min.) through the Sno Valley to the mountain village of Dshuta, which is cut off from the rest of the world for 6-7 months of the year and maintains its natural existence. Our hike starts from here. In good weather conditions, you can see the impressive Tschauchebi Mountain (3842 m). The hike follows a river, and you will be amazed by the diversity of endemic flora. At the beginning of the hike, there is a steep ascent. After that, a fantastic view of the flower meadows opens up in front of us. Our goal leads through the green valley to Mount Tschauchebi. We will get closer and closer to it.',
+          'In the afternoon, we will have tea and learn about Georgian felting from a local artist.',
+          'Overnight in Kazbegi',
+        ],
+      },
+      {
+        day: 'Day 5: ',
+
+        title: 'Along the Ancient Silk Road',
+        info: [
+          'Walking time about 1 hour',
+          'After breakfast, we set off on the Georgian Military Road to Gori, the birthplace of Stalin, beautifully located on the Kura, the largest river in the Caucasus.',
+          'Visit and tasting at a private Georgian winery.',
+          "Today's highlight is the cave city of Uplistsikhe, where you can still find traces of settlements from the early 1st millennium BC. Temples, altars, streets, halls, and shops are located in this ancient cave city, which was part of the legendary Silk Road. The city's structure with multiple streets, a theater, and palaces is well preserved.",
+          "In the afternoon, drive to Western Georgia in the Imereti region, to the country's second-largest city, Kutaisi.",
+          'Overnight in Kutaisi',
+        ],
+      },
+      {
+        day: 'Day 6: ',
+
+        title: 'On to Svaneti!',
+        info: [
+          'Today begins the most exciting part of our journey - a trip to Svaneti, known for its unique high mountain landscape and vibrant traditions.',
+          'Visit the impressive Gelati Monastery Complex (12th century) with the associated academy (UNESCO World Heritage)',
+          'Continue to Mestia.',
+          'Overnight in Mestia',
+        ],
+      },
+      {
+        day: 'Day 7: ',
+
+        title: 'To the Uschba Waterfalls',
+        info: [
+          'Hike to the waterfalls',
+          'Moderate hike',
+          '(Walking time about 3-4 hours, about 7 km, elevation gain: +350 m, -350 m)',
+          'A short drive to the nearby village of Shichra. Start a initially easy, later quite challenging hike to the waterfalls cascading down a rock edge. The hike follows the Dolra River and leads through enchanting dark fir forests, later in the alpine meadows and krummholz zone on narrow paths to a mountain saddle right to the edge of the glacier. If you prefer to save the steep climb on the last meters, you can take a longer break at a beautiful viewpoint in the mountain meadows, while the summit climbers return to this point.',
+          'In the afternoon, we visit the Historical-Ethnographic Museum in the center of Mestia.',
+          'Overnight in Mestia',
+        ],
+      },
+      {
+        day: 'Day 8: ',
+
+        title: 'The Village of Usghuli (2200 m) - UNESCO World Heritage',
+        info: [
+          'Hike in Usghuli',
+          'Moderate hike',
+          '(Walking time about 3-4 hours, about 8 km, elevation gain: +250 m, -250 m)',
+          'Drive to Usghuli, the highest continuously inhabited place in Europe. Here, high mountains, watchtowers, and Svan traditions come together to create a masterpiece. Stroll through the village. We visit the Lamaria Church (12th century), with the eternal white Shkhara (5068 m) rising in the background. The hiking trail leads up the slope of Mount Shkhara to the green oases and cliffs.',
+          'Lunch with a local family, where we will eat the Svan specialty Kubdari!',
+          "In the afternoon, we take a two-hour hike to the ruins of Queen Tamara's summer residence. From here, we enjoy a magnificent view of Shkhara!",
+          'Overnight in Mestia',
+        ],
+      },
+      {
+        day: 'Day 9: ',
+
+        title: "Georgia's White Pearl",
+        info: [
+          'A beautiful drive to the Black Sea, to the modern city of Batumi. On the way, we visit the famous Botanical Garden on the shores of the sea.',
+          'A leisurely walk through the garden along the coast.',
+          'Overnight in Batumi',
+        ],
+      },
+      { day: 'Day 10: ', title: 'Free Day by the Sea', info: ['Overnight in Batumi, Breakfast '] },
+      { day: 'Day 11: ', title: 'Free Day by the Sea', info: ['Overnight in Batumi, Breakfast '] },
+      { day: 'Day 12: ', title: 'Free Day by the Sea', info: ['Overnight in Batumi, Breakfast '] },
+      {
+        day: 'Day 13: ',
+        title: 'Train ride to Tbilisi.',
+        info: ['Overnight in Tbilisi, Breakfast '],
+      },
+      { day: 'Day 14: ', title: 'DEPARTURE from Tbilisi', info: ['Breakfast', 'Check out'] },
+    ],
   },
   {
     title: 'Breathtaking Caucasus Trails',
+    season: '',
     length: '13-day cultural and hiking tour in the Greater Caucasus',
     price: '500$',
     image: Tbilisi,
     location: 'Tbilisi, Kakheti, Kazbegi, Kutaisi, Mestia, Borjomi, Vardzia',
+    images: [Batumi, Tbilisi, Vardzia, Kakheti],
+    trip: [
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+    ],
   },
   {
     title: 'Culinary Crossroads Georgia Gastronomy Tour',
+    season: '',
     length: '14-DAY',
     price: '500$',
     image: Kazbegi,
     location: 'Batumi, Svaneti, Kutaisi, Vardzia, Gori, Kazbegi, Kakheti, Tbilisi',
+    images: [Batumi, Tbilisi, Vardzia, Kakheti],
+    trip: [
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+    ],
   },
   {
     title: 'Cultural Tapestry Tour Discovering Georgia',
+    season: '',
     length: '8-DAY',
     price: '500$',
     image: Kakheti,
     location: 'Tbilisi, Kazbegi, Borjomi, Kakheti',
+    images: [Batumi, Tbilisi, Vardzia, Kakheti],
+    trip: [
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+    ],
   },
   {
-    title: 'Echoes of History Tour ',
+    title: 'Echoes of History Tour',
+    season: '',
     length: '12-DAY',
     price: '500$',
     image: Tbilisi,
     location: 'Tbilisi, Kazbegi, Borjomi, Vardzia, Gori, Kutaisi, Mestia',
+    images: [Batumi, Tbilisi, Vardzia, Kakheti],
+    trip: [
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+    ],
   },
   {
     title: 'Infinite Vineyards Voyage',
+    season: '',
     length: '7 DAY/ 8 NIGHT',
     price: '500$',
     image: Tbilisi,
     location: 'Tbilisi, Kazbegi, Gori, Borjomi, Vardzia, Mtskheta, Kakheti',
+    images: [Batumi, Tbilisi, Vardzia, Kakheti],
+    trip: [
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+    ],
   },
   {
     title: 'Mauntain Majesty Adventure',
+    season: '',
     length: '14 DAY/ 15 NIGHT',
     price: '500$',
     image: Tbilisi,
     location: 'Tbilisi, Kazbegi, Gori, Borjomi, Vardzia, Mtskheta, Kakheti',
+    images: [Batumi, Tbilisi, Vardzia, Kakheti],
+    trip: [
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+    ],
   },
   {
     title: 'Pilgrimage trails in Georgia Spiritual Places in Georgia',
+    season: '',
     length: '5-DAY',
     price: '500$',
     image: Kakheti,
     location: 'Tbilisi, Sighnaghi, Bodbe, Ananuri, Kazbegi',
+    images: [Batumi, Tbilisi, Vardzia, Kakheti],
+    trip: [
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+    ],
   },
   {
     title: 'Sunset Symphony A Georgian Adventure',
+    season: '',
     length: '13-DAY',
     price: '500$',
     image: Kakheti,
     location: 'Tbilisi, Kazbegi, Borjomi, Kutaisi, Mestia, Batumi',
+    images: [Batumi, Tbilisi, Vardzia, Kakheti],
+    trip: [
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+      { day: '', info: ['', '', '', ''] },
+    ],
+  },
+];
+const partnershipData = [
+  {
+    header: 'Why Choose Us',
+    description:
+      "In travel, we're more than A to B. At Caucasus Calling, our confidence comes from expertise, unwavering service, attention to detail, and a passion for travel. Partner with us for standout journeys, where every detail reflects our commitment to excellence.",
+
+    content: [
+      {
+        id: 1,
+        image: knowledge,
+        header: 'Expert knowledge',
+        text: 'Travel agencies that provide round trip, one way, and multi trip services.',
+        title: 'At Caucasus Calling, ',
+        description:
+          "travel planning transcends a job—it's our art. Drawing from our global experiences and recognized excellence, we transform each journey into an extraordinary adventure.",
+      },
+      {
+        id: 2,
+        image: language,
+        header: 'Pre-Travel Mastery',
+        text: 'Travel agencies that provide round trip, one way, and multi trip services.',
+        title: 'At Caucasus Calling, ',
+        description:
+          'we empower our clients with travel guides, detailed itineraries, timelines, and checklists. Our thorough pre-travel consultations ensure clients are not just prepared but genuinely excited for their upcoming journey.',
+      },
+      {
+        id: 3,
+        image: support,
+        header: 'Dedicated Support',
+        text: 'Travel agencies that provide round trip, one way, and multi trip services.',
+        title: 'Choosing Caucasus Calling ',
+        description:
+          "means partnering with a team of travel professionals committed to assisting you throughout the entire booking process. Your journey is not just a reservation; it's a collaborative experience with a dedicated team by your side.",
+      },
+    ],
   },
 ];
 export {
   HomeDestinationsData,
+  partnershipData,
   toursData,
   servicesData,
   infoData,

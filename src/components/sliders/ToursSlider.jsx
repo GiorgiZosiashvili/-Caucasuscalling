@@ -144,7 +144,7 @@ const ToursSlider = ({ data, title, description }) => {
 const SliderContainer = styled.div`
   width: 100%;
   margin: 91px auto 150px;
-  padding: 0px 40px;
+  padding: 0px 20px;
   display: flex;
   flex-direction: column;
   position: relative;

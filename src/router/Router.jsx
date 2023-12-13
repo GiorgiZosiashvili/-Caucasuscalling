@@ -6,6 +6,7 @@ import ToursPage from 'pages/tours/ToursPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import DestinationDetailsPage from '../pages/destination/DestinationDetailsPage';
+import ToursDetailsPage from '../pages/tours/ToursDetailsPage';
 
 function AppRouter() {
   return (
@@ -17,6 +18,7 @@ function AppRouter() {
         <Route path="Health" element={<HealthPage />} />
         <Route path="Partnership" element={<PartnershipPage />} />
         <Route path="Destination/:title" element={<DestinationDetailsPage />} />
+        <Route path="Tours/:title" element={<ToursDetailsPage />} />
       </Routes>
     </BrowserRouter>
   );

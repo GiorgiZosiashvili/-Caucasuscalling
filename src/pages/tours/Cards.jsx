@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { styled } from 'styled-components';
 
 import CustomText from '../../components/reusable/Text';
@@ -8,30 +9,31 @@ const Cards = () => {
   return (
     <CardContainer>
       {tourPackagesData.map((item, index) => (
-        <Card key={index}>
+        <Card key={index} to={`/Tours/${item.title}`}>
           <LocationContainer>
-            <Location />
-            <CustomText
-              style={{ marginLeft: 10 }}
+            <Icon />
+            <TruncatedText
               textAlign="left"
-              fontSize="16px"
+              fontSize="14px"
               fontWeight="400"
               lineHeight="16px"
               color="#fff">
               {item.location}
-            </CustomText>
+            </TruncatedText>
           </LocationContainer>
           <Image src={item?.image} alt={item?.title} />
           <TextContainer>
             <CustomText
+              style={{ maxWidth: 300 }}
               textAlign="left"
               fontSize="20px"
               fontWeight="500"
-              lineHeight="20px"
+              lineHeight="25px"
               color="#222">
               {item?.title}
             </CustomText>
             <CustomText
+              style={{ maxWidth: 300 }}
               textAlign="left"
               fontSize="14px"
               fontWeight="400"
@@ -71,23 +73,26 @@ const CardContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 1286px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
   margin: 73px auto 150px;
   gap: 31px;
-  justify-content: left;
   @media screen and (max-width: 1000px) {
     justify-content: space-evenly;
   }
 `;
-const Card = styled.div`
+const Card = styled(Link)`
   display: flex;
   flex-direction: column;
   border: 0.5px solid #e8e8e8;
-  width: 31.7%;
-  min-width: 310px;
+  width: 100%;
+  max-width: 402px;
   height: 430px;
   position: relative;
   border-radius: 12px;
+  cursor: pointer;
 `;
 const LocationContainer = styled.div`
   display: flex;
@@ -108,15 +113,25 @@ const Image = styled.img`
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
 `;
-
+const Icon = styled(Location)`
+  margin-right: 10px;
+  width: 24px !important;
+  height: 24px !important;
+`;
 const TextContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  width: 248px;
-  height: 100px;
-  margin-left: 15px;
-  margin-top: 24px;
   justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 24px 16px;
+`;
+const TruncatedText = styled(CustomText)`
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 270px;
 `;
 const Div = styled.div`
   display: flex;

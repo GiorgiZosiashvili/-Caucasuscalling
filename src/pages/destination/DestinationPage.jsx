@@ -18,20 +18,18 @@ const Destination = () => {
         <ContentContainer>
           {destinationsData.map((destination, i) => {
             return (
-              <Link to={`/Destination/${destination.title}`} key={i}>
-                <DestinationCard>
-                  <Image src={destination.image} />
-                  <CustomText
-                    style={{ letterSpacing: 2 }}
-                    textAlign="center"
-                    fontSize="45px"
-                    fontWeight="800"
-                    lineHeight="55px"
-                    color="white">
-                    {destination.title}
-                  </CustomText>
-                </DestinationCard>
-              </Link>
+              <DestinationCard to={`/Destination/${destination.title}`} key={i}>
+                <Image src={destination.image} />
+                <CustomText
+                  style={{ letterSpacing: 2, position: 'absolute' }}
+                  textAlign="center"
+                  fontSize="45px"
+                  fontWeight="800"
+                  lineHeight="55px"
+                  color="white">
+                  {destination.title}
+                </CustomText>
+              </DestinationCard>
             );
           })}
         </ContentContainer>
@@ -50,28 +48,30 @@ const ContentContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  align-items: center;
-  justify-content: center;
-  gap: 58px;
-  padding: 0px 20px;
-  margin: 138px 0px 117px;
+  max-width: 1156px;
+  justify-content: left;
+  margin: 138px auto 117px;
+  gap: 50px;
+  @media screen and (max-width: 885px) {
+    padding: 0px 20px;
+  }
 `;
-
-const DestinationCard = styled.div`
+const DestinationCard = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  overflow: hidden;
   border-radius: 10px;
-  width: 552px;
+  width: 100%;
+  max-width: 552px;
+  overflow: hidden;
   height: 422px;
+  border-radius: 30px;
 `;
 const Image = styled.img`
-  position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
   z-index: -1;
+  object-fit: cover;
 `;
 export default Destination;

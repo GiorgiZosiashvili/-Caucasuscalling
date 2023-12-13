@@ -59,7 +59,6 @@ const Packages = () => {
               </Ul>
               <PackagesContainer>
                 {item.packages.map((item, i) => {
-                  console.log(item);
                   return (
                     <PackagesBody key={i}>
                       <CustomText

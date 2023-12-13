@@ -42,9 +42,10 @@ const Container = styled.div`
   width: 100%;
   min-height: 60px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: right;
-  padding-right: 40px;
+  padding: 0px 40px;
   z-index: 100;
   @media screen and (max-width: 885px) {
     align-items: start;
