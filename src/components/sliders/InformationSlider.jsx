@@ -75,7 +75,7 @@ const InformationSlider = ({ title, data, description }) => {
               fontSize="30px"
               fontWeight="600"
               lineHeight="36px"
-              margin="17px 10px 30px 24px"
+              margin="17px 40px 30px 40px"
               color="white">
               {item?.title}
             </CustomText>
@@ -84,20 +84,10 @@ const InformationSlider = ({ title, data, description }) => {
               fontSize="14px"
               fontWeight="400"
               lineHeight="21px"
-              margin="0px 24px 0px"
+              margin="0px 40px 0px"
               color="rgba(255, 255, 255, 0.9)">
               {item.info}
             </CustomText>
-            <ReadMore>
-              <CustomText
-                textAlign="center"
-                fontSize="16px"
-                fontWeight="500"
-                lineHeight="19.5px"
-                color="#007A33">
-                Read more
-              </CustomText>
-            </ReadMore>
           </SlideContent>
         ))}
       </Carousel>
@@ -149,13 +139,13 @@ const StyledArrow = styled(Arrow)`
 const SlideContent = styled.div`
   display: flex;
   flex-direction: column;
-  border-radius: 12px;
   width: 95%;
+  min-height: 380px;
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   position: relative;
-  justify-content: space-between;
+  justify-content: center;
 `;
 const Image = styled.img`
   width: 100%;
@@ -163,15 +153,6 @@ const Image = styled.img`
   object-fit: cover;
   position: absolute;
   z-index: -1;
-`;
-const ReadMore = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: white;
-  height: 48px;
-  cursor: pointer;
-  margin: 100px 24px 17px;
 `;
 
 export default InformationSlider;

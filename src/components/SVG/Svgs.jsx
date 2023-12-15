@@ -812,4 +812,78 @@ const Winter = (props) => (
     </defs>
   </svg>
 );
-export { Arrow, Location, NavArrow, Logo, Spring, Summer, Autumn, Winter, MiniLogo };
+const WhatsApp = (props) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={98} height={98} fill="none" {...props}>
+    <g filter="url(#a)">
+      <g filter="url(#b)">
+        <mask id="c" width={52} height={52} x={23} y={19} fill="#000" maskUnits="userSpaceOnUse">
+          <path fill="#fff" d="M23 19h52v52H23z" />
+          <path
+            fillRule="evenodd"
+            d="M49 70c13.807 0 25-11.193 25-25S62.807 20 49 20 24 31.193 24 45a24.891 24.891 0 0 0 5.157 15.21l-3.5 6.176 6.62-2.802A24.908 24.908 0 0 0 49 70Z"
+            clipRule="evenodd"
+          />
+        </mask>
+        <path
+          fill="#4FCE5D"
+          fillRule="evenodd"
+          d="M49 70c13.807 0 25-11.193 25-25S62.807 20 49 20 24 31.193 24 45a24.891 24.891 0 0 0 5.157 15.21l-3.5 6.176 6.62-2.802A24.908 24.908 0 0 0 49 70Z"
+          clipRule="evenodd"
+        />
+        <path
+          fill="#fff"
+          d="m29.157 60.21.87.493.327-.577-.403-.525-.794.609Zm-3.5 6.176-.87-.493-1.452 2.562 2.712-1.148-.39-.92Zm6.62-2.802.67-.743-.473-.426-.586.248.39.921ZM73 45c0 13.255-10.745 24-24 24v2c14.36 0 26-11.64 26-26h-2ZM49 21c13.255 0 24 10.745 24 24h2c0-14.36-11.64-26-26-26v2ZM25 45c0-13.255 10.745-24 24-24v-2c-14.36 0-26 11.64-26 26h2Zm4.95 14.6A23.89 23.89 0 0 1 25 45h-2c0 5.95 2 11.436 5.364 15.819l1.587-1.218Zm-3.423 7.28 3.5-6.177-1.74-.986-3.5 6.176 1.74.986Zm5.361-4.217-6.62 2.802.779 1.842 6.62-2.802-.779-1.842ZM49 69c-6.173 0-11.8-2.33-16.053-6.159l-1.338 1.486A25.908 25.908 0 0 0 49 71v-2Z"
+          mask="url(#c)"
+        />
+      </g>
+      <path
+        fill="#fff"
+        d="m57.685 49.178-5.941 1.16c-4.013-2.03-6.492-4.36-7.935-7.995l1.11-6.003-2.099-5.626h-5.411c-1.627 0-2.908 1.355-2.665 2.975.606 4.046 2.395 11.382 7.622 16.65 5.49 5.53 13.397 7.93 17.748 8.885 1.68.368 3.172-.953 3.172-2.685v-5.21l-5.6-2.15Z"
+      />
+    </g>
+    <defs>
+      <filter
+        id="a"
+        width={97.8}
+        height={97.8}
+        x={0.1}
+        y={0.1}
+        colorInterpolationFilters="sRGB"
+        filterUnits="userSpaceOnUse">
+        <feFlood floodOpacity={0} result="BackgroundImageFix" />
+        <feColorMatrix
+          in="SourceAlpha"
+          result="hardAlpha"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        />
+        <feOffset dy={4} />
+        <feGaussianBlur stdDeviation={11.45} />
+        <feComposite in2="hardAlpha" operator="out" />
+        <feColorMatrix values="0 0 0 0 0.6 0 0 0 0 0.6 0 0 0 0 0.6 0 0 0 1 0" />
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_515_488" />
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow_515_488" result="shape" />
+      </filter>
+      <filter
+        id="b"
+        width={54}
+        height={53}
+        x={23}
+        y={19}
+        colorInterpolationFilters="sRGB"
+        filterUnits="userSpaceOnUse">
+        <feFlood floodOpacity={0} result="BackgroundImageFix" />
+        <feColorMatrix
+          in="SourceAlpha"
+          result="hardAlpha"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        />
+        <feOffset dx={2} dy={1} />
+        <feComposite in2="hardAlpha" operator="out" />
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0" />
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_515_488" />
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow_515_488" result="shape" />
+      </filter>
+    </defs>
+  </svg>
+);
+export { Arrow, Location, NavArrow, Logo, Spring, Summer, Autumn, Winter, MiniLogo, WhatsApp };

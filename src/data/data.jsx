@@ -1,5 +1,9 @@
 /* eslint-disable react-refresh/only-export-components */
 import Airplane from '../assets/images/airplane.png';
+import HomeBanner1 from '../assets/images/Banners/banner1.jpeg';
+import HomeBanner2 from '../assets/images/Banners/banner2.jpeg';
+import HomeBanner3 from '../assets/images/Banners/banner3.jpeg';
+import HomeBanner4 from '../assets/images/Banners/banner4.png';
 import Batumi from '../assets/images/Batumi.png';
 import HealthBanner from '../assets/images/Borjomi.png';
 import Borjomi from '../assets/images/Borjomi.png';
@@ -9,7 +13,7 @@ import Gori from '../assets/images/Gori.jpeg';
 import Hotel from '../assets/images/hotel.png';
 import Juta from '../assets/images/Juta.png';
 import Jvari_Monastery from '../assets/images/Jvari_Monastery.png';
-import Kakheti from '../assets/images/Kakheti.png';
+import Kakheti from '../assets/images/Kakheti.jpeg';
 import Kazbegi from '../assets/images/Kazbegi.png';
 import knowledge from '../assets/images/knowledge.png';
 import language from '../assets/images/laguage.png';
@@ -24,104 +28,9 @@ import support from '../assets/images/support.png';
 import SUV from '../assets/images/suv.png';
 import Svaneti from '../assets/images/Svaneti.png';
 import Tbilisi from '../assets/images/Tbilisi.png';
-import Tsikhisdziri from '../assets/images/Tsikhisdziri.png';
-import HomeBanner from '../assets/images/upp.png';
 import Us from '../assets/images/us.png';
 import Vardzia from '../assets/images/Vardzia.jpeg';
 
-const toursData = [
-  {
-    title: 'Unique Canyon’s Tour',
-    length: '7 Days Tour on 2 person',
-    price: '500$',
-    image: Canyon,
-    location: 'Samegrelo, Georgia',
-  },
-  {
-    title: 'Tbilisi Tour',
-    length: '7 Days Tour on 2 person',
-    price: '500$',
-    image: Tbilisi,
-    location: 'Tbilisi, Georgia',
-  },
-  {
-    title: 'MIRACLES OF GEORGIA',
-    length: '7 Days Tour on 2 person',
-    price: '500$',
-    image: Kazbegi,
-    location: 'Kazbegi, Georgia',
-  },
-  {
-    title: 'Castles Tour',
-    length: '7 Days Tour on 2 person',
-    price: '500$',
-    image: Kakheti,
-    location: 'Kakheti, Georgia',
-  },
-  {
-    title: 'Tbilisi Tour',
-    length: '7 Days Tour on 2 person',
-    price: '500$',
-    image: Tbilisi,
-    location: 'Tbilisi, Georgia',
-  },
-  {
-    title: 'Tbilisi Tour',
-    length: '7 Days Tour on 2 person',
-    price: '500$',
-    image: Tbilisi,
-    location: 'Tbilisi, Georgia',
-  },
-  {
-    title: 'Tbilisi Tour',
-    length: '7 Days Tour on 2 person',
-    price: '500$',
-    image: Tbilisi,
-    location: 'Tbilisi, Georgia',
-  },
-  {
-    title: 'Castles Tour',
-    length: '7 Days Tour on 2 person',
-    price: '500$',
-    image: Kakheti,
-    location: 'Kakheti, Georgia',
-  },
-];
-const HomeDestinationsData = [
-  {
-    title: 'Juta',
-    image: Juta,
-    location: 'Dusheti, Georgia',
-  },
-  { title: 'Old Tbilisi', image: Old_Tbilisi, location: 'Old Tbilisi' },
-  {
-    title: 'Jvari Monastery',
-    image: Jvari_Monastery,
-    location: 'Jvari Monastery',
-  },
-  {
-    title: 'Tsikhisdziri',
-    image: Tsikhisdziri,
-    location: 'Batumi, Georgia',
-  },
-  {
-    title: 'Juta',
-    image: Juta,
-    location: 'Dusheti, Georgia',
-  },
-  {
-    title: 'Tsikhisdziri',
-    image: Tsikhisdziri,
-    location: 'Batumi, Georgia',
-  },
-  { title: 'Old Tbilisi', image: Old_Tbilisi, location: 'Old Tbilisi' },
-
-  {
-    title: 'Juta',
-    image: Juta,
-    location: 'Dusheti, Georgia',
-  },
-];
 const servicesData = [
   {
     title: 'MICE',
@@ -180,10 +89,10 @@ const pagesData = [
   },
 ];
 const homeBannerData = [
-  { image: HomeBanner, text: 'Our Travel Agency Provides Individual and Group Tours' },
-  { image: HomeBanner, text: 'Our Travel Agency Provides Individual and Group Tours' },
-  { image: HomeBanner, text: 'Our Travel Agency Provides Individual and Group Tours' },
-  { image: HomeBanner, text: 'Our Travel Agency Provides Individual and Group Tours' },
+  { image: HomeBanner1, text: 'Our Travel Agency Provides Individual and Group Tours' },
+  { image: HomeBanner2, text: 'Our Travel Agency Provides Individual and Group Tours' },
+  { image: HomeBanner3, text: 'Our Travel Agency Provides Individual and Group Tours' },
+  { image: HomeBanner4, text: 'Our Travel Agency Provides Individual and Group Tours' },
 ];
 const healthBannerData = [
   { image: HealthBanner, text: 'Our Travel Agency Provides Individual and Group Tours' },
@@ -316,6 +225,7 @@ const healthPrograms = [
 const destinationsData = [
   {
     title: 'Tbilisi',
+    popular: true,
     image: Old_Tbilisi,
     images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
     sections: [
@@ -380,6 +290,7 @@ const destinationsData = [
   },
   {
     title: 'Mtskheta',
+    popular: false,
     image: Mtsketa,
     images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
     sections: [
@@ -444,6 +355,7 @@ const destinationsData = [
   },
   {
     title: 'Kazbegi',
+    popular: true,
     image: Svaneti,
     images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
     sections: [
@@ -503,6 +415,7 @@ const destinationsData = [
   },
   {
     title: 'Gori',
+    popular: false,
     image: Gori,
     images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
     sections: [
@@ -567,6 +480,7 @@ const destinationsData = [
   },
   {
     title: 'Samegrelo',
+    popular: true,
     image: Samegrelo,
     images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
     sections: [
@@ -631,6 +545,7 @@ const destinationsData = [
   },
   {
     title: 'Batumi',
+    popular: true,
     image: Batumi,
     images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
     sections: [
@@ -705,6 +620,7 @@ const destinationsData = [
   },
   {
     title: 'Vardzia',
+    popular: true,
     image: Vardzia,
     images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
     sections: [
@@ -769,6 +685,7 @@ const destinationsData = [
   },
   {
     title: 'Borjomi',
+    popular: false,
     image: Borjomi,
     images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
     sections: [
@@ -833,6 +750,7 @@ const destinationsData = [
   },
   {
     title: 'Kakheti',
+    popular: false,
     image: Kakheti,
     images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
     sections: [
@@ -1208,9 +1126,7 @@ const partnershipData = [
   },
 ];
 export {
-  HomeDestinationsData,
   partnershipData,
-  toursData,
   servicesData,
   infoData,
   pagesData,

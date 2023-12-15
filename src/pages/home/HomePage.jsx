@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 import Person from '../../assets/images/person.png';
 import {
+  destinationsData,
   details,
   homeBannerData,
-  HomeDestinationsData,
   infoData,
   servicesData,
-  toursData,
+  tourPackagesData,
 } from '../../data/data';
 import Services from './Services';
 
@@ -16,7 +16,7 @@ import Footer from 'components/reusable/Footer';
 import Header from 'components/reusable/Header';
 import Info from 'components/reusable/Info';
 import MainContainer from 'components/reusable/MainContainer';
-import DestinationsSlider from 'components/sliders/DestinationsSlider';
+import DestinationsSlider from 'components/sliders/homeDestinationsSlider';
 import ImageSlider from 'components/sliders/ImageSlider';
 import InformationSlider from 'components/sliders/InformationSlider';
 import ToursSlider from 'components/sliders/ToursSlider';
@@ -40,7 +40,7 @@ const HomePage = () => {
       />
       <ToursSlider
         title="Explore Our Tours"
-        data={toursData}
+        data={tourPackagesData}
         description={
           'Most popular destinations around the world, from historical places to natural wonders.'
         }
@@ -50,7 +50,7 @@ const HomePage = () => {
         description={
           'Most popular destinations around the world, from historical places to natural wonders.'
         }
-        data={HomeDestinationsData}
+        data={destinationsData}
       />
       <Services
         data={servicesData}
@@ -73,5 +73,4 @@ const Div = styled.div`
   width: 100%;
   position: relative;
 `;
-
 export default HomePage;

@@ -85,15 +85,14 @@ const ToursSlider = ({ data, title, description }) => {
           <SlideContent key={index}>
             <LocationContainer>
               <Location />
-              <CustomText
-                style={{ marginLeft: 10 }}
+              <TruncatedText
                 textAlign="left"
                 fontSize="16px"
                 fontWeight="400"
                 lineHeight="16px"
                 color="#fff">
                 {item.location}
-              </CustomText>
+              </TruncatedText>
             </LocationContainer>
             <Image src={item?.image} alt={item?.title} />
             <TextContainer>
@@ -191,13 +190,19 @@ const LocationContainer = styled.div`
   align-items: center;
   justify-content: left;
   position: absolute;
-  bottom: 157.5px;
+  bottom: 159.5px;
   width: 100%;
   height: 56px;
   padding-left: 16px;
   background-color: #00000045;
 `;
-
+const TruncatedText = styled(CustomText)`
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 210px;
+`;
 const SlideContent = styled.div`
   display: flex;
   flex-direction: column;
@@ -222,10 +227,9 @@ const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 248px;
-  height: 100px;
+  height: 100%;
   margin-left: 15px;
-  margin-top: 24px;
-  justify-content: space-between;
+  justify-content: space-evenly;
 `;
 const Div = styled.div`
   display: flex;
