@@ -9,7 +9,7 @@ const Packages = () => {
   return (
     <Container>
       <ButtonsContainer>
-        {healthPrograms.map((programs) => {
+        {healthPrograms?.map((programs) => {
           return (
             <Button
               key={programs.id}
@@ -28,7 +28,7 @@ const Packages = () => {
           );
         })}
       </ButtonsContainer>
-      {healthPrograms.map((item, i) =>
+      {healthPrograms?.map((item, i) =>
         item.id === active ? (
           <Div key={i}>
             <CustomText
@@ -41,7 +41,7 @@ const Packages = () => {
             </CustomText>
             <InfoContainer key={item.id}>
               <Ul>
-                {item.programs.map((program, i) => {
+                {item?.programs.map((program, i) => {
                   return (
                     <Li key={i}>
                       <CustomText
@@ -58,7 +58,7 @@ const Packages = () => {
                 })}
               </Ul>
               <PackagesContainer>
-                {item.packages.map((item, i) => {
+                {item?.packages.map((item, i) => {
                   return (
                     <PackagesBody key={i}>
                       <CustomText

@@ -67,7 +67,7 @@ const InformationSlider = ({ title, data, description }) => {
         arrows={false}
         renderButtonGroupOutside={false}
         customButtonGroup={<ButtonGroup />}>
-        {data.map((item, index) => (
+        {data?.map((item, index) => (
           <SlideContent key={index}>
             <Image src={item?.image} alt={item?.title} />
             <CustomText

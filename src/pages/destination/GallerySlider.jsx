@@ -61,7 +61,7 @@ const GallerySlider = ({ data }) => {
         arrows={false}
         renderButtonGroupOutside={false}
         customButtonGroup={<ButtonGroup />}>
-        {data.gallery.map((item, index) => {
+        {data?.gallery.map((item, index) => {
           return (
             <SlideContent key={index}>
               <Image src={item?.imageUrl} />

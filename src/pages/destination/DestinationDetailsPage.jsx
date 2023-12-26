@@ -52,7 +52,7 @@ const DestinationDetailsPage = () => {
             textAlign="left">
             {chosenDestination.sections[1].title}
           </CustomText>
-          <Image src={chosenDestination.sections[1].imageUrl} />
+          <Image src={chosenDestination?.sections[1].imageUrl} />
           <CustomText
             color="black"
             fontSize="18px"
@@ -60,10 +60,10 @@ const DestinationDetailsPage = () => {
             lineHeight="30px"
             margin="35px 0px 30px"
             textAlign="left">
-            {chosenDestination.sections[1].content}
+            {chosenDestination?.sections[1].content}
           </CustomText>
           <ItemsContainer>
-            {chosenDestination.sections[1].details.map((detail, index) => {
+            {chosenDestination?.sections[1].details?.map((detail, index) => {
               return (
                 <ListOfItems key={index}>
                   <CustomText

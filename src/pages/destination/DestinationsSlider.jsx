@@ -55,7 +55,7 @@ const DestinationSlider = ({ images }) => {
   return (
     <Container>
       <StyledSlider {...settings}>
-        {images.map((image, index) => (
+        {images?.map((image, index) => (
           <ActiveImage key={index} src={image} alt={`Slide ${index + 1}`} />
         ))}
       </StyledSlider>

@@ -16,7 +16,7 @@ const Destination = () => {
       <Div>
         <Header backgroundColor="#346172" page={'/Destination'} />
         <ContentContainer>
-          {destinationsData.map((destination, i) => {
+          {destinationsData?.map((destination, i) => {
             return (
               <DestinationCard to={`/Destination/${destination.title}`} key={i}>
                 <Image src={destination.image} />

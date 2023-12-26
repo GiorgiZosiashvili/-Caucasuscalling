@@ -73,7 +73,7 @@ const Info = () => {
           venture.
         </CustomText>
         <IconsContainer>
-          {items.map((item, index) => {
+          {items?.map((item, index) => {
             return <Icon key={index} src={item.image} />;
           })}
         </IconsContainer>
@@ -82,7 +82,7 @@ const Info = () => {
         <CustomText fontSize="16px" fontWeight="700" color="#6F6F70">
           Contact Us
         </CustomText>
-        {contacts.map((contact, index) => {
+        {contacts?.map((contact, index) => {
           return (
             <div
               style={{
@@ -113,7 +113,7 @@ const Info = () => {
         <CustomText fontSize="16px" fontWeight="700" color="#6F6F70">
           Links
         </CustomText>
-        {pagesData.map((navigation, i) => {
+        {pagesData?.map((navigation, i) => {
           return (
             <LinkContainer key={i} to={navigation.page}>
               <CustomText fontSize="14px" fontWeight="500" color="#666666">
@@ -127,7 +127,7 @@ const Info = () => {
         <CustomText fontSize="16px" fontWeight="700" color="#6F6F70">
           Help
         </CustomText>
-        {help.map((help, i) => {
+        {help?.map((help, i) => {
           return (
             <LinkContainer key={i} to={help.page}>
               <CustomText fontSize="14px" fontWeight="500" color="#666666">
@@ -164,12 +164,12 @@ const Partners = () => {
   return (
     <PartnersContainer>
       <PartnersImageContainer>
-        {partnersImages.map((partner, index) => {
+        {partnersImages?.map((partner, index) => {
           return <PartnersImage key={index} src={partner.image} />;
         })}
       </PartnersImageContainer>
       <PaymentMethodContainer>
-        {paymentMethods.map((payment, index) => {
+        {paymentMethods?.map((payment, index) => {
           return <PaymentImage key={index} src={payment.image} />;
         })}
       </PaymentMethodContainer>

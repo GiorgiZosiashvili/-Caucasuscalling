@@ -25,7 +25,7 @@ const Services = ({ title, description, data }) => {
         {description}
       </CustomText>
       <ContentContainer>
-        {data.map((service, index) => {
+        {data?.map((service, index) => {
           return (
             <Content key={index}>
               <Image src={service.image} />

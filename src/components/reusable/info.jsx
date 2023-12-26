@@ -40,7 +40,7 @@ function Info({ description, title, header, details, image }) {
           </CustomText>
           {details && (
             <Div>
-              {details.map((detail, i) => {
+              {details?.map((detail, i) => {
                 return (
                   <DetailsContainer key={i}>
                     <CustomText

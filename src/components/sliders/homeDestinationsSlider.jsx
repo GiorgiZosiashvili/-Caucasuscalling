@@ -83,7 +83,7 @@ const DestinationSlider = ({ data, title, description }) => {
         renderButtonGroupOutside={false}
         customButtonGroup={<ButtonGroup />}>
         {data
-          .filter((item) => item.popular) // Filter the data based on the "popular" property
+          ?.filter((item) => item.popular) // Filter the data based on the "popular" property
           .map((item, index) => (
             <SlideContent key={index}>
               <CustomText

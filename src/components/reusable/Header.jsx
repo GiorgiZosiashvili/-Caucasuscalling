@@ -22,7 +22,7 @@ function Header({ page, backgroundColor }) {
         <MainLogo />
       </LogoContainer>
       <NavigationContainer>
-        {pagesData.map((navigation, i) => {
+        {pagesData?.map((navigation, i) => {
           const isSelected = currentPage === navigation.page;
           return (
             <LinkContainer style={{ textDecoration: 'none' }} key={i} to={navigation.page}>
@@ -37,7 +37,7 @@ function Header({ page, backgroundColor }) {
         <Bar />
         {isMenuOpen ? (
           <Menu>
-            {pagesData.map((navigation, i) => {
+            {pagesData?.map((navigation, i) => {
               const isSelected = currentPage === navigation.page;
               return (
                 <LinkContainer

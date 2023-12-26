@@ -60,7 +60,7 @@ const ToursDetailsPage = () => {
                       {text.title}
                     </span>
                   </CustomText>
-                  {text.info.map((infoText, index) => {
+                  {text?.info.map((infoText, index) => {
                     return (
                       <CustomText
                         key={index}

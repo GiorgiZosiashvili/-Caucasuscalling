@@ -19,7 +19,7 @@ const Contacts = () => {
   return (
     <ContactsContainer>
       <FakeView />
-      {contactsData.map((contacts, index) => {
+      {contactsData?.map((contacts, index) => {
         return (
           <Body key={index}>
             <Icon src={contacts.icon} />

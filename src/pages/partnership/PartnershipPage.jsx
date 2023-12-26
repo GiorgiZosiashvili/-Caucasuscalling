@@ -17,7 +17,7 @@ const PartnershipPage = () => {
       <Body>
         <Header backgroundColor="#346172" page={'/Partnership'} />
         <ContentContainer>
-          {partnershipData.map((partnership, index) => {
+          {partnershipData?.map((partnership, index) => {
             return (
               <Content key={index}>
                 <InitialContainer>

@@ -81,7 +81,7 @@ const ToursSlider = ({ data, title, description }) => {
         itemClass="item-class"
         renderButtonGroupOutside={false}
         customButtonGroup={<ButtonGroup />}>
-        {data.map((item, index) => (
+        {data?.map((item, index) => (
           <SlideContent key={index}>
             <LocationContainer>
               <Location />

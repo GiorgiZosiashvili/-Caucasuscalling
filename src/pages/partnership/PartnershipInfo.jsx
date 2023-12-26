@@ -6,7 +6,7 @@ import CustomText from 'components/reusable/Text';
 const PartnershipInfo = ({ data }) => {
   return (
     <Container>
-      {data.content.map((info) => {
+      {data?.content.map((info) => {
         return (
           <Info key={info.id}>
             {info.id === 2 ? (

@@ -8,7 +8,7 @@ import { tourPackagesData } from '../../data/data';
 const Cards = () => {
   return (
     <CardContainer>
-      {tourPackagesData.map((item, index) => (
+      {tourPackagesData?.map((item, index) => (
         <Card key={index} to={`/Tours/${item.title}`}>
           <LocationContainer>
             <Icon />

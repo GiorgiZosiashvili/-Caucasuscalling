@@ -33,7 +33,7 @@ const ImageSlider = ({ data }) => {
   };
   return (
     <Carousel customDot={<CustomDot />} showDots={true} responsive={responsive} arrows={false}>
-      {data.map((item, index) => {
+      {data?.map((item, index) => {
         return (
           <Container key={index}>
             <Photo src={item.image} />

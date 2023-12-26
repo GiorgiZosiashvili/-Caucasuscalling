@@ -22,7 +22,7 @@ const Filter = () => {
           Filter tours based on your favorite season:
         </CustomText>
         <ButtonContainer>
-          {seasonsData.map((season, index) => {
+          {seasonsData?.map((season, index) => {
             const active = selectedButton === index;
             return (
               <SeasonsButton
