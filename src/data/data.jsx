@@ -4,7 +4,12 @@ import HomeBanner1 from '../assets/images/Banners/banner1.jpeg';
 import HomeBanner2 from '../assets/images/Banners/banner2.jpeg';
 import HomeBanner3 from '../assets/images/Banners/banner3.jpeg';
 import HomeBanner4 from '../assets/images/Banners/banner4.png';
-import Batumi from '../assets/images/Batumi.png';
+import Batumi_Main from '../assets/images/Batumi/batumi_main.jpeg';
+import Batumi_Secondary from '../assets/images/Batumi/batumi_secondary.jpg';
+import Batumi_Slider_1 from '../assets/images/Batumi/batumi_slider_1.jpg';
+import Batumi_Slider_2 from '../assets/images/Batumi/batumi_slider_2.jpg';
+import Batumi_Slider_3 from '../assets/images/Batumi/batumi_slider_3.jpg';
+import Batumi_Slider_4 from '../assets/images/Batumi/batumi_slider_4.jpg';
 import HealthBanner from '../assets/images/Borjomi.png';
 import Borjomi from '../assets/images/Borjomi.png';
 import Canyon from '../assets/images/Canyon.png';
@@ -14,10 +19,25 @@ import Hotel from '../assets/images/hotel.png';
 import Juta from '../assets/images/Juta.png';
 import Jvari_Monastery from '../assets/images/Jvari_Monastery.png';
 import Kakheti from '../assets/images/Kakheti.jpeg';
+import Kakheti_Secondary from '../assets/images/Kakheti/kakheti_secondary.jpg';
+import Kakheti_Slider_1 from '../assets/images/Kakheti/kakheti_slider_1.jpg';
+import Kakheti_Slider_2 from '../assets/images/Kakheti/kakheti_slider_2.jpg';
+import Kakheti_Slider_3 from '../assets/images/Kakheti/kakheti_slider_3.jpg';
+import Kakheti_Slider_4 from '../assets/images/Kakheti/kakheti_slider_4.jpg';
 import Kazbegi from '../assets/images/Kazbegi.png';
+import Kazbegi_Secondary from '../assets/images/Kazbegi/kazbegi_secondary.jpg';
+import Kazbegi_Slider_1 from '../assets/images/Kazbegi/kazbegi_slider_1.jpg';
+import Kazbegi_Slider_2 from '../assets/images/Kazbegi/kazbegi_slider_2.jpg';
+import Kazbegi_Slider_3 from '../assets/images/Kazbegi/kazbegi_slider_3.jpg';
+import Kazbegi_Slider_4 from '../assets/images/Kazbegi/kazbegi_slider_4.jpg';
 import knowledge from '../assets/images/knowledge.png';
 import language from '../assets/images/laguage.png';
 import Mtsketa from '../assets/images/Mtsketa.png';
+import Mtsketa_Secondary from '../assets/images/Mtsketa/mtsketa_secondary.jpg';
+import Mtsketa_Slider_1 from '../assets/images/Mtsketa/mtsketa_slider_1.jpg';
+import Mtsketa_Slider_2 from '../assets/images/Mtsketa/mtsketa_slider_2.jpg';
+import Mtsketa_Slider_3 from '../assets/images/Mtsketa/mtsketa_slider_3.jpg';
+import Mtsketa_Slider_4 from '../assets/images/Mtsketa/mtsketa_slider_4.jpg';
 import Nature from '../assets/images/nature.png';
 import Old_Tbilisi from '../assets/images/Old_Tbilisi.png';
 import Passport from '../assets/images/passport.png';
@@ -28,8 +48,18 @@ import support from '../assets/images/support.png';
 import SUV from '../assets/images/suv.png';
 import Svaneti from '../assets/images/Svaneti.png';
 import Tbilisi from '../assets/images/Tbilisi.png';
+import Tbilisi_Secondary from '../assets/images/Tbilisi/tbilisi_secondary.jpg';
+import Tbilisi_Slider_1 from '../assets/images/Tbilisi/tbilisi_slider_1.jpg';
+import Tbilisi_Slider_2 from '../assets/images/Tbilisi/tbilisi_slider_2.jpg';
+import Tbilisi_Slider_3 from '../assets/images/Tbilisi/tbilisi_slider_3.jpg';
+import Tbilisi_Slider_4 from '../assets/images/Tbilisi/tbilisi_slider_4.jpg';
 import Us from '../assets/images/us.png';
 import Vardzia from '../assets/images/Vardzia.jpeg';
+import Vardzia_Secondary from '../assets/images/Vardzia/vardzia_secondary.jpeg';
+import Vardzia_Slider_1 from '../assets/images/Vardzia/vardzia_slider_1.jpg';
+import Vardzia_Slider_2 from '../assets/images/Vardzia/vardzia_slider_2.jpeg';
+import Vardzia_Slider_3 from '../assets/images/Vardzia/vardzia_slider_3.jpg';
+import Vardzia_Slider_4 from '../assets/images/Vardzia/vardzia_slider_4.jpg';
 
 const servicesData = [
   {
@@ -63,7 +93,7 @@ const infoData = [
   {
     title: 'Georgian Currency',
     image: Currency,
-    info: 'Perched high above the Aegean Sea in this magical place, privy to the island’s most emblematic views, is it any wonder that the picturesque sanctuary that is the Grace Hotel, Auberge Resorts Collection in Santorini, has come out on top of a poll of travel magazine readers as the Best Hotel in Greece and ranked as the second Best Hotel in the World?',
+    info: "The lari (GEL) is the currency of Georgia. It is divided into 100 tetri. The name lari is an old Georgian word denoting a hoard, property, while tetri is an old Georgian monetary term (meaning 'white') used in ancient Colchis from the 6th century BC.",
   },
 ];
 const pagesData = [
@@ -102,11 +132,11 @@ const healthBannerData = [
 ];
 const details = [
   {
-    numbers: '20+',
-    text: 'Years Experience',
+    numbers: '15+',
+    text: 'Years of Experience',
   },
   {
-    numbers: '100+',
+    numbers: '500+',
     text: 'Happy Customer',
   },
   {
@@ -121,14 +151,14 @@ const details = [
 const healthPrograms = [
   {
     id: 1,
-    title: 'Borjomi Palace 4*',
-    text: "Explore Borjomi Palace Health & Spa Center's Comprehensive Wellness Programs:dsadasda",
+    title: 'BORJOMI PALACE HEALTH & SPA CENTER',
+    text: 'BORJOMI PALACE HEALTH & SPA CENTER offers the following wellness programs:',
     programs: [
-      { program: 'Detoxify Your Body' },
-      { program: 'Gastroenterological Health' },
-      { program: "Women's Wellness" },
-      { program: 'Urological Care' },
-      { program: 'Respiratory Health' },
+      { program: 'Detox' },
+      { program: 'Program for the treatment of gastroenterological diseases' },
+      { program: 'Program for the treatment of gynecological diseases' },
+      { program: 'Urological Disease Management Program' },
+      { program: 'Airway Disease Treatment Program' },
     ],
     packages: [
       {
@@ -151,18 +181,18 @@ const healthPrograms = [
       },
     ],
     description:
-      "When you book a room for a 7-night stay at Borjomi Palace Health & Spa Center, complete with three meals a day, you'll receive a comprehensive package of wellness procedures at no extra cost. Our commitment to your health and vitality is reflected in these inclusive offerings, ensuring you leave feeling rejuvenated and revitalized",
+      'When booking a room for up to 7  nights (with three meals a day), a package of procedures is included in the price.',
   },
   {
     id: 2,
-    title: 'Borjomi Likani Health & Spa Centre 5*',
-    text: "Explore Borjomi Palace Health & Spa Center's Comprehensive Wellness Programs:dsadasda",
+    title: 'Hotel BORJOMI LIKANI',
+    text: 'Hotel BORJOMI LIKANI offers the following treatment programs:',
     programs: [
-      { program: 'Detoxify Your Body' },
-      { program: 'Gastroenterological Health' },
-      { program: "Women's Wellness" },
-      { program: 'Urological Care' },
-      { program: 'Respiratory Health' },
+      { program: 'treatment of musculoskeletal diseases' },
+      { program: 'treatment of obesity and diabetes mellitus' },
+      { program: 'treatment of gynecological diseases' },
+      { program: 'treatment of gastrointestinal diseases' },
+      { program: 'anti-cellulite weight loss program' },
     ],
     packages: [
       {
@@ -185,18 +215,20 @@ const healthPrograms = [
       },
     ],
     description:
-      "When you book a room for a 7-night stay at Borjomi Palace Health & Spa Center, complete with three meals a day, you'll receive a comprehensive package of wellness procedures at no extra cost. Our commitment to your health and vitality is reflected in these inclusive offerings, ensuring you leave feeling rejuvenated and revitalized",
+      'When booking a room for up to 7  nights (with three meals a day), a package of procedures is included in the price.',
   },
   {
     id: 3,
-    title: 'SAIRME',
-    text: "Explore Borjomi Palace Health & Spa Center's Comprehensive Wellness Programs:dsadasda",
+    title: 'SAIRME HOTELS & RESORT',
+    text: 'On the territory of SAIRME HOTELS & RESORT (4 *) the following treatments are carried out:',
     programs: [
-      { program: 'Detoxify Your Body' },
-      { program: 'Gastroenterological Health' },
-      { program: "Women's Wellness" },
-      { program: 'Urological Care' },
-      { program: 'Respiratory Health' },
+      { program: 'Metabolic disorders' },
+      { program: 'Gastrointestinal diseases' },
+      { program: 'Urological diseases' },
+      { program: 'Diseases of the musculoskeletal system' },
+      { program: 'Kidney and urinary tract diseases' },
+      { program: 'Diabetes' },
+      { program: 'Metabolic disorders' },
     ],
     packages: [
       {
@@ -219,7 +251,7 @@ const healthPrograms = [
       },
     ],
     description:
-      "When you book a room for a 7-night stay at Borjomi Palace Health & Spa Center, complete with three meals a day, you'll receive a comprehensive package of wellness procedures at no extra cost. Our commitment to your health and vitality is reflected in these inclusive offerings, ensuring you leave feeling rejuvenated and revitalized",
+      'When booking a room for up to 7  nights (with three meals a day), a package of procedures is included in the price.',
   },
 ];
 const destinationsData = [
@@ -227,21 +259,21 @@ const destinationsData = [
     title: 'Tbilisi',
     popular: true,
     image: Old_Tbilisi,
-    images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
+    images: [Tbilisi_Slider_1, Tbilisi_Slider_2, Tbilisi_Slider_3, Tbilisi_Slider_4],
     sections: [
       {
         id: 'tbilisi',
         title: 'Tbilisi - Capital of Georgia',
         content:
           "Embark on a journey to Tbilisi, the heart and soul of Georgia, where ancient history dances with modern vibrancy, creating a captivating tapestry of experiences. Nestled at the crossroads of Europe and Asia, Tbilisi beckons travelers with its diverse charm, cultural richness, and warm hospitality. Wander through the cobblestone streets of the Old Town, where history unfolds in the form of centuries-old churches, charming courtyards, and vibrant markets. As you step into the cobblestone streets of the Old Town, you'll feel like you've entered a living museum. This is where history unfolds in the most enchanting way. Centuries-old churches, each with its own unique story and architectural style, stand as witnesses to the passage of time.",
-        imageUrl: Tbilisi,
+        imageUrl: Tbilisi_Secondary,
       },
       {
         id: 'old-town',
         title: 'Old Town',
         content:
           "Tbilisi's Old Town is a captivating district that transports you back in time with its rich history and charming atmosphere. Here are some key highlights and additional details:",
-        imageUrl: Jvari_Monastery,
+        imageUrl: Tbilisi_Secondary,
         details: [
           {
             header: 'Historic Significance:',
@@ -286,27 +318,26 @@ const destinationsData = [
         ],
       },
     ],
-    gallery: [{ imageUrl: Tbilisi }, { imageUrl: Tbilisi }, { imageUrl: Tbilisi }],
   },
   {
     title: 'Mtskheta',
     popular: false,
     image: Mtsketa,
-    images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
+    images: [Mtsketa_Slider_1, Mtsketa_Slider_2, Mtsketa_Slider_3, Mtsketa_Slider_4],
     sections: [
       {
         id: 'Mtsketa',
         title: 'Mtskheta - The Spiritual Heart of Georgia',
         content:
           "Embark on a journey to Mtskheta, a UNESCO World Heritage site and the ancient capital of Georgia, where history and spirituality converge amidst stunning landscapes. Nestled at the confluence of the Aragvi and Kura rivers, Mtskheta invites travelers to step into a realm where the past gracefully intertwines with the present. The focal point of Mtskheta's cultural heritage is the Svetitskhoveli Cathedral, a masterpiece of medieval architecture and a symbol of Georgia's Christian history. Adorned with intricate carvings and surrounded by an air of reverence, this sacred site is believed to house the robe of Christ. Mtskheta isn't just a destination; it's a pilgrimage into the soul of Georgia.",
-        imageUrl: Mtsketa,
+        imageUrl: '',
       },
       {
         id: 'discovering Mtskheta',
         title: 'Discovering Mtskheta',
         content:
           "Nestled amidst Georgia's picturesque landscape, Mtskheta stands as a living testament to the country's rich heritage. This ancient town beckons travelers to explore its historic streets and immerse themselves in its cultural tapestry.",
-        imageUrl: Mtsketa,
+        imageUrl: Mtsketa_Secondary,
         details: [
           {
             header: 'Svetitskhoveli Cathedral: ',
@@ -351,13 +382,12 @@ const destinationsData = [
         ],
       },
     ],
-    gallery: [{ imageUrl: Mtsketa }, { imageUrl: Mtsketa }, { imageUrl: Mtsketa }],
   },
   {
     title: 'Kazbegi',
     popular: true,
     image: Svaneti,
-    images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
+    images: [Kazbegi_Slider_1, Kazbegi_Slider_2, Kazbegi_Slider_3, Kazbegi_Slider_4],
     sections: [
       {
         id: 'Kazbegi',
@@ -371,7 +401,7 @@ const destinationsData = [
         title: 'Exploring Kazbegi',
         content:
           "Nestled amidst the awe-inspiring Caucasus, Kazbegi stands as a gateway to Georgia's mountainous wonders, inviting travelers to embark on exhilarating adventures and immerse themselves in the region's rich culture.",
-        imageUrl: Kazbegi,
+        imageUrl: Kazbegi_Secondary,
         details: [
           {
             header: 'Gergeti Trinity Church: ',
@@ -411,7 +441,6 @@ const destinationsData = [
         ],
       },
     ],
-    gallery: [{ imageUrl: Kazbegi }, { imageUrl: Kazbegi }, { imageUrl: Kazbegi }],
   },
   {
     title: 'Gori',
@@ -476,7 +505,6 @@ const destinationsData = [
         ],
       },
     ],
-    gallery: [{ imageUrl: Gori }, { imageUrl: Gori }, { imageUrl: Gori }],
   },
   {
     title: 'Samegrelo',
@@ -541,27 +569,26 @@ const destinationsData = [
         ],
       },
     ],
-    gallery: [{ imageUrl: Samegrelo }, { imageUrl: Samegrelo }, { imageUrl: Samegrelo }],
   },
   {
     title: 'Batumi',
     popular: true,
-    image: Batumi,
-    images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
+    image: Batumi_Main,
+    images: [Batumi_Slider_1, Batumi_Slider_2, Batumi_Slider_3, Batumi_Slider_4],
     sections: [
       {
         id: 'batumi',
         title: "Batumi - Georgia's Coastal Jewel",
         content:
           "Embark on a coastal adventure to Batumi, Georgia's gem on the Black Sea, where modernity meets seaside charm in a vibrant fusion. Nestled against the backdrop of the Caucasus Mountains, Batumi invites travelers with its contemporary architecture, lush gardens, and a lively atmosphere that makes it a perfect destination for both relaxation and exploration. Batumi's iconic Batumi Boulevard, a picturesque promenade along the Black Sea coast, sets the tone for your coastal escapade. Lined with palm trees, sculptures, and colorful flowerbeds, the boulevard is a delightful place for a leisurely stroll, offering breathtaking sea views and a refreshing sea breeze.",
-        imageUrl: Batumi,
+        imageUrl: '',
       },
       {
         id: 'discovering batumi',
         title: 'Discovering Batumi',
         content:
           "Batumi, with its captivating blend of natural beauty and urban sophistication, offers a wide array of experiences that cater to every traveler's preferences:",
-        imageUrl: Batumi,
+        imageUrl: Batumi_Secondary,
         details: [
           {
             header: 'Batumi Boulevard: ',
@@ -616,13 +643,12 @@ const destinationsData = [
         ],
       },
     ],
-    gallery: [{ imageUrl: Batumi }, { imageUrl: Batumi }, { imageUrl: Batumi }],
   },
   {
     title: 'Vardzia',
     popular: true,
     image: Vardzia,
-    images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
+    images: [Vardzia_Slider_1, Vardzia_Slider_2, Vardzia_Slider_3, Vardzia_Slider_4],
     sections: [
       {
         id: 'vardzia',
@@ -636,7 +662,7 @@ const destinationsData = [
         title: 'Discovering Vardzia',
         content:
           'Vardzia, with its otherworldly cave dwellings and historical significance, promises a journey of exploration and wonder:',
-        imageUrl: Vardzia,
+        imageUrl: Vardzia_Secondary,
         details: [
           {
             header: 'Cave Monastery Complex: ',
@@ -681,7 +707,6 @@ const destinationsData = [
         ],
       },
     ],
-    gallery: [{ imageUrl: Vardzia }, { imageUrl: Vardzia }, { imageUrl: Vardzia }],
   },
   {
     title: 'Borjomi',
@@ -746,27 +771,26 @@ const destinationsData = [
         ],
       },
     ],
-    gallery: [{ imageUrl: Borjomi }, { imageUrl: Borjomi }, { imageUrl: Borjomi }],
   },
   {
     title: 'Kakheti',
     popular: false,
     image: Kakheti,
-    images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
+    images: [Kakheti_Slider_1, Kakheti_Slider_2, Kakheti_Slider_3, Kakheti_Slider_4],
     sections: [
       {
         id: 'akheti',
         title: "Kakheti - Georgia's Land of Wine and Rich Heritage",
         content:
           "Embark on a sensory journey to Kakheti, Georgia's renowned wine region, where rolling vineyards, ancient winemaking traditions, and cultural riches converge to create an immersive experience for every traveler. Nestled in the country's eastern landscapes, Kakheti invites you to savor the essence of Georgia's winemaking heritage and explore the rich tapestry of its rural charm. This captivating region invites travelers to explore its wineries, discover ancient traditions, and immerse themselves in the rich cultural heritage that defines Kakheti. Kakheti, with its vineyards, monasteries, and cultural richness, invites you to experience the heart of Georgia's wine country.",
-        imageUrl: Kakheti,
+        imageUrl: '',
       },
       {
         id: 'discovering kakheti',
         title: 'Discovering Kakheti',
         content:
           "Kakheti, with its vine-covered landscapes and cultural treasures, offers a range of experiences that showcase the region's unique charm:",
-        imageUrl: Kakheti,
+        imageUrl: Kakheti_Secondary,
         details: [
           {
             header: 'Wine Tasting: ',
@@ -811,7 +835,6 @@ const destinationsData = [
         ],
       },
     ],
-    gallery: [{ imageUrl: Kakheti }, { imageUrl: Kakheti }, { imageUrl: Kakheti }],
   },
 ];
 const seasonsData = [
@@ -829,7 +852,7 @@ const tourPackagesData = [
     price: '500$',
     image: Canyon,
     location: 'Tbilisi, Mtskheta, Kazbegi, Kutaisi, Mestia, Batumi',
-    images: [Batumi, Tbilisi, Vardzia, Kakheti],
+    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
     trip: [
       { day: 'Day 1: ', title: 'Flight to Georgia', info: ['Hotel Check in'] },
       {
@@ -942,7 +965,7 @@ const tourPackagesData = [
     price: '500$',
     image: Tbilisi,
     location: 'Tbilisi, Kakheti, Kazbegi, Kutaisi, Mestia, Borjomi, Vardzia',
-    images: [Batumi, Tbilisi, Vardzia, Kakheti],
+    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
     trip: [
       { day: '', info: ['', '', '', ''] },
       { day: '', info: ['', '', '', ''] },
@@ -961,7 +984,7 @@ const tourPackagesData = [
     price: '500$',
     image: Kazbegi,
     location: 'Batumi, Svaneti, Kutaisi, Vardzia, Gori, Kazbegi, Kakheti, Tbilisi',
-    images: [Batumi, Tbilisi, Vardzia, Kakheti],
+    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
     trip: [
       { day: '', info: ['', '', '', ''] },
       { day: '', info: ['', '', '', ''] },
@@ -980,7 +1003,7 @@ const tourPackagesData = [
     price: '500$',
     image: Kakheti,
     location: 'Tbilisi, Kazbegi, Borjomi, Kakheti',
-    images: [Batumi, Tbilisi, Vardzia, Kakheti],
+    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
     trip: [
       { day: '', info: ['', '', '', ''] },
       { day: '', info: ['', '', '', ''] },
@@ -999,7 +1022,7 @@ const tourPackagesData = [
     price: '500$',
     image: Tbilisi,
     location: 'Tbilisi, Kazbegi, Borjomi, Vardzia, Gori, Kutaisi, Mestia',
-    images: [Batumi, Tbilisi, Vardzia, Kakheti],
+    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
     trip: [
       { day: '', info: ['', '', '', ''] },
       { day: '', info: ['', '', '', ''] },
@@ -1018,7 +1041,7 @@ const tourPackagesData = [
     price: '500$',
     image: Tbilisi,
     location: 'Tbilisi, Kazbegi, Gori, Borjomi, Vardzia, Mtskheta, Kakheti',
-    images: [Batumi, Tbilisi, Vardzia, Kakheti],
+    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
     trip: [
       { day: '', info: ['', '', '', ''] },
       { day: '', info: ['', '', '', ''] },
@@ -1037,7 +1060,7 @@ const tourPackagesData = [
     price: '500$',
     image: Tbilisi,
     location: 'Tbilisi, Kazbegi, Gori, Borjomi, Vardzia, Mtskheta, Kakheti',
-    images: [Batumi, Tbilisi, Vardzia, Kakheti],
+    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
     trip: [
       { day: '', info: ['', '', '', ''] },
       { day: '', info: ['', '', '', ''] },
@@ -1056,7 +1079,7 @@ const tourPackagesData = [
     price: '500$',
     image: Kakheti,
     location: 'Tbilisi, Sighnaghi, Bodbe, Ananuri, Kazbegi',
-    images: [Batumi, Tbilisi, Vardzia, Kakheti],
+    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
     trip: [
       { day: '', info: ['', '', '', ''] },
       { day: '', info: ['', '', '', ''] },
@@ -1075,7 +1098,7 @@ const tourPackagesData = [
     price: '500$',
     image: Kakheti,
     location: 'Tbilisi, Kazbegi, Borjomi, Kutaisi, Mestia, Batumi',
-    images: [Batumi, Tbilisi, Vardzia, Kakheti],
+    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
     trip: [
       { day: '', info: ['', '', '', ''] },
       { day: '', info: ['', '', '', ''] },

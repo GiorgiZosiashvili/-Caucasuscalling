@@ -57,7 +57,7 @@ const ImageSlider = ({ data }) => {
 
 const Container = styled.div`
   width: 100%;
-  min-height: 93vh;
+  min-height: 94vh;
   max-height: 692px;
   height: 100%;
   position: relative;

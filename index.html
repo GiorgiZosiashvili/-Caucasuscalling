@@ -15,8 +15,21 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-
     <title>Vite + React</title>
+    <script type="text/javascript">
+      var duplicate_google_translate_counter = 0;
+
+      function googleTranslateElementInit() {
+        if (duplicate_google_translate_counter == 0) {
+          new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+        duplicate_google_translate_counter++;
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
   </head>
   <body>
     <div id="root"></div>

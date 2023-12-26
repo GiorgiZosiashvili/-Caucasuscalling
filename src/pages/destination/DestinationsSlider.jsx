@@ -74,26 +74,25 @@ const StyledSlider = styled(Slider)`
     overflow: hidden;
     width: 100% !important;
     max-height: 435px !important;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     height: 100%;
   }
   .slick-dots {
     display: flex !important;
     position: static;
     justify-content: space-between;
+    gap: 10px;
     li {
-      max-width: 214px;
       width: 100%;
       height: 141px;
       border-radius: 12px;
       margin: 0px;
       overflow: hidden;
-      @media screen and (max-width: 1200px) {
-        display: none;
-      }
+      transition: all 0.3s !important;
     }
     li.slick-active {
-      display: none;
+      border: solid 2.5px #fa8b02;
+      transition: all 0.3s !important;
     }
   }
 `;
@@ -104,11 +103,14 @@ const Container = styled.div`
 `;
 const ActiveImage = styled.img`
   display: flex !important ;
-  width: 100%;
-  height: 100%;
+  width: 684px;
+  height: 435px;
   object-fit: cover;
   margin-bottom: 10px;
   min-height: 435px !important ;
+  @media screen and (max-width: 1000px) {
+    align-items: start;
+  }
 `;
 
 const Body = styled.a``;
@@ -126,10 +128,7 @@ const ArrowLeft = styled.div`
   height: 50px;
   border-radius: 50px;
   background-color: #efefef;
-  top: 40%;
-  @media screen and (max-width: 1200px) {
-    top: 50%;
-  }
+  top: 210px;
   transform: translateY(-50%);
   &:hover {
     background-color: #fa8b02;
@@ -147,13 +146,11 @@ const ArrowRight = styled.div`
   height: 50px;
   border-radius: 50px;
   background-color: #efefef;
-  @media screen and (max-width: 1200px) {
-    top: 50%;
-  }
   &:hover {
     background-color: #fa8b02;
   }
-  top: 40%;
+  top: 210px;
+
   z-index: 10;
   cursor: pointer;
   right: 10px;

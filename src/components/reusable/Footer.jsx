@@ -68,8 +68,9 @@ const Info = () => {
           lineHeight="25.6px"
           margin="0px 0px 26px"
           color="#666666">
-          We believe in making every journey a story to tell. Real experiences, genuine connections,
-          and a world of possibilities
+          Join forces for exceptional tourism partnerships. Our crafted experiences redefine
+          collaboration, guaranteeing mutual success. Connect with Caucasus Calling and elevate your
+          venture.
         </CustomText>
         <IconsContainer>
           {items.map((item, index) => {

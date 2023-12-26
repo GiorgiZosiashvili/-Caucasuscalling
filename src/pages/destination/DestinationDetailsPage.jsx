@@ -3,7 +3,6 @@ import { styled } from 'styled-components';
 
 import { destinationsData } from '../../data/data';
 import DestinationSlider from './DestinationsSlider';
-import GallerySlider from './GallerySlider';
 
 import Languages from 'components/Languages';
 import Footer from 'components/reusable/Footer';
@@ -14,13 +13,14 @@ import CustomText from 'components/reusable/Text';
 const DestinationDetailsPage = () => {
   const { title } = useParams();
   const chosenDestination = destinationsData?.find((destination) => destination.title === title);
+
   return (
     <MainContainer>
       <Languages />
       <Body>
-        <Header backgroundColor="#346172" />
+        <Header backgroundColor="#346172" page={'/Destination'} />
         <FirstContentContainer>
-          <DestinationSlider images={destinationsData[0].images} />
+          <DestinationSlider images={chosenDestination?.images} />
           <InitialText key={chosenDestination.sections[0].id}>
             <CustomText
               color="black"
@@ -87,7 +87,6 @@ const DestinationDetailsPage = () => {
             })}
           </ItemsContainer>
         </SecondContentContainer>
-        <GallerySlider data={chosenDestination} />
       </Body>
       <Footer />
     </MainContainer>
@@ -102,9 +101,9 @@ const Body = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 130px;
   @media screen and (max-width: 1200px) {
     padding: 0px 20px;
-    justify-content: center;
   }
 `;
 const FirstContentContainer = styled.div`
@@ -116,6 +115,11 @@ const FirstContentContainer = styled.div`
   margin-top: 138px;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px;
+  @media screen and (max-width: 1184px) {
+    padding: 0px 20px;
+    justify-content: center;
+  }
 `;
 const SecondContentContainer = styled.div`
   display: flex;
@@ -125,6 +129,10 @@ const SecondContentContainer = styled.div`
   max-width: 1156px;
   justify-content: space-between;
   flex-wrap: wrap;
+  @media screen and (max-width: 1184px) {
+    padding: 0px 20px;
+    justify-content: left;
+  }
 `;
 const InitialText = styled.div`
   display: flex;
@@ -136,7 +144,7 @@ const InitialText = styled.div`
 `;
 const Image = styled.img`
   width: 100%;
-  max-height: 277px;
+  max-height: 400px;
   object-fit: cover;
   border-radius: 12px;
 `;

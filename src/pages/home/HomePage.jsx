@@ -35,7 +35,7 @@ const HomePage = () => {
         header={'WELCOME TO OUR WEBSITE!'}
         title={'We are the best company for your visit'}
         description={
-          'Our passion is to curate unforgettable journeys, tailored to your preferences and desires. Whether you dream of uncovering ancient history, savoring culinary delights, or relishing the great outdoors, we have the perfect adventure in store for you.Our team of expert guides, drivers, and travel enthusiasts are at your service, ready to unveil the hidden gems of Georgia. We offer thoughtfully designed packages that'
+          "Step into our Georgian escape! With 15+ years of expertise, we're your gateway to the heart of Georgian culture. Our guided experiences unveil the richness of traditions, accompanied by culinary delights. Partners, let's co-create remarkable journeys. Solo adventurers, anticipate personalised trips infused with the authentic spirit of Georgia. Begin your immersive travel story with us, where every moment reflects the unique tapestry of Georgian culture."
         }
       />
       <ToursSlider

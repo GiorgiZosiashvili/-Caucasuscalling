@@ -45,7 +45,7 @@ const Packages = () => {
                   return (
                     <Li key={i}>
                       <CustomText
-                        style={{ letterSpacing: 4 }}
+                        style={{ letterSpacing: 2 }}
                         textAlign="left"
                         fontSize="18px"
                         fontWeight="500"
@@ -120,18 +120,20 @@ const Container = styled.div`
   margin: 103px 0px 162px;
   flex-wrap: wrap;
   max-width: 1190px;
-  padding: 0px 30px;
+  padding: 0px 40px;
 `;
 const Div = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
+  transition: all 0.3s;
 `;
 const ButtonsContainer = styled.div`
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  min-height: 80px;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
@@ -141,12 +143,14 @@ const ButtonsContainer = styled.div`
 
 const Button = styled.button`
   display: flex;
-  width: 100%;
   align-items: center;
   justify-content: center;
-  max-width: 376px;
-  min-height: 60px;
+  flex-direction: row;
   border-radius: 10px;
+  flex: 1;
+  padding: 5px;
+  min-height: 80px;
+  transition: all 0.3s;
 `;
 const InfoContainer = styled.div`
   display: flex;
@@ -159,6 +163,7 @@ const Ul = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 480px;
 `;
 const Li = styled.li`
   width: 100%;
@@ -168,7 +173,7 @@ const PackagesContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 50px;
-  margin: 10px 0px;
+  margin: 10px 10px;
 `;
 const PackagesBody = styled.div`
   display: flex;

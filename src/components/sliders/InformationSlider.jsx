@@ -75,7 +75,7 @@ const InformationSlider = ({ title, data, description }) => {
               fontSize="30px"
               fontWeight="600"
               lineHeight="36px"
-              margin="17px 40px 30px 40px"
+              margin="100px 30px 10px"
               color="white">
               {item?.title}
             </CustomText>
@@ -84,7 +84,7 @@ const InformationSlider = ({ title, data, description }) => {
               fontSize="14px"
               fontWeight="400"
               lineHeight="21px"
-              margin="0px 40px 0px"
+              margin="0px 30px"
               color="rgba(255, 255, 255, 0.9)">
               {item.info}
             </CustomText>
@@ -145,7 +145,6 @@ const SlideContent = styled.div`
   border-radius: 30px;
   overflow: hidden;
   position: relative;
-  justify-content: center;
 `;
 const Image = styled.img`
   width: 100%;
