@@ -81,10 +81,10 @@ const StyledSlider = styled(Slider)`
     display: flex !important;
     position: static;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
     li {
       width: 100%;
-      height: 141px;
+      height: 100px;
       border-radius: 12px;
       margin: 0px;
       overflow: hidden;
