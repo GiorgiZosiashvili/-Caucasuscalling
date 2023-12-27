@@ -14,6 +14,7 @@ const Contacts = () => {
     {
       icon: Mail,
       text: ['Caucasuscalling@gmail.com'],
+      link: 'https://mail.google.com/mail/u/0/#search/Caucasuscalling%40gmail.com',
     },
   ];
   return (

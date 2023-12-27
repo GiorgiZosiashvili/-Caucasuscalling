@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import Instagram from 'assets/images/instagram.png';
 import Location from 'assets/images/location.png';
 import Mail from 'assets/images/mail.png';
@@ -32,10 +33,12 @@ const Info = () => {
     {
       icon: Location,
       text: '0102, Marjanishvili 16, Tbilisi',
+      link: 'https://www.google.com/maps/search/Marjanishvili+16,+Tbilisi/@41.7090723,44.79549,19.78z?entry=ttu',
     },
     {
       icon: Mail,
       text: 'Caucasuscalling@gmail.com',
+      link: 'https://mail.google.com/mail/u/0/#search/Caucasuscalling%40gmail.com?compose=new',
     },
     {
       icon: Phone,
@@ -92,9 +95,11 @@ const Info = () => {
               key={index}>
               <Image src={contact?.icon} />
               {index !== 2 ? (
-                <CustomText fontSize="16px" fontWeight="500" lineHeight="26px" color="#666666">
-                  {contact?.text}
-                </CustomText>
+                <a target="_blank" href={contact.link}>
+                  <CustomText fontSize="16px" fontWeight="500" lineHeight="26px" color="#0077B6">
+                    {contact?.text}
+                  </CustomText>
+                </a>
               ) : (
                 <PhoneNumber>
                   <CustomText fontSize="16px" fontWeight="500" lineHeight="26px" color="#0077B6">
