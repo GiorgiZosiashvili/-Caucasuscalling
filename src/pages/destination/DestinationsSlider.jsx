@@ -88,11 +88,9 @@ const StyledSlider = styled(Slider)`
       border-radius: 12px;
       margin: 0px;
       overflow: hidden;
-      transition: all 0.3s !important;
     }
     li.slick-active {
       border: solid 2.5px #fa8b02;
-      transition: all 0.3s !important;
     }
   }
 `;

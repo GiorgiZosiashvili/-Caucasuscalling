@@ -31,6 +31,12 @@ import Kazbegi_Slider_2 from '../assets/images/Kazbegi/kazbegi_slider_2.jpg';
 import Kazbegi_Slider_3 from '../assets/images/Kazbegi/kazbegi_slider_3.jpg';
 import Kazbegi_Slider_4 from '../assets/images/Kazbegi/kazbegi_slider_4.jpg';
 import knowledge from '../assets/images/knowledge.png';
+import Kutaisi from '../assets/images/Kutaisi/kutaisi_main.jpg';
+import Kutaisi_Secondary from '../assets/images/Kutaisi/kutaisi_secondary.webp';
+import Kutaisi_Slider_1 from '../assets/images/Kutaisi/kutaisi_slider_1.jpg';
+import Kutaisi_Slider_2 from '../assets/images/Kutaisi/kutaisi_slider_2.jpeg';
+import Kutaisi_Slider_3 from '../assets/images/Kutaisi/kutaisi_slider_3.jpg';
+import Kutaisi_Slider_4 from '../assets/images/Kutaisi/kutaisi_slider_4.jpg';
 import language from '../assets/images/laguage.png';
 import Mtsketa from '../assets/images/Mtsketa.png';
 import Mtsketa_Secondary from '../assets/images/Mtsketa/mtsketa_secondary.jpg';
@@ -83,16 +89,21 @@ const infoData = [
   {
     title: 'Visa Information',
     image: Passport,
+    viewMore: true,
     info: 'Perched high above the Aegean Sea in this magical place, privy to the island’s most emblematic views, is it any wonder that the picturesque sanctuary that is the Grace Hotel, Auberge Resorts Collection in Santorini, has come out on top of a poll of travel magazine readers as the Best Hotel in Greece and ranked as the second Best Hotel in the World?',
   },
   {
     title: 'Climate In Georgia',
     image: Nature,
-    info: 'Perched high above the Aegean Sea in this magical place, privy to the island’s most emblematic views, is it any wonder that the picturesque sanctuary that is the Grace Hotel, Auberge Resorts Collection in Santorini, has come out on top of a poll of travel magazine readers as the Best Hotel in Greece and ranked as the second Best Hotel in the World?',
+    viewMore: false,
+
+    info: "Georgia's climate varies from subtropical in the west to moderate and arid in the east. The Black Sea coast offers sun and sea activities year-round. In the west, humid summers and mild winters prevail, with abundant precipitation. Eastern Georgia experiences sparse and unpredictable rain, with strong winds in canyons and valleys.",
   },
   {
     title: 'Georgian Currency',
     image: Currency,
+    viewMore: false,
+
     info: "The lari (GEL) is the currency of Georgia. It is divided into 100 tetri. The name lari is an old Georgian word denoting a hoard, property, while tetri is an old Georgian monetary term (meaning 'white') used in ancient Colchis from the 6th century BC.",
   },
 ];
@@ -164,18 +175,18 @@ const healthPrograms = [
       {
         title: 'Relaxing Packages:',
         link_en:
-          'https://media1.giphy.com/media/MgcE5n2MDfwiI/giphy.gif?cid=ecf05e47q1frl7nd640yjne2bh70hmr7014mxdgw1hfp1sfd&ep=v1_gifs_search&rid=giphy.gif&ct=g',
+          'https://drive.google.com/file/d/1YB37B8tCRz6jQQnafEVv6d5Qirqe0JIR/view?usp=share_link',
         link_ru:
-          'https://media0.giphy.com/media/D7z8JfNANqahW/giphy.gif?cid=ecf05e477a72oewk2rlq3bcvtgz8fy1cjzj9ouvcbmj1n20f&ep=v1_gifs_search&rid=giphy.gif&ct=g',
+          'https://drive.google.com/file/d/1t8XzkVc84Z2McJXwJofZM5vvZrcGR9ee/view?usp=share_link',
         iconUs: Us,
         iconRu: Ru,
       },
       {
         title: 'Medical Packages:',
         link_en:
-          'https://media3.giphy.com/media/l378BzHA5FwWFXVSg/giphy.gif?cid=ecf05e47yziwejhwka2b153sqcwo1yhq1zz8dpx7o05hkeqv&ep=v1_gifs_search&rid=giphy.gif&ct=g',
+          'https://drive.google.com/file/d/1jaSXJWiyZIPmvs5ORPtSJ6lROuoU9x2X/view?usp=share_link',
         link_ru:
-          'https://media4.giphy.com/media/3ohzdLD2vN09ZavdqU/giphy.gif?cid=ecf05e478hluqvkgm43t2yz49lu23e7exqnlcuszuuspync5&ep=v1_gifs_search&rid=giphy.gif&ct=g',
+          'https://drive.google.com/file/d/1pZzh_cvE_5l2u91cg7PYJMlfTauo3v6v/view?usp=share_link ',
         iconUs: Us,
         iconRu: Ru,
       },
@@ -196,20 +207,11 @@ const healthPrograms = [
     ],
     packages: [
       {
-        title: 'Relaxing Packages:',
-        link_en:
-          'https://media1.giphy.com/media/MgcE5n2MDfwiI/giphy.gif?cid=ecf05e47q1frl7nd640yjne2bh70hmr7014mxdgw1hfp1sfd&ep=v1_gifs_search&rid=giphy.gif&ct=g',
-        link_ru:
-          'https://media0.giphy.com/media/D7z8JfNANqahW/giphy.gif?cid=ecf05e477a72oewk2rlq3bcvtgz8fy1cjzj9ouvcbmj1n20f&ep=v1_gifs_search&rid=giphy.gif&ct=g',
-        iconUs: Us,
-        iconRu: Ru,
-      },
-      {
         title: 'Medical Packages:',
         link_en:
-          'https://media3.giphy.com/media/l378BzHA5FwWFXVSg/giphy.gif?cid=ecf05e47yziwejhwka2b153sqcwo1yhq1zz8dpx7o05hkeqv&ep=v1_gifs_search&rid=giphy.gif&ct=g',
+          'https://drive.google.com/file/d/1jkVfzMK-NDGyRy_AFpxKMP5cxw8c3ra5/view?usp=share_link',
         link_ru:
-          'https://media4.giphy.com/media/3ohzdLD2vN09ZavdqU/giphy.gif?cid=ecf05e478hluqvkgm43t2yz49lu23e7exqnlcuszuuspync5&ep=v1_gifs_search&rid=giphy.gif&ct=g',
+          'https://drive.google.com/file/d/16IWfrqM-sy7mvmcKA4sLDCsv705lgtTD/view?usp=share_link',
         iconUs: Us,
         iconRu: Ru,
       },
@@ -321,7 +323,7 @@ const destinationsData = [
   },
   {
     title: 'Mtskheta',
-    popular: false,
+    popular: true,
     image: Mtsketa,
     images: [Mtsketa_Slider_1, Mtsketa_Slider_2, Mtsketa_Slider_3, Mtsketa_Slider_4],
     sections: [
@@ -378,6 +380,80 @@ const destinationsData = [
             header: 'Adventure Awaits: ',
             detail:
               "Beyond its historical and spiritual treasures, Mtskheta serves as a gateway to outdoor adventures. The surrounding countryside offers opportunities for hiking, rafting, and exploring caves, allowing you to connect with Georgia's natural wonders.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: 'Kutaisi',
+    popular: false,
+    image: Kutaisi,
+    images: [Kutaisi_Slider_1, Kutaisi_Slider_2, Kutaisi_Slider_3, Kutaisi_Slider_4],
+    sections: [
+      {
+        id: 'Kutaisi',
+        title: 'Kutaisi Chronicles: A Tapestry of Heritage, Nature, and Warmth.',
+        content:
+          "Explore the charm of Kutaisi, Georgia's vibrant cultural hub. Nestled amidst scenic landscapes, Kutaisi boasts ancient history and modern allure. Immerse yourself in the UNESCO World Heritage Site, Bagrati Cathedral, or wander through the historic Gelati Monastery. Stroll along the Rioni River, discovering picturesque bridges and lively markets. Kutaisi is a gateway to natural wonders, with nearby attractions like Prometheus Cave and Sataplia Nature Reserve. Indulge in local cuisine at charming eateries and experience the warm hospitality that defines this captivating city. Kutaisi beckons with a blend of tradition and contemporary excitement.",
+        imageUrl: '',
+      },
+      {
+        id: 'discovering Kutaisi',
+        title: 'Discovering Kutaisi',
+        content:
+          "Nestled amidst Georgia's picturesque landscape, Kutaisi stands as a living testament to the country's rich heritage. This ancient town beckons travelers to explore its historic streets and immerse themselves in its cultural tapestry.",
+        imageUrl: Kutaisi_Secondary,
+        details: [
+          {
+            header: 'Rich History: ',
+            detail:
+              "Explore ancient wonders like Bagrati Cathedral and Gelati Monastery, reflecting Kutaisi's deep historical roots.",
+          },
+          {
+            header: 'UNESCO Heritage Sites: ',
+            detail:
+              "Kutaisi boasts UNESCO-listed treasures, offering a glimpse into Georgia's cultural and architectural heritage.",
+          },
+          {
+            header: 'Natural Marvels: ',
+            detail:
+              "Discover the enchanting Prometheus Cave and Sataplia Nature Reserve, showcasing Georgia's diverse and stunning landscapes.",
+          },
+          {
+            header: 'Warm Hospitality: ',
+            detail:
+              "Experience the genuine warmth of Kutaisi's locals, known for their hospitality and friendliness.",
+          },
+          {
+            header: 'Scenic Rioni River: ',
+            detail:
+              "Wander along the picturesque Rioni River, crossing charming bridges and enjoying the city's vibrant atmosphere.",
+          },
+          {
+            header: 'Culinary Delights: ',
+            detail:
+              'Indulge in authentic Georgian cuisine in local taverns, savoring unique flavors and traditional dishes.',
+          },
+          {
+            header: 'Affordability: ',
+            detail:
+              'Enjoy a budget-friendly travel experience with affordable accommodations, dining, and activities in Kutaisi.',
+          },
+          {
+            header: 'Blend of Tradition and Modernity: ',
+            detail:
+              'Witness the harmonious coexistence of ancient landmarks and a lively, modern cityscape.',
+          },
+          {
+            header: 'Dinosaur Footprints: ',
+            detail:
+              'Fascinate yourself with the prehistoric at Sataplia Nature Reserve, where dinosaur footprints tell tales of ancient times.',
+          },
+          {
+            header: 'Gateway to Western Georgia: ',
+            detail:
+              'Kutaisi serves as a perfect starting point for exploring the diverse landscapes and cultural gems of western Georgia.',
           },
         ],
       },
@@ -508,7 +584,7 @@ const destinationsData = [
   },
   {
     title: 'Samegrelo',
-    popular: true,
+    popular: false,
     image: Samegrelo,
     images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
     sections: [
@@ -646,7 +722,7 @@ const destinationsData = [
   },
   {
     title: 'Vardzia',
-    popular: true,
+    popular: false,
     image: Vardzia,
     images: [Vardzia_Slider_1, Vardzia_Slider_2, Vardzia_Slider_3, Vardzia_Slider_4],
     sections: [
@@ -774,7 +850,7 @@ const destinationsData = [
   },
   {
     title: 'Kakheti',
-    popular: false,
+    popular: true,
     image: Kakheti,
     images: [Kakheti_Slider_1, Kakheti_Slider_2, Kakheti_Slider_3, Kakheti_Slider_4],
     sections: [

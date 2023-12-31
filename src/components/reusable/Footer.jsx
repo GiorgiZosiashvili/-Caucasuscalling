@@ -7,7 +7,6 @@ import Phone from 'assets/images/phone.png';
 import Twitter from 'assets/images/tweeter.png';
 import Visa from 'assets/images/visa.png';
 import Youtube from 'assets/images/youtube.png';
-import { Link } from 'react-router-dom';
 import { styled } from 'styled-components';
 
 import { pagesData } from '../../data/data';
@@ -47,15 +46,11 @@ const Info = () => {
   const help = [
     {
       name: 'Terms of Use',
-      page: '',
+      link: 'https://drive.google.com/file/d/1WnSOx6KHT1Ks9CDzoLAcdikZtZATheJU/view',
     },
     {
+      link: 'https://drive.google.com/file/d/1UKFWtNAOBhbfQRmTGW8aptdWdOv0LHTL/view?usp=share_link',
       name: 'Privacy Policy',
-      page: '',
-    },
-    {
-      name: 'Terms of Use',
-      page: '',
     },
   ];
 
@@ -134,7 +129,7 @@ const Info = () => {
         </CustomText>
         {help?.map((help, i) => {
           return (
-            <LinkContainer key={i} to={help.page}>
+            <LinkContainer key={i} target="_blank" href={help.link}>
               <CustomText fontSize="14px" fontWeight="500" color="#666666">
                 {help.name}
               </CustomText>
@@ -234,7 +229,7 @@ const NavigationContainer = styled.ul`
   gap: 20px;
   margin-bottom: 50px;
 `;
-const LinkContainer = styled(Link)`
+const LinkContainer = styled.a`
   display: flex;
   flex-direction: column;
   text-decoration: none;

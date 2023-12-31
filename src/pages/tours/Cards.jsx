@@ -71,16 +71,16 @@ const Cards = () => {
 export default Cards;
 const CardContainer = styled.div`
   display: flex;
+  max-width: 1310px;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
-  justify-content: left;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 0px 20px;
   margin: 73px auto 150px;
-  gap: 31px;
+  gap: 32px;
   @media screen and (max-width: 1000px) {
     justify-content: space-evenly;
+    padding: 0px 20px;
   }
 `;
 const Card = styled(Link)`
@@ -88,7 +88,7 @@ const Card = styled(Link)`
   flex-direction: column;
   border: 0.5px solid #e8e8e8;
   width: 100%;
-  max-width: 402px;
+  max-width: 408px;
   height: 430px;
   position: relative;
   border-radius: 12px;

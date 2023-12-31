@@ -75,7 +75,7 @@ const InformationSlider = ({ title, data, description }) => {
               fontSize="30px"
               fontWeight="600"
               lineHeight="36px"
-              margin="100px 30px 10px"
+              margin="50px 40px 10px"
               color="white">
               {item?.title}
             </CustomText>
@@ -84,10 +84,11 @@ const InformationSlider = ({ title, data, description }) => {
               fontSize="14px"
               fontWeight="400"
               lineHeight="21px"
-              margin="0px 30px"
-              color="rgba(255, 255, 255, 0.9)">
+              margin="0px 40px"
+              color="rgba(255, 255, 255, 1)">
               {item.info}
             </CustomText>
+            {/* <ViewMore>View More</ViewMore> */}
           </SlideContent>
         ))}
       </Carousel>
@@ -97,6 +98,7 @@ const InformationSlider = ({ title, data, description }) => {
 const SliderContainer = styled.div`
   width: 100%;
   margin: 0px auto 150px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -140,11 +142,14 @@ const SlideContent = styled.div`
   display: flex;
   flex-direction: column;
   width: 95%;
-  min-height: 380px;
+  min-height: 350px;
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   position: relative;
+  @media screen and (max-width: 1000px) {
+    min-height: 450px;
+  }
 `;
 const Image = styled.img`
   width: 100%;
@@ -152,6 +157,18 @@ const Image = styled.img`
   object-fit: cover;
   position: absolute;
   z-index: -1;
+`;
+const ViewMore = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 17px;
+  width: 503px;
+  height: 48px;
+  margin: 24px;
+  background-color: #ffffff;
+  color: #007a33;
 `;
 
 export default InformationSlider;

@@ -66,7 +66,7 @@ const Packages = () => {
                         fontSize="18px"
                         fontWeight="500"
                         color="#000000"
-                        lineHeight="40px">
+                        margin="0px 0px 10px">
                         {item.title}
                       </CustomText>
                       <TourPackages target="_blank" href={item.link_en}>
@@ -114,12 +114,11 @@ const Packages = () => {
 };
 const Container = styled.div`
   display: flex;
-  width: 100%;
   position: relative;
   flex-direction: column;
   margin: 103px 0px 162px;
   flex-wrap: wrap;
-  max-width: 1190px;
+  transition: all 0.3s;
   padding: 0px 40px;
 `;
 const Div = styled.div`
@@ -132,13 +131,16 @@ const Div = styled.div`
 const ButtonsContainer = styled.div`
   display: flex;
   width: 100%;
-  flex-wrap: wrap;
+  flex-direction: row;
   min-height: 80px;
   border-radius: 10px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   overflow: hidden;
   background-color: #f2f2f2;
+  @media screen and (max-width: 1082px) {
+    flex-direction: column;
+  }
 `;
 
 const Button = styled.button`
@@ -147,23 +149,24 @@ const Button = styled.button`
   justify-content: center;
   flex-direction: row;
   border-radius: 10px;
-  flex: 1;
   padding: 5px;
-  min-height: 80px;
   transition: all 0.3s;
+  width: 100%;
+  min-height: 80px;
 `;
 const InfoContainer = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
+  transition: all 0.3s;
+  align-items: flex-start;
 `;
 const Ul = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 480px;
+  margin: 0px 10px 10px 0px;
 `;
 const Li = styled.li`
   width: 100%;
@@ -173,7 +176,6 @@ const PackagesContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 50px;
-  margin: 10px 10px;
 `;
 const PackagesBody = styled.div`
   display: flex;

@@ -30,7 +30,7 @@ const GoogleTranslate = () => {
 
   return (
     <Container>
-      <div id="google_translate_element"></div>
+      <div style={{ background: 'red' }} id="google_translate_element"></div>
     </Container>
   );
 };
@@ -41,7 +41,6 @@ const Container = styled.div`
   z-index: 100;
   width: 100%;
   padding: 0px 40px;
-  height: 60px;
   @media screen and (max-width: 900px) {
     padding: 0px 20px;
   }

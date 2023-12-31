@@ -54,7 +54,6 @@ const Container = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: right;
-
   z-index: 100;
   @media screen and (max-width: 885px) {
     align-items: start;
