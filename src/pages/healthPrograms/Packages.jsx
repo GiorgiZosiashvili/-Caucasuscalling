@@ -19,7 +19,7 @@ const Packages = () => {
               }}>
               <CustomText
                 textAlign="center"
-                fontSize="18px"
+                fontSize="17px"
                 fontWeight="700"
                 color={programs.id === active ? '#fff' : '#141515'}>
                 {programs.title}

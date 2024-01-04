@@ -90,7 +90,7 @@ const infoData = [
     title: 'Visa Information',
     image: Passport,
     viewMore: true,
-    info: 'Perched high above the Aegean Sea in this magical place, privy to the island’s most emblematic views, is it any wonder that the picturesque sanctuary that is the Grace Hotel, Auberge Resorts Collection in Santorini, has come out on top of a poll of travel magazine readers as the Best Hotel in Greece and ranked as the second Best Hotel in the World?',
+    info: 'All UAE expats who have a valid resident visa of the United Arab. Emirates will also receive a visa on arrival in Georgia. Even holders of visas or residence permits of other GCC (Gulf). Cooperation Council) countries can travel to Georgia visa-free for a period of 90 days. They get an entry stamp to Georgia upon arrival.',
   },
   {
     title: 'Climate In Georgia',
@@ -196,8 +196,8 @@ const healthPrograms = [
   },
   {
     id: 2,
-    title: 'Hotel BORJOMI LIKANI',
-    text: 'Hotel BORJOMI LIKANI offers the following treatment programs:',
+    title: 'HOTEL BORJOMI LIKANI',
+    text: 'HOTEL BORJOMI LIKANI offers the following treatment programs:',
     programs: [
       { program: 'treatment of musculoskeletal diseases' },
       { program: 'treatment of obesity and diabetes mellitus' },

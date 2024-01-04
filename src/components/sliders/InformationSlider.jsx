@@ -88,7 +88,15 @@ const InformationSlider = ({ title, data, description }) => {
               color="rgba(255, 255, 255, 1)">
               {item.info}
             </CustomText>
-            {/* <ViewMore>View More</ViewMore> */}
+            {index === 0 && (
+              <ViewMore
+                target="_blank"
+                href={
+                  'https://drive.google.com/file/d/12Yzu6tLeUGqZVcoiw3_n54A_XQI3ln0G/view?pli=1'
+                }>
+                View More
+              </ViewMore>
+            )}
           </SlideContent>
         ))}
       </Carousel>
@@ -147,9 +155,6 @@ const SlideContent = styled.div`
   border-radius: 30px;
   overflow: hidden;
   position: relative;
-  @media screen and (max-width: 1000px) {
-    min-height: 450px;
-  }
 `;
 const Image = styled.img`
   width: 100%;
@@ -162,13 +167,13 @@ const ViewMore = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
   bottom: 17px;
-  width: 503px;
+  width: 90%;
   height: 48px;
-  margin: 24px;
+  margin: 10% auto 0px;
   background-color: #ffffff;
   color: #007a33;
+  cursor: pointer;
 `;
 
 export default InformationSlider;

@@ -106,7 +106,7 @@ const Image = styled.img`
   height: 70%;
   object-fit: cover;
   margin-right: 5%;
-  max-width: 300px;
+  max-width: 340px;
   max-height: 400px;
   margin-bottom: 30px;
   min-width: 250px;
