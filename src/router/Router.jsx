@@ -7,10 +7,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import DestinationDetailsPage from '../pages/destination/DestinationDetailsPage';
 import ToursDetailsPage from '../pages/tours/ToursDetailsPage';
+import ScrollToTop from '../utils/ScrollToTop';
 
 function AppRouter() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route index element={<HomePage />} />
         <Route exact path="Destination" element={<Destination />} />

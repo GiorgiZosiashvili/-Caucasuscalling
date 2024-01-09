@@ -169,9 +169,9 @@ const AboutUsTextContainer = styled.div`
 const Image = styled.img`
   height: 100%;
   object-fit: cover;
-  margin-right: 5%;
-  max-width: 350px;
-  max-height: 450px;
+  margin-right: 3%;
+  max-width: 320px;
+  max-height: 420px;
   margin-bottom: 30px;
   min-width: 250px;
 `;
