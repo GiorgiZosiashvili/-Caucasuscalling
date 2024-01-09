@@ -20,6 +20,7 @@ const HealthPage = () => {
         <Header backgroundColor="#346172" page={'/Health'} />
       </Div>
       <Info
+        page="/Health"
         image={Resort}
         header={'Health Programs'}
         title={'Discover Wellness in Georgia: Explore Our Healing Retreats'}

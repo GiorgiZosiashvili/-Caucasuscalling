@@ -76,8 +76,7 @@ const CardContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin: 73px auto 150px;
-  gap: 32px;
+  margin: 10px auto 150px;
   @media screen and (max-width: 1000px) {
     justify-content: space-evenly;
     padding: 0px 20px;
@@ -88,11 +87,12 @@ const Card = styled(Link)`
   flex-direction: column;
   border: 0.5px solid #e8e8e8;
   width: 100%;
-  max-width: 408px;
+  max-width: 400px;
   height: 430px;
   position: relative;
   border-radius: 12px;
   cursor: pointer;
+  margin-top: 30px;
 `;
 const LocationContainer = styled.div`
   display: flex;

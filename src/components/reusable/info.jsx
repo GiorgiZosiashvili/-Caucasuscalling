@@ -6,7 +6,8 @@ import { aboutUs } from '../../data/data';
 
 import CustomText from 'components/reusable/Text';
 
-function Info({ description, title, header, details, image }) {
+function Info({ description, title, header, details, image, page }) {
+  console.log(page);
   return (
     <Container>
       <BackgroundImage src={Background} />
@@ -69,52 +70,54 @@ function Info({ description, title, header, details, image }) {
             </Div>
           )}
         </TextContainer>
-        <AboutUs>
-          {aboutUs?.map((text, index) => {
-            return (
-              <AboutUsContainer key={index}>
-                <CustomText
-                  textAlign="left"
-                  fontSize="18px"
-                  fontWeight="900"
-                  color="#666"
-                  lineHeight="29px">
-                  {text.title}
-                </CustomText>
-                {text?.names.map((person, index) => {
-                  return (
-                    <AboutUsTextContainer key={index}>
-                      <CustomText
-                        textAlign="left"
-                        fontSize="18px"
-                        fontWeight="700"
-                        color="#FF6B35"
-                        lineHeight="29px">
-                        {person.name}
-                      </CustomText>
-                      <CustomText
-                        textAlign="left"
-                        fontSize="18px"
-                        fontWeight="400"
-                        color="#666"
-                        lineHeight="29px">
-                        {person.destination}
-                      </CustomText>
-                    </AboutUsTextContainer>
-                  );
-                })}
-                <CustomText
-                  textAlign="left"
-                  fontSize="18px"
-                  fontWeight="500"
-                  color="#666"
-                  lineHeight="29px">
-                  {text.conclusion}
-                </CustomText>
-              </AboutUsContainer>
-            );
-          })}
-        </AboutUs>
+        {page !== '/Health' && (
+          <AboutUs>
+            {aboutUs?.map((text, index) => {
+              return (
+                <AboutUsContainer key={index}>
+                  <CustomText
+                    textAlign="left"
+                    fontSize="18px"
+                    fontWeight="900"
+                    color="#666"
+                    lineHeight="29px">
+                    {text.title}
+                  </CustomText>
+                  {text?.names.map((person, index) => {
+                    return (
+                      <AboutUsTextContainer key={index}>
+                        <CustomText
+                          textAlign="left"
+                          fontSize="18px"
+                          fontWeight="700"
+                          color="#FF6B35"
+                          lineHeight="29px">
+                          {person.name}
+                        </CustomText>
+                        <CustomText
+                          textAlign="left"
+                          fontSize="18px"
+                          fontWeight="400"
+                          color="#666"
+                          lineHeight="29px">
+                          {person.destination}
+                        </CustomText>
+                      </AboutUsTextContainer>
+                    );
+                  })}
+                  <CustomText
+                    textAlign="left"
+                    fontSize="18px"
+                    fontWeight="500"
+                    color="#666"
+                    lineHeight="29px">
+                    {text.conclusion}
+                  </CustomText>
+                </AboutUsContainer>
+              );
+            })}
+          </AboutUs>
+        )}
       </InfoContainer>
     </Container>
   );
@@ -137,7 +140,7 @@ const InfoContainer = styled.div`
   height: 100%;
   max-width: 1130px;
   flex-wrap: wrap;
-  padding: 20px 40px 20px;
+  padding: 50px 40px 20px;
   min-height: 630px;
   align-self: center;
 `;
@@ -153,7 +156,7 @@ const AboutUs = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
-  margin: 50px auto 30px;
+  margin: 30px auto 30px;
 `;
 const AboutUsContainer = styled.div`
   display: flex;

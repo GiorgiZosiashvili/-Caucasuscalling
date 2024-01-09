@@ -30,6 +30,7 @@ const HomePage = () => {
         <Header backgroundColor="#346172" page="/" />
       </Div>
       <Info
+        page="/"
         image={Person}
         details={details}
         header={'WELCOME TO OUR WEBSITE!'}
