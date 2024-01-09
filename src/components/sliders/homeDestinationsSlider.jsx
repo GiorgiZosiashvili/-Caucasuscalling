@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import CustomText from '../reusable/Text';
@@ -85,7 +86,7 @@ const DestinationSlider = ({ data, title, description }) => {
         {data
           ?.filter((item) => item.popular) // Filter the data based on the "popular" property
           .map((item, index) => (
-            <SlideContent key={index}>
+            <SlideContent to={`/Destination/${item.title}`} key={index}>
               <CustomText
                 margin="0px 0px 0px 15px"
                 textAlign="left"
@@ -130,6 +131,7 @@ const CarouselButtonContainer = styled.div`
   justify-content: space-between;
   position: absolute;
   width: 100%;
+  height: 0px;
 `;
 const StyledArrow = styled(Arrow)`
   &:hover {
@@ -157,7 +159,7 @@ const Button = styled.button`
   }
 `;
 
-const SlideContent = styled.div`
+const SlideContent = styled(Link)`
   display: flex;
   flex-direction: column;
   border-radius: 12px;

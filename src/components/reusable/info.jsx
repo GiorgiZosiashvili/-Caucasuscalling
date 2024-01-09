@@ -2,6 +2,8 @@
 import Background from 'assets/images/background.png';
 import { styled } from 'styled-components';
 
+import { aboutUs } from '../../data/data';
+
 import CustomText from 'components/reusable/Text';
 
 function Info({ description, title, header, details, image }) {
@@ -67,6 +69,52 @@ function Info({ description, title, header, details, image }) {
             </Div>
           )}
         </TextContainer>
+        <AboutUs>
+          {aboutUs?.map((text, index) => {
+            return (
+              <AboutUsContainer key={index}>
+                <CustomText
+                  textAlign="left"
+                  fontSize="18px"
+                  fontWeight="900"
+                  color="#666"
+                  lineHeight="29px">
+                  {text.title}
+                </CustomText>
+                {text?.names.map((person, index) => {
+                  return (
+                    <AboutUsTextContainer key={index}>
+                      <CustomText
+                        textAlign="left"
+                        fontSize="18px"
+                        fontWeight="700"
+                        color="#FF6B35"
+                        lineHeight="29px">
+                        {person.name}
+                      </CustomText>
+                      <CustomText
+                        textAlign="left"
+                        fontSize="18px"
+                        fontWeight="400"
+                        color="#666"
+                        lineHeight="29px">
+                        {person.destination}
+                      </CustomText>
+                    </AboutUsTextContainer>
+                  );
+                })}
+                <CustomText
+                  textAlign="left"
+                  fontSize="18px"
+                  fontWeight="500"
+                  color="#666"
+                  lineHeight="29px">
+                  {text.conclusion}
+                </CustomText>
+              </AboutUsContainer>
+            );
+          })}
+        </AboutUs>
       </InfoContainer>
     </Container>
   );
@@ -89,7 +137,7 @@ const InfoContainer = styled.div`
   height: 100%;
   max-width: 1130px;
   flex-wrap: wrap;
-  padding: 20px 20px 20px;
+  padding: 20px 40px 20px;
   min-height: 630px;
   align-self: center;
 `;
@@ -101,13 +149,29 @@ const TextContainer = styled.div`
   max-width: 690px;
 `;
 
+const AboutUs = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 50px auto 30px;
+`;
+const AboutUsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
+const AboutUsTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+`;
 const Image = styled.img`
-  width: 40%;
-  height: 70%;
+  height: 100%;
   object-fit: cover;
   margin-right: 5%;
-  max-width: 340px;
-  max-height: 400px;
+  max-width: 350px;
+  max-height: 450px;
   margin-bottom: 30px;
   min-width: 250px;
 `;

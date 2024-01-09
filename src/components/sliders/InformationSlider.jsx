@@ -170,7 +170,7 @@ const ViewMore = styled.a`
   bottom: 17px;
   width: 90%;
   height: 48px;
-  margin: 10% auto 0px;
+  margin: 10% auto 20px;
   background-color: #ffffff;
   color: #007a33;
   cursor: pointer;

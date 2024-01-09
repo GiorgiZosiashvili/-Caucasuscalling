@@ -85,6 +85,25 @@ const servicesData = [
     image: SUV,
   },
 ];
+const aboutUs = [
+  {
+    title: 'Presenting the powerhouses behind our tourism magic:',
+    names: [
+      {
+        name: 'Giorgi Lomtadze',
+        destination:
+          'Embark on a journey led by Giorgi, a tourism virtuoso with 7 years of crafting unforgettable experiences. His commitment to excellence ensures our partners a symphony of seamless adventures.',
+      },
+      {
+        name: 'Ramaz Beritashvili',
+        destination:
+          'Meet Ramaz, our visionary with a decade-long expertise in curating extraordinary travel. Partnering with him means unlocking a treasure trove of unique, tailored experiences that captivate and inspire.',
+      },
+    ],
+    conclusion:
+      'United, Giorgi and Ramaz form an unstoppable force, delivering not just trips but lifetime memories. Elevate your partnerships with us, where every destination becomes a canvas for unparalleled success.',
+  },
+];
 const infoData = [
   {
     title: 'Visa Information',
@@ -1236,4 +1255,5 @@ export {
   healthPrograms,
   destinationsData,
   seasonsData,
+  aboutUs,
 };
