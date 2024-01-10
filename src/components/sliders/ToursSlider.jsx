@@ -100,7 +100,7 @@ const ToursSlider = ({ data, title, description }) => {
                 textAlign="left"
                 fontSize="20px"
                 fontWeight="500"
-                lineHeight="20px"
+                lineHeight="25px"
                 color="#222">
                 {item?.title}
               </CustomText>
@@ -142,7 +142,7 @@ const ToursSlider = ({ data, title, description }) => {
 
 const SliderContainer = styled.div`
   width: 100%;
-  margin: 91px auto 150px;
+  margin: 91px auto 100px;
   padding: 0px 20px;
   display: flex;
   flex-direction: column;

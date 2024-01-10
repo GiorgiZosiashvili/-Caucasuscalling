@@ -76,7 +76,7 @@ const CardContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin: 10px auto 150px;
+  margin: 10px auto 100px;
   @media screen and (max-width: 1000px) {
     justify-content: space-evenly;
     padding: 0px 20px;

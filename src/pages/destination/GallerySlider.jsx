@@ -75,7 +75,7 @@ const GallerySlider = ({ data }) => {
 const SliderContainer = styled.div`
   width: 100%;
   max-width: 1156px;
-  margin: 80px auto 150px;
+  margin: 80px auto 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

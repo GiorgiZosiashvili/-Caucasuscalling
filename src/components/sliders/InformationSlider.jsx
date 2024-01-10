@@ -5,7 +5,7 @@ import { styled } from 'styled-components';
 import CustomText from '../reusable/Text';
 import { Arrow } from '../SVG/Svgs';
 
-const InformationSlider = ({ title, data, description }) => {
+const InformationSlider = ({ title, data }) => {
   const responsive = {
     desktop: {
       breakpoint: { max: 2500, min: 1530 },
@@ -46,18 +46,9 @@ const InformationSlider = ({ title, data, description }) => {
         fontSize="24px"
         fontWeight="800"
         lineHeight="30px"
-        margin="0px 10px 16px"
+        margin="0px 10px 20px"
         color="#172432">
         {title}
-      </CustomText>
-      <CustomText
-        textAlign="left"
-        fontSize="24px"
-        fontWeight="400"
-        lineHeight="29px"
-        color="#767E86"
-        margin="0px 10px 55px">
-        {description}
       </CustomText>
       <Carousel
         draggable={false}
@@ -105,7 +96,7 @@ const InformationSlider = ({ title, data, description }) => {
 };
 const SliderContainer = styled.div`
   width: 100%;
-  margin: 0px auto 150px;
+  margin: 0px auto 100px;
   position: relative;
   display: flex;
   flex-direction: column;

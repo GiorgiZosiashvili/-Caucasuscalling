@@ -43,13 +43,13 @@ const HomePage = () => {
         title="Explore Our Tours"
         data={tourPackagesData}
         description={
-          'Most popular destinations around the world, from historical places to natural wonders.'
+          'Most popular tours around the world, from historical places to natural wonders.'
         }
       />
       <DestinationsSlider
         title="Popular Destinations"
         description={
-          'Most popular destinations around the world, from historical places to natural wonders.'
+          'Most popular destinations around Georgia, from historical places to natural wonders.'
         }
         data={destinationsData}
       />
@@ -61,9 +61,7 @@ const HomePage = () => {
       <InformationSlider
         data={infoData}
         title="Comprehensive Travel Planning Information"
-        description={
-          'Most popular destinations around the world, from historical places to natural wonders.'
-        }
+        description={null}
       />
       <Footer />
     </MainContainer>

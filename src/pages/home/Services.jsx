@@ -50,7 +50,7 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0px auto 150px;
+  margin: 0px auto 100px;
   max-width: 1156px;
   @media screen and (max-width: 885px) {
     padding: 0px 20px;

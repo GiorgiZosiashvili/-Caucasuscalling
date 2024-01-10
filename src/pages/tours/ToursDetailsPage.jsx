@@ -3,7 +3,7 @@ import { styled } from 'styled-components';
 
 import Header from '../../components/reusable/Header';
 import CustomText from '../../components/reusable/Text';
-import { tourPackagesData } from '../../data/data';
+import { includedServices, tourPackagesData } from '../../data/data';
 import ToursPageSlider from './ToursPageSlider';
 
 import Languages from 'components/Languages';
@@ -62,21 +62,54 @@ const ToursDetailsPage = () => {
                   </CustomText>
                   {text?.info.map((infoText, index) => {
                     return (
-                      <CustomText
-                        key={index}
-                        fontSize="18px"
-                        fontWeight="400"
-                        lineHeight="35px"
-                        color="#222"
-                        textAlign="left">
-                        {infoText}
-                      </CustomText>
+                      <ul key={index}>
+                        <li style={{ listStyle: 'initial' }}>
+                          <CustomText
+                            fontSize="18px"
+                            fontWeight="400"
+                            lineHeight="35px"
+                            color="#222"
+                            textAlign="left">
+                            {infoText}
+                          </CustomText>
+                        </li>
+                      </ul>
                     );
                   })}
                 </Text>
               );
             })}
           </TextContainer>
+          {includedServices.map((services, index) => {
+            return (
+              <IncludedServices key={index}>
+                <CustomText
+                  fontSize="18px"
+                  fontWeight="600"
+                  lineHeight="35px"
+                  color="#222"
+                  textAlign="left">
+                  {services.title}
+                </CustomText>
+                {services.content.map((text, index) => {
+                  return (
+                    <Ul key={index}>
+                      <li style={{ listStyle: 'initial' }}>
+                        <CustomText
+                          fontSize="16px"
+                          fontWeight="400"
+                          lineHeight="35px"
+                          color="#222"
+                          textAlign="left">
+                          {text}
+                        </CustomText>
+                      </li>
+                    </Ul>
+                  );
+                })}
+              </IncludedServices>
+            );
+          })}
         </ContentContainer>
       </Body>
     </MainContainer>
@@ -116,4 +149,13 @@ const TextContainer = styled.ul`
   gap: 20px;
 `;
 const Text = styled.li``;
+const IncludedServices = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 20px;
+`;
+const Ul = styled.ul`
+  display: flex;
+`;
 export default ToursDetailsPage;
