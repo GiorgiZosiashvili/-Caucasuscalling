@@ -96,7 +96,7 @@ const InformationSlider = ({ title, data }) => {
 };
 const SliderContainer = styled.div`
   width: 100%;
-  margin: 0px auto 100px;
+  margin: 0px auto 125px;
   position: relative;
   display: flex;
   flex-direction: column;

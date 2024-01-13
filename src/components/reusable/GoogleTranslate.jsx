@@ -30,7 +30,7 @@ const GoogleTranslate = () => {
 
   return (
     <Container>
-      <div style={{ background: 'red' }} id="google_translate_element"></div>
+      <div id="google_translate_element"></div>
     </Container>
   );
 };

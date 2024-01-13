@@ -118,7 +118,7 @@ const DestinationSlider = ({ data, title, description }) => {
 
 const SliderContainer = styled.div`
   width: 100%;
-  margin: 0px auto 100px;
+  margin: 0px auto 125px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -132,6 +132,7 @@ const CarouselButtonContainer = styled.div`
   position: absolute;
   width: 100%;
   height: 0px;
+  align-items: center;
 `;
 const StyledArrow = styled(Arrow)`
   &:hover {

@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import CustomText from '../reusable/Text';
@@ -81,60 +82,62 @@ const ToursSlider = ({ data, title, description }) => {
         itemClass="item-class"
         renderButtonGroupOutside={false}
         customButtonGroup={<ButtonGroup />}>
-        {data?.map((item, index) => (
-          <SlideContent key={index}>
-            <LocationContainer>
-              <Location />
-              <TruncatedText
-                textAlign="left"
-                fontSize="16px"
-                fontWeight="400"
-                lineHeight="16px"
-                color="#fff">
-                {item.location}
-              </TruncatedText>
-            </LocationContainer>
-            <Image src={item?.image} alt={item?.title} />
-            <TextContainer>
-              <CustomText
-                textAlign="left"
-                fontSize="20px"
-                fontWeight="500"
-                lineHeight="25px"
-                color="#222">
-                {item?.title}
-              </CustomText>
-              <CustomText
-                textAlign="left"
-                fontSize="14px"
-                fontWeight="400"
-                lineHeight="14px"
-                color="#999">
-                {item?.length}
-              </CustomText>
-              <CustomText
-                textAlign="left"
-                fontSize="24px"
-                fontWeight="500"
-                lineHeight="24px"
-                color="#FA7436">
-                {item?.price}
-              </CustomText>
-              <Div>
+        {data
+          ?.filter((item) => item.popular)
+          .map((item, index) => (
+            <SlideContent to={`/Tours/${item.title}`} key={index}>
+              <LocationContainer>
+                <Location />
+                <TruncatedText
+                  textAlign="left"
+                  fontSize="16px"
+                  fontWeight="400"
+                  lineHeight="16px"
+                  color="#fff">
+                  {item.location}
+                </TruncatedText>
+              </LocationContainer>
+              <Image src={item?.image} alt={item?.title} />
+              <TextContainer>
+                <CustomText
+                  textAlign="left"
+                  fontSize="20px"
+                  fontWeight="500"
+                  lineHeight="25px"
+                  color="#222">
+                  {item?.title}
+                </CustomText>
                 <CustomText
                   textAlign="left"
                   fontSize="14px"
-                  fontWeight="500"
+                  fontWeight="400"
                   lineHeight="14px"
-                  color="#007A33">
-                  View
-                  <br /> More
+                  color="#999">
+                  {item?.length}
                 </CustomText>
-                <NavArrow />
-              </Div>
-            </TextContainer>
-          </SlideContent>
-        ))}
+                <CustomText
+                  textAlign="left"
+                  fontSize="24px"
+                  fontWeight="500"
+                  lineHeight="24px"
+                  color="#FA7436">
+                  {item?.price}
+                </CustomText>
+                <Div>
+                  <CustomText
+                    textAlign="left"
+                    fontSize="14px"
+                    fontWeight="500"
+                    lineHeight="14px"
+                    color="#007A33">
+                    View
+                    <br /> More
+                  </CustomText>
+                  <NavArrow />
+                </Div>
+              </TextContainer>
+            </SlideContent>
+          ))}
       </Carousel>
     </SliderContainer>
   );
@@ -142,7 +145,7 @@ const ToursSlider = ({ data, title, description }) => {
 
 const SliderContainer = styled.div`
   width: 100%;
-  margin: 91px auto 100px;
+  margin: 91px auto 125px;
   padding: 0px 20px;
   display: flex;
   flex-direction: column;
@@ -153,7 +156,7 @@ const CarouselButtonContainer = styled.div`
   justify-content: space-between;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 0px;
   align-items: center;
 `;
 
@@ -203,7 +206,7 @@ const TruncatedText = styled(CustomText)`
   display: block;
   max-width: 210px;
 `;
-const SlideContent = styled.div`
+const SlideContent = styled(Link)`
   display: flex;
   flex-direction: column;
   border: 0.5px solid #e8e8e8;
@@ -217,7 +220,7 @@ const SlideContent = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  height: 242px;
+  min-height: 240px;
   object-fit: fill;
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;

@@ -66,7 +66,7 @@ const FilterContainer = styled.div`
   justify-content: center;
   min-height: 50vh;
   @media screen and (max-width: 1000px) {
-    min-height: 100vh;
+    min-height: 630px;
   }
 `;
 const Image = styled.img`
@@ -74,6 +74,7 @@ const Image = styled.img`
   height: 100%;
   object-fit: cover;
   position: absolute;
+  max-height: 630px;
 `;
 const SeasonsContainer = styled.div`
   display: flex;

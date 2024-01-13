@@ -1,6 +1,6 @@
 import { styled } from 'styled-components';
 
-import Planes from '../../assets/images/planes.png';
+import Planes from '../../assets/images/Icons/planes.png';
 import { partnershipData } from '../../data/data';
 import PartnershipInfo from './PartnershipInfo';
 

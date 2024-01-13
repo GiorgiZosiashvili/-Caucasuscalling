@@ -72,15 +72,14 @@ export default Cards;
 const CardContainer = styled.div`
   display: flex;
   max-width: 1310px;
+  width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 30px;
   align-items: center;
-  margin: 10px auto 100px;
-  @media screen and (max-width: 1000px) {
-    justify-content: space-evenly;
-    padding: 0px 20px;
-  }
+  padding: 0px 20px;
+  margin: 10px auto 125px;
 `;
 const Card = styled(Link)`
   display: flex;
@@ -108,8 +107,8 @@ const LocationContainer = styled.div`
 `;
 const Image = styled.img`
   width: 100%;
-  height: 242px;
-  object-fit: fill;
+  min-height: 242px;
+  object-fit: cover;
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
 `;

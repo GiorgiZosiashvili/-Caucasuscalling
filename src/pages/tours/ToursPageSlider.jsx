@@ -1,125 +1,138 @@
 /* eslint-disable react/prop-types */
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import { styled } from 'styled-components';
+import { useState } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+import styled from 'styled-components';
 
 import { Arrow } from '../../components/SVG/Svgs';
 
-const ToursPageSlider = ({ data }) => {
-  console.log(data);
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 1,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 1,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
-  const ButtonGroup = ({ next, previous, ...rest }) => {
-    const {
-      carouselState: { currentSlide },
-    } = rest;
+const SamplePrevArrow = (props) => {
+  const { onClick } = props;
+  const [hover, setHover] = useState(false);
 
-    return (
-      <CarouselButtonContainer className="carousel-button-group">
-        <Button className={currentSlide === 0 ? 'disable' : ''} onClick={() => previous()}>
-          <StyledArrow stroke={'#333'} />
-        </Button>
-        <Button style={{ transform: 'rotate(180deg)' }} onClick={() => next()}>
-          <StyledArrow stroke={'#333'} />
-        </Button>
-      </CarouselButtonContainer>
-    );
+  return (
+    <ArrowLeft
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      onClick={onClick}>
+      <StyledArrow stroke={hover ? '#fff' : '#333333'} />
+    </ArrowLeft>
+  );
+};
+const SampleNextArrow = (props) => {
+  const { onClick } = props;
+  const [hover, setHover] = useState(false);
+
+  return (
+    <ArrowRight
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      onClick={onClick}>
+      <StyledArrow stroke={hover ? '#fff' : '#333333'} />
+    </ArrowRight>
+  );
+};
+const ToursPageSlider = ({ data }) => {
+  const settings = {
+    className: 'center',
+    centerMode: true,
+    infinite: true,
+    slidesToShow: 3,
+    speed: 500,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <SliderContainer>
-      <Carousel
-        draggable={false}
-        itemClass="item-class"
-        responsive={responsive}
-        removeArrowOnDeviceType={['tablet', 'mobile']}
-        arrows={false}
-        renderButtonGroupOutside={false}
-        customButtonGroup={<ButtonGroup />}>
-        {data?.map((item, index) => {
-          return (
-            <SlideContent key={index}>
-              <Image src={item} />
-            </SlideContent>
-          );
-        })}
-      </Carousel>
-    </SliderContainer>
+    <StyledSlider {...settings}>
+      {data?.map((image, index) => (
+        <Slide key={index}>
+          <Image src={image} />
+        </Slide>
+      ))}
+    </StyledSlider>
   );
 };
-const SliderContainer = styled.div`
-  width: 100%;
-  max-width: 1156px;
-  margin: 0px auto;
+const StyledSlider = styled(Slider)`
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
+  align-items: center;
+  width: 100%;
+  max-width: 1128px;
+
+  .slick-slide {
+    padding: 50px 15px;
+    transition: all 1s;
+  }
+  .slick-current {
+    transform: scale(1.15);
+  }
 `;
-const Button = styled.button`
+const ArrowLeft = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 45px;
-  height: 45px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
   border-radius: 50px;
   background-color: #efefef;
-  cursor: pointer;
-  transition: all 0.3s;
-  svg path {
-    transition: all 0.3s;
-  }
+  top: 250px;
+  transform: translateY(-50%);
   &:hover {
-    background-color: #ff6b35;
+    background-color: #fa8b02;
   }
-  &:hover svg path {
-    stroke: #fff;
-  }
+  z-index: 10;
+  cursor: pointer;
+  left: 5px;
 `;
-
-const CarouselButtonContainer = styled.div`
+const ArrowRight = styled.div`
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  width: 100%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #efefef;
+  &:hover {
+    background-color: #fa8b02;
+  }
+  top: 250px;
+  z-index: 10;
+  cursor: pointer;
+  right: 5px;
+  transform: rotate(180deg) translateY(50%);
 `;
 const StyledArrow = styled(Arrow)`
-  &:hover {
-    stroke: #fff;
-  }
+  stroke: ${(props) => props.stroke};
+  transition: stroke 0.3s; /* Smooth transition for color change */
 `;
-
-const SlideContent = styled.div`
+const Slide = styled.div`
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1128px;
-  height: 565px;
-  position: relative;
-  overflow: hidden;
-  position: relative;
-  justify-content: space-between;
 `;
 const Image = styled.img`
-  width: 100%;
-  height: 100%;
+  object-fit: cover;
+  min-width: 100%;
+  height: 350px;
   object-fit: cover;
 `;
-
 export default ToursPageSlider;

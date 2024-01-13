@@ -50,11 +50,8 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0px auto 100px;
-  max-width: 1156px;
-  @media screen and (max-width: 885px) {
-    padding: 0px 20px;
-  }
+  margin: 0px auto 125px;
+  padding: 0px 20px;
 `;
 const ContentContainer = styled.div`
   width: 100%;
@@ -62,21 +59,21 @@ const ContentContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 20px;
 `;
 const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  width: 265px;
+  width: 300px;
   height: 229px;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.35);
   border-radius: 24px;
 `;
 const Image = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   object-fit: cover;
 `;
 

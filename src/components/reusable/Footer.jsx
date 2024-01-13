@@ -1,12 +1,12 @@
 /* eslint-disable react/jsx-no-target-blank */
-import Instagram from 'assets/images/instagram.png';
-import Location from 'assets/images/location.png';
-import Mail from 'assets/images/mail.png';
+import Instagram from 'assets/images/Icons/instagram.png';
+import Location from 'assets/images/Icons/location.png';
+import Mail from 'assets/images/Icons/mail.png';
+import Phone from 'assets/images/Icons/phone.png';
+import Twitter from 'assets/images/Icons/tweeter.png';
+import Visa from 'assets/images/Icons/visa.png';
+import Youtube from 'assets/images/Icons/youtube.png';
 import Partner from 'assets/images/partner.png';
-import Phone from 'assets/images/phone.png';
-import Twitter from 'assets/images/tweeter.png';
-import Visa from 'assets/images/visa.png';
-import Youtube from 'assets/images/youtube.png';
 import { Link } from 'react-router-dom';
 import { styled } from 'styled-components';
 

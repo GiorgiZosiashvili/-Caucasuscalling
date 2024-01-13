@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import Mail from '../assets/images/mail.png';
-import Phone from '../assets/images/phone.png';
+import Mail from '../assets/images/Icons/mail.png';
+import Phone from '../assets/images/Icons/phone.png';
 import GoogleTranslate from './reusable/GoogleTranslate';
 import CustomText from './reusable/Text';
 

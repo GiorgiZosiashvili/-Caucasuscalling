@@ -84,7 +84,7 @@ const StyledSlider = styled(Slider)`
     gap: 20px;
     li {
       width: 100%;
-      height: 100px;
+      height: 125px;
       border-radius: 12px;
       margin: 0px;
       overflow: hidden;

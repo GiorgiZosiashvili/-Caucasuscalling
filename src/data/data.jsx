@@ -1,5 +1,3 @@
-/* eslint-disable react-refresh/only-export-components */
-import Airplane from '../assets/images/airplane.png';
 import HomeBanner1 from '../assets/images/Banners/banner1.jpeg';
 import HomeBanner2 from '../assets/images/Banners/banner2.jpeg';
 import HomeBanner3 from '../assets/images/Banners/banner3.jpeg';
@@ -10,57 +8,87 @@ import Batumi_Slider_1 from '../assets/images/Batumi/batumi_slider_1.jpg';
 import Batumi_Slider_2 from '../assets/images/Batumi/batumi_slider_2.jpg';
 import Batumi_Slider_3 from '../assets/images/Batumi/batumi_slider_3.jpg';
 import Batumi_Slider_4 from '../assets/images/Batumi/batumi_slider_4.jpg';
-import HealthBanner from '../assets/images/Borjomi.png';
-import Borjomi from '../assets/images/Borjomi.png';
-import Canyon from '../assets/images/Canyon.png';
+import Gonio_Slider_1 from '../assets/images/Batumi/gonio_slider_1.jpeg';
+import Gonio_Slider_2 from '../assets/images/Batumi/gonio_slider_2.jpeg';
+import HealthBanner from '../assets/images/Borjomi/Borjomi.png';
+import Borjomi from '../assets/images/Borjomi/Borjomi.png';
+import Borjomi_Secondary from '../assets/images/Borjomi/borjomi_secondary.jpg';
+import Borjomi_Slider_1 from '../assets/images/Borjomi/borjomi_slider_1.jpg';
+import Borjomi_Slider_2 from '../assets/images/Borjomi/borjomi_slider_2.jpg';
+import Borjomi_Slider_3 from '../assets/images/Borjomi/borjomi_slider_3.jpg';
+import Borjomi_Slider_4 from '../assets/images/Borjomi/borjomi_slider_4.jpg';
 import Currency from '../assets/images/currency.png';
-import Gori from '../assets/images/Gori.jpeg';
-import Hotel from '../assets/images/hotel.png';
-import Juta from '../assets/images/Juta.png';
-import Jvari_Monastery from '../assets/images/Jvari_Monastery.png';
-import Kakheti from '../assets/images/Kakheti.jpeg';
+import Gori from '../assets/images/Gori/Gori.jpeg';
+import Gori_Secondary from '../assets/images/Gori/gori_secondary.jpeg';
+import Gori_Slider_1 from '../assets/images/Gori/gori_slider_1.jpg';
+import Gori_Slider_2 from '../assets/images/Gori/gori_slider_2.jpg';
+import Gori_Slider_3 from '../assets/images/Gori/gori_slider_3.jpeg';
+import Gori_Slider_4 from '../assets/images/Gori/gori_slider_4.jpeg';
+import Airplane from '../assets/images/Icons/airplane.png';
+import Hotel from '../assets/images/Icons/hotel.png';
+import knowledge from '../assets/images/Icons/knowledge.png';
+import language from '../assets/images/Icons/laguage.png';
+import Ru from '../assets/images/Icons/ru.png';
+import Suitcase from '../assets/images/Icons/suitcase.png';
+import support from '../assets/images/Icons/support.png';
+import SUV from '../assets/images/Icons/suv.png';
+import Us from '../assets/images/Icons/us.png';
+import Kakheti from '../assets/images/Kakheti/Kakheti.jpeg';
 import Kakheti_Secondary from '../assets/images/Kakheti/kakheti_secondary.jpg';
 import Kakheti_Slider_1 from '../assets/images/Kakheti/kakheti_slider_1.jpg';
 import Kakheti_Slider_2 from '../assets/images/Kakheti/kakheti_slider_2.jpg';
 import Kakheti_Slider_3 from '../assets/images/Kakheti/kakheti_slider_3.jpg';
 import Kakheti_Slider_4 from '../assets/images/Kakheti/kakheti_slider_4.jpg';
-import Kazbegi from '../assets/images/Kazbegi.png';
+import Kazbegi from '../assets/images/Kazbegi/Kazbegi.png';
 import Kazbegi_Secondary from '../assets/images/Kazbegi/kazbegi_secondary.jpg';
 import Kazbegi_Slider_1 from '../assets/images/Kazbegi/kazbegi_slider_1.jpg';
 import Kazbegi_Slider_2 from '../assets/images/Kazbegi/kazbegi_slider_2.jpg';
 import Kazbegi_Slider_3 from '../assets/images/Kazbegi/kazbegi_slider_3.jpg';
 import Kazbegi_Slider_4 from '../assets/images/Kazbegi/kazbegi_slider_4.jpg';
-import knowledge from '../assets/images/knowledge.png';
+import Mestia_Slider_1 from '../assets/images/Kazbegi/mestia_slider_1.webp';
+import Mestia_Slider_2 from '../assets/images/Kazbegi/mestia_slider_2.jpeg';
 import Kutaisi from '../assets/images/Kutaisi/kutaisi_main.jpg';
 import Kutaisi_Secondary from '../assets/images/Kutaisi/kutaisi_secondary.webp';
 import Kutaisi_Slider_1 from '../assets/images/Kutaisi/kutaisi_slider_1.jpg';
 import Kutaisi_Slider_2 from '../assets/images/Kutaisi/kutaisi_slider_2.jpeg';
 import Kutaisi_Slider_3 from '../assets/images/Kutaisi/kutaisi_slider_3.jpg';
 import Kutaisi_Slider_4 from '../assets/images/Kutaisi/kutaisi_slider_4.jpg';
-import language from '../assets/images/laguage.png';
-import Mtsketa from '../assets/images/Mtsketa.png';
+import Mtsketa from '../assets/images/Mtsketa/Mtsketa.png';
 import Mtsketa_Secondary from '../assets/images/Mtsketa/mtsketa_secondary.jpg';
 import Mtsketa_Slider_1 from '../assets/images/Mtsketa/mtsketa_slider_1.jpg';
 import Mtsketa_Slider_2 from '../assets/images/Mtsketa/mtsketa_slider_2.jpg';
 import Mtsketa_Slider_3 from '../assets/images/Mtsketa/mtsketa_slider_3.jpg';
 import Mtsketa_Slider_4 from '../assets/images/Mtsketa/mtsketa_slider_4.jpg';
 import Nature from '../assets/images/nature.png';
-import Old_Tbilisi from '../assets/images/Old_Tbilisi.png';
 import Passport from '../assets/images/passport.png';
-import Ru from '../assets/images/ru.png';
-import Samegrelo from '../assets/images/Samegrelo.png';
-import Suitcase from '../assets/images/suitcase.png';
-import support from '../assets/images/support.png';
-import SUV from '../assets/images/suv.png';
-import Svaneti from '../assets/images/Svaneti.png';
-import Tbilisi from '../assets/images/Tbilisi.png';
+import Akhaltsikhe_slider_1 from '../assets/images/Piligrims/akhaltsikhe_slider_1.jpeg';
+import Akhaltsikhe_slider_2 from '../assets/images/Piligrims/akhaltsikhe_slider_2.jpeg';
+import Bodbe_Slider_1 from '../assets/images/Piligrims/bodbe_slider_1.jpeg';
+import Bodbe_Slider_2 from '../assets/images/Piligrims/bodbe_slider_2.jpeg';
+import David_Gareja_Slider_1 from '../assets/images/Piligrims/david_gareja_slider_1.jpeg';
+import Freedom_Monument_Slider_1 from '../assets/images/Piligrims/freedom_monument_slider_1.jpeg';
+import Mamadaviti_Slider_1 from '../assets/images/Piligrims/Mamadaviti_slider_1.jpeg';
+import Metekhi from '../assets/images/Piligrims/metekhi_slider_1.webp';
+import Narikala_Slider_1 from '../assets/images/Piligrims/narikala_slider_1.jpeg';
+import Signakhi_Slider_1 from '../assets/images/Piligrims/signakhi_slider_1.jpeg';
+import Sioni_Slider_1 from '../assets/images/Piligrims/sioni_slider_1.jpeg';
+import Svetitskhoveli_Slider_1 from '../assets/images/Piligrims/svetitskhoveli_slider_1.jpg';
+import Samegrelo from '../assets/images/Samegrelo/Samegrelo.png';
+import Samegrelo_Secondary from '../assets/images/Samegrelo/samegrelo_secondary.png';
+import Samegrelo_Slider_1 from '../assets/images/Samegrelo/samegrelo_slider_1.jpg';
+import Samegrelo_Slider_2 from '../assets/images/Samegrelo/samegrelo_slider_2.jpeg';
+import Samegrelo_Slider_3 from '../assets/images/Samegrelo/samegrelo_slider_3.jpeg';
+import Samegrelo_Slider_4 from '../assets/images/Samegrelo/samegrelo_slider_4.jpg';
+import Gudauri_Slider_1 from '../assets/images/Tbilisi/gudauri_slider_1.jpeg';
+import Gudauri_Slider_2 from '../assets/images/Tbilisi/gudauri_slider_2.jpeg';
+import Gudauri_Slider_3 from '../assets/images/Tbilisi/gudauri_slider_3.jpeg';
+import Old_Tbilisi from '../assets/images/Tbilisi/Old_Tbilisi.png';
 import Tbilisi_Secondary from '../assets/images/Tbilisi/tbilisi_secondary.jpg';
 import Tbilisi_Slider_1 from '../assets/images/Tbilisi/tbilisi_slider_1.jpg';
 import Tbilisi_Slider_2 from '../assets/images/Tbilisi/tbilisi_slider_2.jpg';
 import Tbilisi_Slider_3 from '../assets/images/Tbilisi/tbilisi_slider_3.jpg';
 import Tbilisi_Slider_4 from '../assets/images/Tbilisi/tbilisi_slider_4.jpg';
-import Us from '../assets/images/us.png';
-import Vardzia from '../assets/images/Vardzia.jpeg';
+import Vardzia from '../assets/images/Vardzia/Vardzia.jpeg';
 import Vardzia_Secondary from '../assets/images/Vardzia/vardzia_secondary.jpeg';
 import Vardzia_Slider_1 from '../assets/images/Vardzia/vardzia_slider_1.jpg';
 import Vardzia_Slider_2 from '../assets/images/Vardzia/vardzia_slider_2.jpeg';
@@ -481,7 +509,7 @@ const destinationsData = [
   {
     title: 'Kazbegi',
     popular: true,
-    image: Svaneti,
+    image: Kazbegi,
     images: [Kazbegi_Slider_1, Kazbegi_Slider_2, Kazbegi_Slider_3, Kazbegi_Slider_4],
     sections: [
       {
@@ -489,7 +517,6 @@ const destinationsData = [
         title: "Kazbegi - Where Georgia's Majestic Peaks Beckon",
         content:
           "Embark on a journey to Kazbegi, a breathtaking region where nature's grandeur and ancient charm harmonize amidst the towering peaks of the Caucasus Mountains. Nestled at the foot of Mount Kazbek, Kazbegi welcomes adventurers to a realm where history and adventure intertwine seamlessly.  The iconic symbol of Kazbegi is the Gergeti Trinity Church, perched dramatically on a hilltop with Mount Kazbek as its backdrop. This 14th-century marvel is not only an architectural gem but also a spiritual sanctuary. Kazbegi isn't just a destination; it's an expedition into the heart of Georgia's wilderness.   Kazbegi, with its awe-inspiring landscapes, spiritual sanctuaries, and boundless adventures, invites you to embark on an unforgettable journey into the heart of the Caucasus Mountains. Each step through its rugged terrain reveals a new facet of Georgia's natural and cultural wonders.",
-        imageUrl: Kazbegi,
       },
       {
         id: 'Exploring Kazbegi',
@@ -541,7 +568,7 @@ const destinationsData = [
     title: 'Gori',
     popular: false,
     image: Gori,
-    images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
+    images: [Gori_Slider_1, Gori_Slider_2, Gori_Slider_3, Gori_Slider_4],
     sections: [
       {
         id: 'gori',
@@ -555,7 +582,7 @@ const destinationsData = [
         title: 'Discovering Gori',
         content:
           'Nestled within the tranquil landscapes of Shida Kartli, Gori offers a compelling blend of history, culture, and natural beauty, making it a unique destination for curious travelers.',
-        imageUrl: Gori,
+        imageUrl: Gori_Secondary,
         details: [
           {
             header: 'Historic Significance:',
@@ -605,7 +632,7 @@ const destinationsData = [
     title: 'Samegrelo',
     popular: false,
     image: Samegrelo,
-    images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
+    images: [Samegrelo_Slider_1, Samegrelo_Slider_2, Samegrelo_Slider_3, Samegrelo_Slider_4],
     sections: [
       {
         id: 'samegrelo',
@@ -619,7 +646,7 @@ const destinationsData = [
         title: 'Discovering Samegrelo',
         content:
           'Nestled amidst the stunning landscapes of western Georgia, Samegrelo is a region of diverse experiences, inviting travelers to uncover its rich cultural tapestry and natural beauty.',
-        imageUrl: Samegrelo,
+        imageUrl: Samegrelo_Secondary,
         details: [
           {
             header: 'Dadiani Palace: ',
@@ -807,7 +834,7 @@ const destinationsData = [
     title: 'Borjomi',
     popular: false,
     image: Borjomi,
-    images: [Tbilisi, Old_Tbilisi, Juta, Jvari_Monastery],
+    images: [Borjomi_Slider_1, Borjomi_Slider_2, Borjomi_Slider_3, Borjomi_Slider_4],
     sections: [
       {
         id: 'borjomi',
@@ -821,7 +848,7 @@ const destinationsData = [
         title: 'Discovering Borjomi',
         content:
           'Borjomi, with its natural wonders and therapeutic springs, offers a myriad of experiences that cater to those seeking rejuvenation and connection with nature:',
-        imageUrl: Borjomi,
+        imageUrl: Borjomi_Secondary,
         details: [
           {
             header: 'Borjomi Mineral Water: ',
@@ -943,11 +970,29 @@ const tourPackagesData = [
   {
     title: 'Kazbegi Kinetics & Kakheti',
     season: 'Summer',
-    length: '5 Day/ 6 Night Tour',
-    price: '500$',
-    image: Tbilisi,
+    popular: true,
+    length: '5 Day / 6 Night Tour',
+    id: 1,
+    pricing: [
+      { person: 'For 35-50 person', price: ['3 day - 466$', '4 day - 557$', '5 day - 767$'] },
+      { person: 'For 20-35 person', price: ['3 day - 473$', '4 day - 563$', '5 day - 773$'] },
+      { person: 'For 7-20 person', price: ['3 day - 489$', '4 day - 579$', '5 day - 789$'] },
+      { person: 'For 4-7 person', price: ['3 day - 591$', '4 day - 681$', '5 day - 891$'] },
+      { person: 'For 4 or less person', price: ['3 day - 669$', '4 day - 759$', '5 day - 969$'] },
+    ],
+    price: '466$',
+    image: Kazbegi_Slider_1,
     location: 'Tbilisi, Kakheti, Gudauri, Kazbegi',
-    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
+    images: [
+      Tbilisi_Slider_1,
+      Tbilisi_Slider_2,
+      Kakheti_Slider_1,
+      Gudauri_Slider_1,
+      Gudauri_Slider_3,
+      Kakheti_Slider_2,
+      Kazbegi_Slider_1,
+      Kazbegi_Slider_2,
+    ],
     trip: [
       {
         day: 'Day 1: ',
@@ -1012,11 +1057,31 @@ const tourPackagesData = [
   {
     title: 'Georgian Highlands Harmony',
     season: '',
-    length: '7 Day/ 6 Night Tour 2',
-    price: '500$',
-    image: Tbilisi,
+    popular: false,
+    id: 2,
+    length: '7 Day / 6 Night Tour 2',
+    pricing: [
+      { person: 'For 35-50 + person', price: ['3 day - 565$', '4 day - 673$', '5 day - 961$'] },
+      { person: 'For 20-35 person', price: ['3 day - 574$', '4 day - 682$', '5 day - 970$'] },
+      { person: 'For 7-20 person', price: ['3 day - 599$', '4 day - 707$', '5 day - 995$'] },
+      { person: 'For 4-7 person', price: ['3 day - 717$', '4 day - 825$', '5 day - 1113$'] },
+      { person: 'For 4 or less person', price: ['3 day - 837$', '4 day - 945$', '5 day - 1233$'] },
+    ],
+    price: '565$',
+    image: Tbilisi_Secondary,
     location: 'Tbilisi, Kakheti, Gudauri, Gori, Borjomi, Kazbegi',
-    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
+    images: [
+      Tbilisi_Slider_3,
+      Tbilisi_Slider_4,
+      Kakheti_Slider_3,
+      Kakheti_Slider_4,
+      Gori_Slider_1,
+      Gori_Slider_2,
+      Borjomi_Slider_1,
+      Borjomi_Slider_2,
+      Kazbegi_Slider_3,
+      Kazbegi_Slider_4,
+    ],
     trip: [
       {
         day: 'Day 1: ',
@@ -1092,11 +1157,32 @@ const tourPackagesData = [
   {
     title: 'Georgian Grandeur Odyssey',
     season: 'Summer',
-    length: '7 day/8 night Day Tour',
-    price: '500$',
-    image: Tbilisi,
+    popular: false,
+    id: 3,
+    length: '7 day / 8 night Day Tour',
+    pricing: [
+      { person: 'For 35-50 + person', price: ['3 day  - $629', '4 day  - $737', '5 day  - $1025'] },
+      { person: 'For 20-35 person', price: ['3 day  - $638', '4 day  - $746', '5 day  - $1034'] },
+      { person: 'For 7-20 person', price: ['3 day  - $667', '4 day  - $774', '5 day  - $1062'] },
+      { person: 'For 4-7 person', price: ['3 day  - $811', '4 day  - $919', '5 day  - $1207'] },
+      {
+        person: 'For 4 or less person',
+        price: ['3 day  - $958', '4 day  - $1065', '5 day  - $1354'],
+      },
+    ],
+    price: '629$',
+    image: Kutaisi,
     location: 'Tbilisi, Kazbegi, Kutaisi, Kakheti',
-    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
+    images: [
+      Old_Tbilisi,
+      Tbilisi_Slider_4,
+      Kazbegi_Slider_1,
+      Kazbegi_Slider_4,
+      Kutaisi_Slider_1,
+      Kutaisi_Slider_2,
+      Kakheti_Slider_1,
+      Kakheti,
+    ],
     trip: [
       {
         day: 'Day 1: ',
@@ -1183,11 +1269,34 @@ const tourPackagesData = [
   {
     title: 'Black Sea & Beyond Bliss',
     season: 'Summer',
-    length: '9 day/10 night Day Tour',
-    price: '500$',
-    image: Tbilisi,
+    popular: false,
+    id: 4,
+    length: '9 day / 10 night Day Tour',
+    pricing: [
+      { person: 'For 35-50 + person', price: ['3 day - 890$', '4 day - 1052$', '5 day - 1485$'] },
+      { person: 'For 20-35 person', price: ['3 day - 918$', '4 day - 1080$', '5 day - 1512$'] },
+      { person: 'For 7-20 person', price: ['3 day - 960$', '4 day - 1122$', '5 day - 1554$'] },
+      { person: 'For 4-7 person', price: ['3 day - 1164$', '4 day - 1326$', '5 day - 1758$'] },
+      {
+        person: 'For 4 or less person',
+        price: ['3 day - 1384$', '4 day - 1546$', '5 day - 1979$'],
+      },
+    ],
+    price: '890$',
+    image: Batumi_Secondary,
     location: 'Tbilisi, Kakheti, Kutaisi,  Mestia, Batumi',
-    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
+    images: [
+      Tbilisi_Secondary,
+      Tbilisi_Slider_2,
+      Kakheti_Slider_4,
+      Kakheti_Secondary,
+      Mestia_Slider_1,
+      Mestia_Slider_2,
+      Kutaisi,
+      Kutaisi_Slider_4,
+      Batumi_Main,
+      Batumi_Secondary,
+    ],
     trip: [
       {
         day: 'Day 1: ',
@@ -1301,11 +1410,32 @@ const tourPackagesData = [
   {
     title: 'Black Sea to Borderlands Bliss',
     season: 'Summer',
-    length: '6 day/7 night Day Tour 5',
-    price: '500$',
-    image: Canyon,
+    popular: false,
+    id: 5,
+    length: '6 day / 7 night Day Tour 5',
+    pricing: [
+      { person: 'For 35-50 + person', price: ['3 day - 571$', '4 day - 679$', '5 day - 967$'] },
+      { person: 'For 20-35 person', price: ['3 day - 590$', '4 day - 686$', '5 day - 974$'] },
+      { person: 'For 7-20 person', price: ['3 day - 602$', '4 day - 710$', '5 day - 998$'] },
+      { person: 'For 4-7 person', price: ['3 day - 718$', '4 day - 826$', '5 day - 1114$'] },
+      {
+        person: 'For 4 or less person',
+        price: ['3 day - 1015$', '4 day - 1144$', '5 day - 1490$'],
+      },
+    ],
+    price: '571$',
+    image: Kazbegi_Slider_4,
     location: 'Svaneti, Kutaisi, Batumi',
-    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
+    images: [
+      Kazbegi,
+      Kazbegi_Slider_1,
+      Kazbegi_Slider_3,
+      Kutaisi_Slider_3,
+      Kutaisi,
+      Kutaisi_Secondary,
+      Batumi_Slider_3,
+      Batumi_Slider_4,
+    ],
     trip: [
       {
         day: 'Day 1: ',
@@ -1383,13 +1513,31 @@ const tourPackagesData = [
     ],
   },
   {
-    title: '',
+    title: 'Wine Routes & Black Sea',
     season: '',
-    length: '5 Day/6 Night Tour 6',
-    price: '500$',
-    image: Tbilisi,
+    popular: false,
+    id: 6,
+    length: '5 Day / 6 Night Tour',
+    pricing: [
+      { person: 'For 35-50 + person', price: ['3 day - 477$', '4 day - 567$', '5 day -807$'] },
+      { person: 'For 20-35 person', price: ['3 day - 483$', '4 day - 573$', '5 day - 813$'] },
+      { person: 'For 7-20 person', price: ['3 day - 502$', '4 day - 592$', '5 day - 832$'] },
+      { person: 'For 4-7 person', price: ['3 day - 600$', '4 day - 690$', '5 day - 930$'] },
+      { person: 'For 4 or less person', price: ['3 day - 695$', '4 day - 785$', '5 day - 1025$'] },
+    ],
+    price: '477$',
+    image: Kutaisi_Slider_2,
     location: 'Batumi, Gonio, Kutaisi',
-    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
+    images: [
+      Batumi_Main,
+      Batumi_Secondary,
+      Batumi_Slider_1,
+      Gonio_Slider_1,
+      Gonio_Slider_2,
+      Kutaisi_Secondary,
+      Kutaisi_Slider_4,
+      Kutaisi_Slider_3,
+    ],
     trip: [
       {
         day: 'Day 1: ',
@@ -1452,11 +1600,28 @@ const tourPackagesData = [
   {
     title: 'Georgian Gems Expedition',
     season: '',
-    length: '5 day/6 night Day Tour',
-    price: '500$',
-    image: Tbilisi,
+    popular: false,
+    id: 7,
+    length: '5 day / 6 night Day Tour',
+    pricing: [
+      { person: 'For 35-50 + person', price: ['3 day - 492$', '4 day - 582$', '5 day - 822$'] },
+      { person: 'For 20-35 person', price: ['3 day - 495$', '4 day - 585$', '5 day - 825$'] },
+      { person: 'For 7-20 person', price: ['3 day - 512$', '4 day - 602$', '5 day - 842$'] },
+      { person: 'For 4-7 person', price: ['3 day - 603$', '4 day - 693$', '5 day - 933$'] },
+      { person: 'For 4 or less person', price: ['3 day - 687$', '4 day - 777$', '5 day - 1017$'] },
+    ],
+    price: '492$',
+    image: Mestia_Slider_1,
     location: 'Kutaisi, Svaneti, Ushguli, Mestia',
-    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
+    images: [
+      Kutaisi_Slider_1,
+      Kutaisi_Slider_4,
+      Kazbegi,
+      Kazbegi_Slider_3,
+      Mestia_Slider_1,
+      Mestia_Slider_2,
+      Kazbegi_Secondary,
+    ],
     trip: [
       {
         day: 'Day 1: ',
@@ -1522,11 +1687,30 @@ const tourPackagesData = [
   {
     title: 'Beyond Borjomi Borders',
     season: '',
-    length: '6 day/7 night Day Tour',
-    price: '500$',
-    image: Tbilisi,
+    popular: false,
+    id: 8,
+    length: '6 day / 7 night Day Tour',
+    pricing: [
+      { person: 'For 35-50 + person', price: ['3 day - 558$', '4 day - 667$', '5 day - 954$'] },
+      { person: 'For 20-35 person', price: ['3 day - 561$', '4 day - 669$', '5 day - 957$'] },
+      { person: 'For 7-20 person', price: ['3 day - 587$', '4 day - 695$', '5 day - 983$'] },
+      { person: 'For 4-7 person', price: ['3 day - 699$', '4 day - 807$', '5 day - 1095$'] },
+      { person: 'For 4 or less person', price: ['3 day - 808$', '4 day - 916$', '5 day - 1204$'] },
+    ],
+    price: '558$',
+    image: Borjomi_Slider_2,
     location: 'Borjomi, Kutaisi, Tbilisi',
-    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
+    images: [
+      Borjomi,
+      Borjomi_Slider_2,
+      Borjomi_Slider_4,
+      Kutaisi,
+      Kutaisi_Slider_4,
+      Kutaisi_Slider_2,
+      Old_Tbilisi,
+      Tbilisi_Slider_3,
+      Tbilisi_Slider_1,
+    ],
     trip: [
       {
         day: 'Day 1: ',
@@ -1603,11 +1787,32 @@ const tourPackagesData = [
   {
     title: 'Mountain Majesty Mosaic',
     season: '',
-    length: '8 day/9 night Day Tour',
-    price: '500$',
-    image: Tbilisi,
+    popular: false,
+    id: 9,
+    length: '8 day / 9 night Day Tour',
+    pricing: [
+      { person: 'For 35-50 + person', price: ['3 day - 779$', '4 day - 922$', '5 day - 1306$'] },
+      { person: 'For 20-35 person', price: ['3 day - 788$', '4 day - 931$', '5 day - 1315$'] },
+      { person: 'For 7-20 person', price: ['3 day - 819$', '4 day - 963$', '5 day - 1347$'] },
+      { person: 'For 4-7 person', price: ['3 day - 979$', '4 day - 1123$', '5 day - 1507$'] },
+      {
+        person: 'For 4 or less person',
+        price: ['3 day - 1136$', '4 day - 1280$', '5 day - 1664$'],
+      },
+    ],
+    price: '779$',
+    image: Gori_Secondary,
     location: 'Kutaisi, Gori, Kakheti, Kazbegi, Tbilisi',
-    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
+    images: [
+      Kutaisi_Secondary,
+      Kutaisi_Slider_4,
+      Kakheti_Slider_2,
+      Kakheti_Slider_3,
+      Kazbegi,
+      Kazbegi_Slider_3,
+      Tbilisi_Secondary,
+      Tbilisi_Slider_2,
+    ],
     trip: [
       {
         day: 'Day 1: ',
@@ -1708,11 +1913,28 @@ const tourPackagesData = [
   {
     title: 'Peaks & Palaces Pursuit',
     season: '',
-    length: '4 Day/ 5 Night Tour',
-    price: '500$',
-    image: Tbilisi,
+    popular: false,
+    length: '4 Day / 5 Night Tour',
+    id: 10,
+    pricing: [
+      { person: 'For 35-50 + person', price: ['3 day - 368$', '4 day - 440$', '5 day - 632$'] },
+      { person: 'For 20-35 person', price: ['3 day - 373$', '4 day - 445$', '5 day - 637$'] },
+      { person: 'For 7-20 person', price: ['3 day - 385$', '4 day - 457$', '5 day - 649$'] },
+      { person: 'For 4-7 person', price: ['3 day - 455$', '4 day - 526$', '5 day - 719$'] },
+      { person: 'For 4 or less person', price: ['3 day - 543$', '4 day - 615$', '5 day - 807$'] },
+    ],
+    price: '368$',
+    image: Gudauri_Slider_1,
     location: 'Tbilisi, Gudauri, Kazbegi, ',
-    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
+    images: [
+      Tbilisi_Secondary,
+      Old_Tbilisi,
+      Gudauri_Slider_2,
+      Gudauri_Slider_3,
+      Kazbegi_Slider_2,
+      Kazbegi,
+      Kazbegi_Slider_4,
+    ],
     trip: [
       {
         day: 'Day 1: ',
@@ -1767,11 +1989,29 @@ const tourPackagesData = [
   {
     title: 'Vineyard Vista Voyages',
     season: '',
-    length: '4 Day/ 5 Night Tour',
-    price: '500$',
-    image: Tbilisi,
+    popular: true,
+    id: 11,
+    length: '4 Day / 5 Night Tour',
+    pricing: [
+      { person: 'For 35-50 + person', price: ['3 day - 360$', '4 day - 432$', '5 day - 624$'] },
+      { person: 'For 20-35 person', price: ['3 day - 364$', '4 day - 436$', '5 day - 628$'] },
+      { person: 'For 7-20 person', price: ['3 day - 376$', '4 day - 449$', '5 day - 640$'] },
+      { person: 'For 4-7 person', price: ['3 day - 440$', '4 day - 512$', '5 day - 704$'] },
+      { person: 'For 4 or less person', price: ['3 day - 501$', '4 day - 573$', '5 day - 765$'] },
+    ],
+    price: '360$',
+    image: Kakheti_Slider_3,
     location: 'Tbilisi, Kakheti',
-    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
+    images: [
+      Tbilisi_Secondary,
+      Tbilisi_Slider_1,
+      Tbilisi_Slider_3,
+      Tbilisi_Slider_4,
+      Kakheti,
+      Kakheti_Slider_1,
+      Kakheti_Slider_3,
+      Kakheti_Slider_4,
+    ],
     trip: [
       {
         day: 'Day 1: ',
@@ -1823,11 +2063,29 @@ const tourPackagesData = [
   {
     title: 'Tbilisi Tapestry Trails',
     season: '',
-    length: '4 Day/ 5 Night Tour',
-    price: '500$',
-    image: Tbilisi,
-    location: 'Tbilisi, Borjomi',
-    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
+    popular: true,
+    length: '4 Day / 5 Night Tour',
+    id: 12,
+    pricing: [
+      { person: 'For 35-50 + person', price: ['3 day - 366$', '4 day - 438$', '5 day - 630$'] },
+      { person: 'For 20-35 person', price: ['3 day - 370$', '4 day - 443$', '5 day - 635$'] },
+      { person: 'For 7-20 person', price: ['3 day - 383$', '4 day - 455$', '5 day - 647$'] },
+      { person: 'For 4-7 person', price: ['3 day - 453$', '4 day - 525$', '5 day - 717$'] },
+      { person: 'For 4 or less person', price: ['3 day - 519$', '4 day - 592$', '5 day - 784$'] },
+    ],
+    price: '366$',
+    image: Borjomi_Slider_4,
+    location: 'Tbilisi, Borjomi, Narikala',
+    images: [
+      Tbilisi_Secondary,
+      Tbilisi_Slider_1,
+      Tbilisi_Slider_2,
+      Borjomi,
+      Narikala_Slider_1,
+      Borjomi_Secondary,
+      Borjomi_Slider_1,
+      Borjomi_Slider_2,
+    ],
     trip: [
       {
         day: 'Day 1: ',
@@ -1880,13 +2138,95 @@ const tourPackagesData = [
     ],
   },
   {
+    title: 'Caspian Crowned Caravan',
+    season: '',
+    popular: true,
+    length: '3 Day / 4 Night Tour',
+    id: 13,
+    pricing: [
+      { person: 'For 35-50 + person', price: ['3 day - 275$', '4 day - 329$', '5 day - 473$'] },
+      { person: 'For 20-35 person', price: ['3 day - 279$', '4 day - 333$', '5 day - 477$'] },
+      { person: 'For 7-20 person', price: ['3 day - 287$', '4 day - 341$', '5 day - 485$'] },
+      { person: 'For 4-7 person', price: ['3 day - 337$', '4 day - 391$', '5 day - 545$'] },
+      { person: 'For 4 or less person', price: ['3 day - 384$', '4 day - 438$', '5 day - 582$'] },
+    ],
+    price: '366$',
+    image: Bodbe_Slider_2,
+    location: 'Tbilisi, Kakheti, Bodbe, Signagi',
+    images: [
+      Tbilisi_Secondary,
+      Tbilisi_Slider_1,
+      Tbilisi_Slider_2,
+      Bodbe_Slider_1,
+      Bodbe_Slider_2,
+      Signakhi_Slider_1,
+    ],
+    trip: [
+      {
+        day: 'Day 1: ',
+        title: 'Flight to Tbilisi',
+        info: [
+          'After arriving in Tbilisi, the capital of Georgia, we will first go to your hotel, where you can check in and rest.',
+          'Greeted at the airport by the local tour guide.',
+          'Overnight Tbilisi',
+        ],
+      },
+      {
+        day: 'Day 2: ',
+        title: 'City Tour',
+        info: [
+          'Sightseeing of the Georgian capital.',
+          "All interesting architectural monuments are close to each other in the old town, so we can explore the sights with a nice walk. First, we visit the Narikala Fortress and the equestrian statue of the city's founder, Vakhtang Gorgasali. We take the cable car to the Mother of Georgia.",
+          'From here, we have a great view of the entire city of Tbilisi. A very pleasant walk through the park over the Peace Bridge to the Puppet Theater.',
+          'Dinner in a typical Georgian restaurant!',
+          'Overnight in Tbilisi.',
+        ],
+      },
+      {
+        day: 'Day 3: ',
+        title: 'Georgian Wine Region',
+        info: [
+          'Drive approximately 110 km, about 2 hours',
+          'Today we drive to Kakheti, the famous wine region of Georgia. A delightful tour through the autumnal Kakheti wine province along lonely country roads and through endless walnut tree alleys along the Greater Caucasus Mountains. We drive to the Bodbe Monastery (4th - 8th century), where St. Nino is buried. A walk through the picturesque town of Signagi, followed by a visit to a farm with a wine cellar. Lunch and wine tasting at the farm, where we learn more about rural life.',
+          'Return to Tbilisi.',
+          'Drive approximately 110 km, about 2 hours',
+          'Overnight in Tbilisi',
+        ],
+      },
+      {
+        day: 'Day 4: ',
+        title: 'Departure from Tbilisi',
+        info: ['BREAKFAST OR LUNCH BOX', 'Transfer to Airport'],
+      },
+    ],
+  },
+  {
     title: 'Kazbegi Kaleidoscope Quest',
     season: '',
-    length: '3 Day/ 4 Night Tour',
-    price: '500$',
-    image: Tbilisi,
+    popular: '',
+    length: '3 Day / 4 Night Tour',
+    id: 14,
+    pricing: [
+      { person: 'For 35-50 + person', price: ['3 day - 275$', '4 day - 329$', '5 day - 473$'] },
+      { person: 'For 20-35 person', price: ['3 day - 279$', '4 day - 333$', '5 day - 477$'] },
+      { person: 'For 7-20 person', price: ['3 day - 287$', '4 day - 341$', '5 day - 485$'] },
+      { person: 'For 4-7 person', price: ['3 day - 337$', '4 day - 391$', '5 day - 545$'] },
+      { person: 'For 4 or less person', price: ['3 day - 384$', '4 day - 438$', '5 day - 582$'] },
+    ],
+    price: '275$',
+    image: Gudauri_Slider_2,
     location: 'Tbilisi, Gudauri, Kazbegi',
-    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
+    images: [
+      Old_Tbilisi,
+      Tbilisi_Slider_4,
+      Tbilisi_Slider_3,
+      Gudauri_Slider_1,
+      Gudauri_Slider_2,
+      Gudauri_Slider_3,
+      Kazbegi_Slider_1,
+      Kazbegi_Slider_4,
+      Kazbegi_Slider_3,
+    ],
     trip: [
       {
         day: 'Day 1: ',
@@ -1927,13 +2267,37 @@ const tourPackagesData = [
     ],
   },
   {
-    title: 'Batumi toTbilisi trails',
-    season: '14 Day/ 15 Night',
-    length: '',
-    price: '500$',
-    image: Tbilisi,
+    title: 'Batumi to Tbilisi trails',
+    season: '14 Day/15 Night',
+    popular: false,
+    length: '13 Day   / 14 Night',
+    id: 15,
+    pricing: [
+      { person: 'For 35-50 + person', price: ['3 day - 274$', '4 day - 328$', '5 day - 472$'] },
+      { person: 'For 20-35 person', price: ['3 day - 279$', '4 day - 333$', '5 day - 477$'] },
+      { person: 'For 7-20 person', price: ['3 day - 287$', '4 day - 341$', '5 day - 485$'] },
+      { person: 'For 4-7 person', price: ['3 day - 343$', '4 day - 397$', '5 day - 545$'] },
+      { person: 'For 4 or less person', price: ['3 day - 396$', '4 day - 438$', '5 day - 582$'] },
+    ],
+    price: '274$',
+    image: Batumi_Slider_3,
     location: 'Batumi, Svaneti, Kutaisi, Borjomi, Gori, Kazbegi, Kakheti, Tbilisi ',
-    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
+    images: [
+      Batumi_Slider_4,
+      Batumi_Main,
+      Kazbegi_Slider_3,
+      Mestia_Slider_2,
+      Mestia_Slider_1,
+      Borjomi_Slider_4,
+      Gori_Slider_1,
+      Gori,
+      Borjomi,
+      Borjomi_Secondary,
+      Kakheti,
+      Kakheti_Slider_2,
+      Tbilisi_Secondary,
+      Tbilisi_Slider_1,
+    ],
     trip: [
       {
         day: 'Day 1: ',
@@ -2098,11 +2462,35 @@ const tourPackagesData = [
   {
     title: 'Palatial Peaks Pilgrimage',
     season: '',
+    popular: true,
+    id: 16,
     length: '9 Days / 8 Nights',
-    price: '500$',
-    image: Tbilisi,
+    pricing: [
+      { person: 'For 35-50 + person', price: ['3 day - 609$', '4 day - 724$', '5 day - 1032$'] },
+      { person: 'For 20-35 person', price: ['3 day - 617$', '4 day - 732$', '5 day - 1040$'] },
+      { person: 'For 7-20 person', price: ['3 day - 640$', '4 day - 756$', '5 day - 1063$'] },
+      { person: 'For 4-7 person', price: ['3 day - 645$', '4 day - 760$', '5 day - 1067$'] },
+      {
+        person: 'For 4 or less person',
+        price: ['3 day - 872$', '4 day - 986$', '5 day - 1293$'],
+      },
+    ],
+    price: '1290$',
+    image: Akhaltsikhe_slider_1,
     location: 'Tbilisi, Metekhi, Kvareli, Bodbe, Mtskheta, Akhaltsikhe, Vradzia',
-    images: [Batumi_Main, Tbilisi, Vardzia, Kakheti],
+    images: [
+      Tbilisi_Slider_2,
+      Tbilisi_Slider_3,
+      Metekhi,
+      Bodbe_Slider_1,
+      Bodbe_Slider_2,
+      Mtsketa_Slider_4,
+      Mtsketa,
+      Vardzia_Slider_2,
+      Vardzia_Slider_3,
+      Akhaltsikhe_slider_1,
+      Akhaltsikhe_slider_2,
+    ],
     trip: [
       {
         day: 'Day 1: ',
@@ -2178,6 +2566,133 @@ const tourPackagesData = [
       },
     ],
   },
+  {
+    title: 'Pilgrimage trails in Georgia Spiritual Places in Georgia',
+    season: '',
+    popular: true,
+    id: 17,
+    length: '9 Days / 8 Nights',
+    pricing: [
+      { person: 'For 35-50 + person', price: ['3 day - 473$', '4 day - 560$', '5 day - 790$'] },
+      { person: 'For 20-35 person', price: ['3 day - 481$', '4 day - 568$', '5 day - 798$'] },
+      { person: 'For 7-20 person', price: ['3 day - 502$', '4 day - 588$', '5 day - 819$'] },
+      { person: 'For 4-7 person', price: ['3 day - 615$', '4 day - 701$', '5 day - 932$'] },
+      {
+        person: 'For 4 or less person',
+        price: ['3 day - 725$', '4 day - 812$', '5 day - 1042$'],
+      },
+    ],
+    price: '1290$',
+    image: Sioni_Slider_1,
+    location: 'Tbilisi, Metekhi, Kvareli, Bodbe, Mtskheta, Akhaltsikhe, Vradzia',
+    images: [
+      Tbilisi_Slider_2,
+      Metekhi,
+      Bodbe_Slider_1,
+      Bodbe_Slider_2,
+      Mtsketa_Slider_1,
+      Kutaisi_Slider_3,
+      Mtsketa,
+      David_Gareja_Slider_1,
+      Akhaltsikhe_slider_1,
+      Akhaltsikhe_slider_2,
+      Freedom_Monument_Slider_1,
+      Narikala_Slider_1,
+      Sioni_Slider_1,
+      Svetitskhoveli_Slider_1,
+    ],
+    trip: [
+      {
+        day: 'Day 1: ',
+        title: 'Meeting in the airport',
+        info: [
+          'Arrival and Meeting in Tbilisi airport. Transfer to the hotel. Check in',
+          'Overnight in Tbilisi.',
+        ],
+      },
+      {
+        day: 'Day 2: ',
+        title: 'Tbilisi city tour',
+        info: [
+          'Breakfast in the hotel.',
+          'Tbilisi walking tour. We will begin a pilgrimage trip from Holy Trinity Cathedral. It is the third-tallest Eastern Orthodox cathedral in the world. There are nine chapels within the cathedral, dedicated to the Archangels and to St. John the Baptist, St. Nino, St. George, St. Nicholas, the Twelve Apostles, and to All the Saints. Five of the chapels are located below the main floor.',
+          'We’ll see the Metekhi Temple. As the legend goes from old times, at the bottom of Metekhi rock was the venue of martyrdom of the patron saint of Tbilisi, Abo Tbileli. In the sacristy of the church is the tomb of St. Shushanik. We will cross the Metekhi Bridge of 100,000 martyrs.',
+          'Then we will visit the main fortress of Tbilisi – Narikala. From Narikala fortress, one may enjoy the most beautiful views of Old and New Tbilisi.',
+          'Sioni Cathedral - the residence of the Catholicos - the Patriarch of Georgian Christian is named in the honor of Jerusalem Zion. The cross of St. Nino is kept there. Sion was repeatedly destroyed by enemies. But each time it rose from the ashes.',
+          "St. David's Church 'Mamadaviti' - the most prominent writers, artists, scholars, and national heroes of Georgia are buried here. It is a quiet and nice spot to watch Tbilisi from the height.",
+          'The Freedom Monument – gold-covered, bronze statue of George slaying the dragon. The monument can be easily seen from almost anywhere in Tbilisi and is iconic to the country. Visit world 3rd largest Orthodox Trinity church',
+          'Dinner at traditional Georgian restaurant 19:00, With Georgian Traditional dance program.',
+          'Overnight in Tbilisi.',
+        ],
+      },
+      {
+        day: 'Day 3: ',
+        title: 'Trip to Sighnaghi and Bodbe',
+        info: [
+          'Drive approximately about 2 hours about 110 km',
+          'Breakfast in the hotel.',
+          'Visiting one of the most revered in Georgia monastic complexes founded in the VI century, which proudly bears the name of Saint David Garedji. Then drive to Signakhi. A fairy-tale city, a city of love surrounded by the Alazani Valley and the Caucasus Mountains.',
+          'David Gareja–the complex unites 20 monasteries and the main one is the laurel of St. David, which is located on the northern slope of the mountain that separates Georgia and Azerbaijan.',
+          'Signakhifortressis Of The Largest Fortresses In Georgia, surrounded by a fortress wall and 28 watchtowers, from which a wonderful view of the Alazani Valley opens. The fortress dominates over Signakhi and is associated with the Great Wall of China.',
+          "BodbeMonastery—built in IX century and remodelled in In XVII, Bodbe Monastery was one of the most important pilgrimage places in Georgia, because the country's patron saint, St. Nino, is buried there.",
+          'St.Ninospring–asmallbrickbuilding,wherethetopisthe temple of Zavulon and Sosana (the parents of St. Nina), and beneath it is a swimming pool, in which you can plunge.',
+          'Dinner at traditional Georgian restaurant 19:00',
+          'Return to Tbilisi',
+          'Drive approximately about 2 hours about 110 km',
+          'Overnight in Tbilisi.',
+        ],
+      },
+      {
+        day: 'Day 4: ',
+        title: 'Day trip to Ananuri and Kazbegi',
+        info: [
+          'Drive approximately about 3 hours about 158 km',
+          'Breakfast in the hotel.',
+          'Further we will go to the holy city for all Georgians - Mtskheta.',
+          'Svetiskhoveli Cathedral is one of the most sacred places in Georgia and the place where Christ’s robe is said to be buried.',
+          'Jvari monastery - According to the legend, the cross of St. Nino, one of the most revered saints who converted Georgia to Christianity, is kept here. The temple of Jvari went through a long and difficult journey of one and a half thousand year’s length along with the Georgian people, experienced hardships and difficulties, becoming a symbol of faith for Georgia.',
+          'Ananuri-acastlecomplexperchedalongoftheAragvi River is best-protected monuments in Georgia. This castle is highly popular among the tourists.',
+          "Georgian Military Road-thisRoadismostscenicroads, steeped in trade, wars, and legends. This ancient passage across the Caucasus towards Vladikavkaz in Russia is a spectacular adventure. The highest point of the road is the Jvari Pass, also known as Krestovy Pereval or Cross Pass. ● Russia–Georgia Friendship Monument situated on the Georgian Military Road between the ski resort Gudauri and the Jvari pass. Monument is a cool viewing platform overlooking Devil's Valley and the Caucasus Mountains.",
+          'Jinvali water reservoir-one of the most impressive and attractive nature sights of Georgia. On The road from Mtskheta to Ananuri you are sharing an unbelievably fantastic panorama, the colour of Jinvali water reservoir heavenly. Do not miss opportunity to visit this unforgettable place.',
+          'Dinner in the Georgian family 19:00',
+          'Overnight in the guest house. Kazbegi',
+        ],
+      },
+      {
+        day: 'Day 5: ',
+        title: 'Day trip to Gori',
+        info: [
+          'Drive approximately about 3-4 hours about 191 km',
+          "Gergeti Trinity Church – most stunning church in Georgia. The ancient church, dating from the 14th century, stands at an elevation of 2170 metres. Apart from its religious purpose, the mediaeval church used to serve as a hiding place. During invasions at different times in Georgia's history the national treasure was hidden there, since it was hardly reachable for enemies. (Special Cars Delica)",
+          'Next stop in the pilgrimage tour is Samtavro Monastery. The monastery is considered the famous landmark of the town. First Christian King of Georgia Mirian and Queen Nana were buried in Samtavro. In the monastery holy shrines are kept; the blackberry of St. Nina, where she prayed, part of the life-giving pillar, the icon of the Iberian Mother of God, which has a miraculous power, the icon of St. Nino, a stone from the grave of St. Nino from the monastery of Bodbe, the relics of Abibos Nekres and the relics of St. Shio Mgvime.',
+          'We head out on the Georgian Military Highway to Gori, the birthplace of Stalin, located beautifully along the Kura, the largest river in the Caucasus.',
+          'We also visit the Stalin Museum.',
+          "The highlight of the day is the Uplistsikhe cave town, where you can still find traces of settlements dating back to the early 1st millennium BC. Temples, altars, streets, halls, and shops can be found in this ancient cave town, which was situated along a branch of the legendary Silk Road. The town's layout, with multiple streets, a theatre, and palaces, is easy to understand. ",
+          'Dinner at traditional Georgian restaurant 19:00',
+          'Overnight in the hotel at Gori.',
+        ],
+      },
+      {
+        day: 'Day 6: ',
+        title: 'Day trip in Kutaisi',
+        info: [
+          'Drive approximately about 2-3 hours about 143 km',
+          'Breakfast in the hotel. Kutaisi sightseeing tour.',
+          'Gelati Monastery founded by David IV the Builder in 1106 in the heyday of Georgian State. Temple is blessed in honored of the Nativity of the Mother God..',
+          'Bagrat Temple built in the reign of Bagrat III, as a main temple of the united Georgian Kingdom and consecrated in honor of Assumption of Virgin in 1003. The temple was considered to be the main state temple for many years. The Great Cathedral was decorated with a gorgeous mosaic and vanity stool. David IV the Builder was crowned in the walls of the temple and ascended the throne in 1089.',
+          'Early dinner at traditional Georgian restaurant 17:00',
+          'Return to Tbilisi',
+          'Drive approximately about 2-3 hours about 143 km',
+          'Overnight in Tbilisi.',
+        ],
+      },
+      {
+        day: 'Day 7: ',
+        title: 'Departure from Tbilisi international airport',
+        info: ['Breakfast in the hotel.'],
+      },
+    ],
+  },
 ];
 const partnershipData = [
   {
@@ -2220,12 +2735,16 @@ const includedServices = [
   {
     title: 'Included services:',
     content: [
-      '8 nights accommodation at 4**** hotel (5 nights in Tbilisi, 1 night in Kvareli, 2 nights in Analtihe, H.B basis, in DBL rooms;',
+      '8 nights accommodation at 4 day  hotel (5 nights in Tbilisi, 1 night in Kvareli, 2 nights in Analtihe, H.B basis, in DBL rooms;',
       'Transfer airport – hotel – airport;',
       'All transfers as per program with a modern and air-conditioned bus;',
       'English or Any Language speaking guide during the entire journey;',
       'All museums and entrance fees as per program.',
     ],
+  },
+  {
+    title: 'Not included in the price:',
+    content: ['Flight', 'Alcoholic beverages - Tips'],
   },
 ];
 export {

@@ -22,7 +22,9 @@ function ToursPage() {
   );
 }
 const Div = styled.div`
+  display: flex;
   width: 100%;
   position: relative;
+  justify-content: center;
 `;
 export default ToursPage;
