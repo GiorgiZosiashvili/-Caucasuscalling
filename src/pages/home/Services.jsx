@@ -57,9 +57,10 @@ const ContentContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
+  margin-left: 10px;
 `;
 const Content = styled.div`
   display: flex;

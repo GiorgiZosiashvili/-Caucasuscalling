@@ -81,6 +81,7 @@ const DestinationSlider = ({ data, title, description }) => {
         responsive={responsive}
         removeArrowOnDeviceType={['tablet', 'mobile']}
         arrows={false}
+        infinite={true}
         renderButtonGroupOutside={false}
         customButtonGroup={<ButtonGroup />}>
         {data

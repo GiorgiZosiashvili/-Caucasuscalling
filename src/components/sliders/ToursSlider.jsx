@@ -76,6 +76,7 @@ const ToursSlider = ({ data, title, description }) => {
       </CustomText>
       <Carousel
         draggable={false}
+        infinite={true}
         responsive={responsive}
         removeArrowOnDeviceType={['tablet', 'mobile']}
         arrows={false}

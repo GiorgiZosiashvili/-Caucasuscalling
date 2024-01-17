@@ -1,7 +1,12 @@
 /* eslint-disable react/jsx-no-target-blank */
+import Amex from 'assets/images/Icons/Amex.png';
+import ApplePay from 'assets/images/Icons/ApplePay.png';
+import Cash from 'assets/images/Icons/Cash.png';
+import GooglePay from 'assets/images/Icons/GooglePay.png';
 import Instagram from 'assets/images/Icons/instagram.png';
 import Location from 'assets/images/Icons/location.png';
 import Mail from 'assets/images/Icons/mail.png';
+import MasterCard from 'assets/images/Icons/MasterCard.png';
 import Phone from 'assets/images/Icons/phone.png';
 import Twitter from 'assets/images/Icons/tweeter.png';
 import Visa from 'assets/images/Icons/visa.png';
@@ -155,12 +160,11 @@ const Partners = () => {
   ];
   const paymentMethods = [
     { image: Visa },
-    { image: Visa },
-    { image: Visa },
-    { image: Visa },
-    { image: Visa },
-    { image: Visa },
-    { image: Visa },
+    { image: MasterCard },
+    { image: Amex },
+    { image: GooglePay },
+    { image: ApplePay },
+    { image: Cash },
   ];
   return (
     <PartnersContainer>
@@ -259,7 +263,7 @@ const Icon = styled.img`
   margin-right: 12px;
   width: 40px;
   height: 40px;
-  object-fit: fill;
+  object-fit: cover;
 `;
 const MainLogo = styled(Logo)`
   margin-bottom: 25px;
@@ -301,6 +305,8 @@ const PaymentMethodContainer = styled.div`
   margin-bottom: 50px;
 `;
 const PaymentImage = styled.img`
+  width: 50px;
+  height: 33px;
   object-fit: cover;
 `;
 

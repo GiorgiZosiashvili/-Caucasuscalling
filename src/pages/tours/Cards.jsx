@@ -8,62 +8,67 @@ import { tourPackagesData } from '../../data/data';
 const Cards = () => {
   return (
     <CardContainer>
-      {tourPackagesData?.map((item, index) => (
-        <Card key={index} to={`/Tours/${item.title}`}>
-          <LocationContainer>
-            <Icon />
-            <TruncatedText
-              textAlign="left"
-              fontSize="14px"
-              fontWeight="400"
-              lineHeight="16px"
-              color="#fff">
-              {item.location}
-            </TruncatedText>
-          </LocationContainer>
-          <Image src={item?.image} alt={item?.title} />
-          <TextContainer>
-            <CustomText
-              style={{ maxWidth: 300 }}
-              textAlign="left"
-              fontSize="20px"
-              fontWeight="500"
-              lineHeight="25px"
-              color="#222">
-              {item?.title}
-            </CustomText>
-            <CustomText
-              style={{ maxWidth: 300 }}
-              textAlign="left"
-              fontSize="14px"
-              fontWeight="400"
-              lineHeight="14px"
-              color="#999">
-              {item?.length}
-            </CustomText>
-            <CustomText
-              textAlign="left"
-              fontSize="24px"
-              fontWeight="500"
-              lineHeight="24px"
-              color="#FA7436">
-              {item?.price}
-            </CustomText>
-            <Div>
-              <CustomText
+      {tourPackagesData?.map((item, index) => {
+        return (
+          <Card
+            style={{ marginLeft: index === index.length - 1 && 0 }}
+            key={index}
+            to={`/Tours/${item.title}`}>
+            <LocationContainer>
+              <Icon />
+              <TruncatedText
                 textAlign="left"
                 fontSize="14px"
+                fontWeight="400"
+                lineHeight="16px"
+                color="#fff">
+                {item.location}
+              </TruncatedText>
+            </LocationContainer>
+            <Image src={item?.image} alt={item?.title} />
+            <TextContainer>
+              <CustomText
+                style={{ maxWidth: 300 }}
+                textAlign="left"
+                fontSize="20px"
                 fontWeight="500"
-                lineHeight="14px"
-                color="#007A33">
-                View
-                <br /> More
+                lineHeight="25px"
+                color="#222">
+                {item?.title}
               </CustomText>
-              <NavArrow />
-            </Div>
-          </TextContainer>
-        </Card>
-      ))}
+              <CustomText
+                style={{ maxWidth: 300 }}
+                textAlign="left"
+                fontSize="14px"
+                fontWeight="400"
+                lineHeight="14px"
+                color="#999">
+                {item?.length}
+              </CustomText>
+              <CustomText
+                textAlign="left"
+                fontSize="24px"
+                fontWeight="500"
+                lineHeight="24px"
+                color="#FA7436">
+                {item?.price}
+              </CustomText>
+              <Div>
+                <CustomText
+                  textAlign="left"
+                  fontSize="14px"
+                  fontWeight="500"
+                  lineHeight="14px"
+                  color="#007A33">
+                  View
+                  <br /> More
+                </CustomText>
+                <NavArrow />
+              </Div>
+            </TextContainer>
+          </Card>
+        );
+      })}
     </CardContainer>
   );
 };
@@ -75,8 +80,6 @@ const CardContainer = styled.div`
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
   align-items: center;
   padding: 0px 20px;
   margin: 10px auto 125px;
@@ -85,13 +88,22 @@ const Card = styled(Link)`
   display: flex;
   flex-direction: column;
   border: 0.5px solid #e8e8e8;
-  width: 100%;
-  max-width: 400px;
+  width: calc(50% - 15px);
   height: 430px;
+  margin-top: 30px;
   position: relative;
   border-radius: 12px;
   cursor: pointer;
-  margin-top: 30px;
+  margin-right: 30px;
+  &:nth-child(even) {
+    margin-right: 0px;
+  }
+  @media screen and (max-width: 700px) {
+    &:nth-child(initial) {
+    }
+    margin-right: 0px;
+    width: 100%;
+  }
 `;
 const LocationContainer = styled.div`
   display: flex;

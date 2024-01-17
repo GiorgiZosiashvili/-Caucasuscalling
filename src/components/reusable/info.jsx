@@ -194,7 +194,7 @@ const Div = styled.div`
   gap: 50px;
 `;
 const DetailsContainer = styled.div`
-  max-width: 125px;
+  max-width: 120px;
   display: flex;
   flex-direction: column;
 `;

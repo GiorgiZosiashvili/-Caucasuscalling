@@ -2,6 +2,9 @@ import HomeBanner1 from '../assets/images/Banners/banner1.jpeg';
 import HomeBanner2 from '../assets/images/Banners/banner2.jpeg';
 import HomeBanner3 from '../assets/images/Banners/banner3.jpeg';
 import HomeBanner4 from '../assets/images/Banners/banner4.png';
+import BorjomiPalace from '../assets/images/Banners/BORJOMI PALACE HEALTH & SPA CENTER.jpeg';
+import Likani from '../assets/images/Banners/HOTEL BORJOMI LIKANI.jpeg';
+import Sairme from '../assets/images/Banners/SAIRME HOTELS & RESORT.jpeg';
 import Batumi_Main from '../assets/images/Batumi/batumi_main.jpeg';
 import Batumi_Secondary from '../assets/images/Batumi/batumi_secondary.jpg';
 import Batumi_Slider_1 from '../assets/images/Batumi/batumi_slider_1.jpg';
@@ -10,7 +13,6 @@ import Batumi_Slider_3 from '../assets/images/Batumi/batumi_slider_3.jpg';
 import Batumi_Slider_4 from '../assets/images/Batumi/batumi_slider_4.jpg';
 import Gonio_Slider_1 from '../assets/images/Batumi/gonio_slider_1.jpeg';
 import Gonio_Slider_2 from '../assets/images/Batumi/gonio_slider_2.jpeg';
-import HealthBanner from '../assets/images/Borjomi/Borjomi.png';
 import Borjomi from '../assets/images/Borjomi/Borjomi.png';
 import Borjomi_Secondary from '../assets/images/Borjomi/borjomi_secondary.jpg';
 import Borjomi_Slider_1 from '../assets/images/Borjomi/borjomi_slider_1.jpg';
@@ -183,10 +185,9 @@ const homeBannerData = [
   { image: HomeBanner4, text: 'Our Travel Agency Provides Individual and Group Tours' },
 ];
 const healthBannerData = [
-  { image: HealthBanner, text: 'Our Travel Agency Provides Individual and Group Tours' },
-  { image: HealthBanner, text: 'Our Travel Agency Provides Individual and Group Tours' },
-  { image: HealthBanner, text: 'Our Travel Agency Provides Individual and Group Tours' },
-  { image: HealthBanner, text: 'Our Travel Agency Provides Individual and Group Tours' },
+  { image: BorjomiPalace, text: 'Our Travel Agency Provides Individual and Group Tours' },
+  { image: Sairme, text: 'Our Travel Agency Provides Individual and Group Tours' },
+  { image: Likani, text: 'Our Travel Agency Provides Individual and Group Tours' },
 ];
 const details = [
   {
@@ -2592,6 +2593,7 @@ const tourPackagesData = [
       Bodbe_Slider_2,
       Mtsketa_Slider_1,
       Kutaisi_Slider_3,
+      Mamadaviti_Slider_1,
       Mtsketa,
       David_Gareja_Slider_1,
       Akhaltsikhe_slider_1,

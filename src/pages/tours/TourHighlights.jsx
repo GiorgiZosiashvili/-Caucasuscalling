@@ -13,7 +13,7 @@ const TourHighlights = ({ data }) => {
             <Text key={index}>
               <CustomText
                 fontSize="18px"
-                fontWeight="500"
+                fontWeight="700"
                 lineHeight="27px"
                 color="#007A33"
                 margin="0px 0px 20px"
@@ -56,7 +56,7 @@ const TourHighlights = ({ data }) => {
               fontSize="18px"
               fontWeight="600"
               lineHeight="35px"
-              color="#222"
+              color={services.title === 'Included services:' ? '#007A33' : '#c60505'}
               textAlign="left">
               {services.title}
             </CustomText>

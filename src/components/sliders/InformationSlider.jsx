@@ -10,17 +10,17 @@ const InformationSlider = ({ title, data }) => {
     desktop: {
       breakpoint: { max: 2500, min: 1530 },
       items: 3,
-      slidesToSlide: 1, // optional, default to 1.
+      slidesToSlide: 1,
     },
     tablet: {
       breakpoint: { max: 1530, min: 901 },
       items: 2,
-      slidesToSlide: 1, // optional, default to 1.
+      slidesToSlide: 1,
     },
     mobile: {
       breakpoint: { max: 901, min: 0 },
       items: 1,
-      slidesToSlide: 1, // optional, default to 1.
+      slidesToSlide: 1,
     },
   };
   const ButtonGroup = ({ next, previous, ...rest }) => {
@@ -53,6 +53,7 @@ const InformationSlider = ({ title, data }) => {
       <Carousel
         draggable={false}
         itemClass="item-class"
+        infinite={true}
         responsive={responsive}
         removeArrowOnDeviceType={['tablet', 'mobile']}
         arrows={false}
@@ -60,6 +61,7 @@ const InformationSlider = ({ title, data }) => {
         customButtonGroup={<ButtonGroup />}>
         {data?.map((item, index) => (
           <SlideContent key={index}>
+            <Shadow />
             <Image src={item?.image} alt={item?.title} />
             <CustomText
               textAlign="left"
@@ -147,12 +149,19 @@ const SlideContent = styled.div`
   overflow: hidden;
   position: relative;
 `;
+const Shadow = styled.div`
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+`;
 const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
   position: absolute;
-  z-index: -1;
+  z-index: -2;
 `;
 const ViewMore = styled.a`
   display: flex;

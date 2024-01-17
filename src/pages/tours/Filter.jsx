@@ -87,7 +87,7 @@ const SeasonsContainer = styled.div`
 const ButtonContainer = styled.div`
   display: flex;
   margin-bottom: 60px;
-  gap: 5px;
+  gap: 15px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -98,7 +98,7 @@ const SeasonsButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 250px;
+  width: 245px;
   height: 60px;
   border-radius: 20px;
   transition: all 0.3s;

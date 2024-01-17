@@ -26,5 +26,6 @@ const Div = styled.div`
   width: 100%;
   position: relative;
   justify-content: center;
+  margin-bottom: 20px;
 `;
 export default ToursPage;
