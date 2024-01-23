@@ -51,23 +51,26 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0px auto 125px;
-  padding: 0px 20px;
+  padding: 0px 30px;
 `;
 const ContentContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
-  margin-left: 10px;
+  @media screen and (max-width: 690px) {
+    justify-content: center;
+  }
 `;
 const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  width: 300px;
+  width: 22%;
+  min-width: 190px;
   height: 229px;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.35);
   border-radius: 24px;

@@ -2,13 +2,12 @@
 import { styled } from 'styled-components';
 
 import CustomText from '../../components/reusable/Text';
-import { includedServices } from '../../data/data';
 
 const TourHighlights = ({ data }) => {
   return (
     <>
       <TextContainer>
-        {data.trip.map((text, index) => {
+        {data?.trip?.map((text, index) => {
           return (
             <Text key={index}>
               <CustomText
@@ -49,14 +48,14 @@ const TourHighlights = ({ data }) => {
           );
         })}
       </TextContainer>
-      {includedServices.map((services, index) => {
+      {data?.services?.map((services, index) => {
         return (
           <IncludedServices key={index}>
             <CustomText
               fontSize="18px"
               fontWeight="600"
               lineHeight="35px"
-              color={services.title === 'Included services:' ? '#007A33' : '#c60505'}
+              color={services.title === 'Included in the price:' ? '#007A33' : '#c60505'}
               textAlign="left">
               {services.title}
             </CustomText>

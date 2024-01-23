@@ -48,12 +48,13 @@ const ContentContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1156px;
-  justify-content: left;
+  max-width: 1200px;
+  justify-content: space-between;
   margin: 138px auto 117px;
-  gap: 50px;
-  @media screen and (max-width: 885px) {
-    padding: 0px 20px;
+  gap: 20px;
+  padding: 0px 20px;
+  @media screen and (max-width: 1165px) {
+    justify-content: center;
   }
 `;
 const DestinationCard = styled(Link)`

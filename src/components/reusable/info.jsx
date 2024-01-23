@@ -134,14 +134,13 @@ const InfoContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   max-width: 1130px;
   flex-wrap: wrap;
-  padding: 50px 40px 20px;
-  min-height: 630px;
+  padding: 40px 40px 20px;
+
   align-self: center;
 `;
 const TextContainer = styled.div`

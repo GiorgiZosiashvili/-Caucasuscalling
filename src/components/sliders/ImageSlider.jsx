@@ -61,6 +61,7 @@ const Container = styled.div`
   max-height: 692px;
   height: 100%;
   position: relative;
+  margin: 0px;
 `;
 const Photo = styled.img`
   width: 100%;

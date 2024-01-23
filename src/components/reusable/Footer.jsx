@@ -11,10 +11,15 @@ import Phone from 'assets/images/Icons/phone.png';
 import Twitter from 'assets/images/Icons/tweeter.png';
 import Visa from 'assets/images/Icons/visa.png';
 import Youtube from 'assets/images/Icons/youtube.png';
-import Partner from 'assets/images/partner.png';
 import { Link } from 'react-router-dom';
 import { styled } from 'styled-components';
 
+import Radisson from '../../assets/images/Partners/269787025_10158803762752893_2037228519395609413_n.jpg';
+import Golden from '../../assets/images/Partners/274726004_114042854542300_4854276251995897832_n.jpg';
+import Iota from '../../assets/images/Partners/306776609_455026730002394_5940101563884108855_n.png';
+import Partner from '../../assets/images/Partners/327892002_706878367847814_687437835270475003_n.jpg';
+import Hilton from '../../assets/images/Partners/350777659_245847438053629_3993703453841194562_n.jpg';
+import Marriot from '../../assets/images/Partners/mc_logo_L.png.webp';
 import { pagesData } from '../../data/data';
 import { Logo } from '../SVG/Svgs';
 import CustomText from './Text';
@@ -149,13 +154,22 @@ const Info = () => {
 const Partners = () => {
   const partnersImages = [
     {
-      image: Partner,
+      image: Radisson,
+    },
+    {
+      image: Golden,
+    },
+    {
+      image: Iota,
     },
     {
       image: Partner,
     },
     {
-      image: Partner,
+      image: Hilton,
+    },
+    {
+      image: Marriot,
     },
   ];
   const paymentMethods = [
@@ -224,7 +238,7 @@ const ContactsContainer = styled.div`
   align-items: flex-start;
   max-height: 190px;
   gap: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 `;
 
 const NavigationContainer = styled.ul`
@@ -232,7 +246,6 @@ const NavigationContainer = styled.ul`
   flex-direction: column;
   text-decoration: none;
   gap: 20px;
-  margin-bottom: 50px;
 `;
 const LinkContainer = styled(Link)`
   display: flex;
@@ -253,7 +266,7 @@ const HelpContainer = styled.div`
 
 const IconsContainer = styled.div`
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 `;
 const PhoneNumber = styled.div`
   display: flex;
@@ -287,22 +300,25 @@ const PartnersContainer = styled.div`
   width: 100%;
   align-items: center;
   max-width: 1400px;
+  gap: 30px;
+  margin: 30px 0px;
 `;
 const PartnersImageContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 10px;
-  margin-bottom: 50px;
+  justify-content: space-between;
 `;
 const PartnersImage = styled.img`
+  width: 70px;
+  height: 70px;
   object-fit: cover;
 `;
 const PaymentMethodContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 50px;
 `;
 const PaymentImage = styled.img`
   width: 50px;

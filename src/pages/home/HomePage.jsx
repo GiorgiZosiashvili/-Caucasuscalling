@@ -71,5 +71,6 @@ const HomePage = () => {
 const Div = styled.div`
   width: 100%;
   position: relative;
+  margin: 0px;
 `;
 export default HomePage;

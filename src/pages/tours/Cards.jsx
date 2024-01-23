@@ -111,7 +111,7 @@ const LocationContainer = styled.div`
   align-items: center;
   justify-content: left;
   position: absolute;
-  bottom: 187px;
+  bottom: 187.5px;
   width: 100%;
   height: 56px;
   padding-left: 16px;
@@ -119,6 +119,7 @@ const LocationContainer = styled.div`
 `;
 const Image = styled.img`
   width: 100%;
+  height: 242px;
   min-height: 242px;
   object-fit: cover;
   border-top-right-radius: 12px;

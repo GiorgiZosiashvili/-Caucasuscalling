@@ -19,7 +19,7 @@ const Filter = () => {
           margin="0px 50px 30px"
           color="#FFFFFF"
           lineHeight="29px">
-          Filter tours based on your favorite season:
+          Tours seasons:
         </CustomText>
         <ButtonContainer>
           {seasonsData?.map((season, index) => {
@@ -33,13 +33,13 @@ const Filter = () => {
                   setSelectedButton(index);
                 }}
                 key={index}>
-                {index === 1 ? (
+                {index === 0 ? (
                   <Spring />
-                ) : index === 2 ? (
+                ) : index === 1 ? (
                   <Summer />
-                ) : index === 3 ? (
+                ) : index === 2 ? (
                   <Autumn />
-                ) : index === 4 ? (
+                ) : index === 3 ? (
                   <Winter />
                 ) : null}
                 <CustomText
