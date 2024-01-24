@@ -2,13 +2,13 @@
 import Amex from 'assets/images/Icons/Amex.png';
 import ApplePay from 'assets/images/Icons/ApplePay.png';
 import Cash from 'assets/images/Icons/Cash.png';
+import Facebook from 'assets/images/Icons/facebook.png';
 import GooglePay from 'assets/images/Icons/GooglePay.png';
 import Instagram from 'assets/images/Icons/instagram.png';
 import Location from 'assets/images/Icons/location.png';
 import Mail from 'assets/images/Icons/mail.png';
 import MasterCard from 'assets/images/Icons/MasterCard.png';
 import Phone from 'assets/images/Icons/phone.png';
-import Twitter from 'assets/images/Icons/tweeter.png';
 import Visa from 'assets/images/Icons/visa.png';
 import Youtube from 'assets/images/Icons/youtube.png';
 import { Link } from 'react-router-dom';
@@ -27,16 +27,12 @@ import CustomText from './Text';
 const Info = () => {
   const items = [
     {
-      image: Twitter,
-      link: '',
+      image: Facebook,
+      link: 'https://www.facebook.com/profile.php?id=61550605292431&mibextid=LQQJ4d',
     },
     {
       image: Instagram,
-      link: '',
-    },
-    {
-      image: Youtube,
-      link: '',
+      link: 'https://www.instagram.com/caucasuscalling?igsh=ZXUxZmEwc2V4bTlr&utm_source=qr',
     },
   ];
   const contacts = [
@@ -83,7 +79,11 @@ const Info = () => {
         </CustomText>
         <IconsContainer>
           {items?.map((item, index) => {
-            return <Icon key={index} src={item.image} />;
+            return (
+              <a key={index} target="_blank" href={item.link}>
+                <Icon src={item.image} />
+              </a>
+            );
           })}
         </IconsContainer>
       </Div>
@@ -266,7 +266,7 @@ const HelpContainer = styled.div`
 
 const IconsContainer = styled.div`
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 `;
 const PhoneNumber = styled.div`
   display: flex;
