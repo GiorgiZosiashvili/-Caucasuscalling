@@ -24,6 +24,7 @@ const Container = styled.div`
   margin-right: auto;
   display: flex;
   position: relative;
+  max-width: 1550px;
 `;
 const IconCont = styled.a`
   display: flex;
