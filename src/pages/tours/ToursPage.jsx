@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 
+import Seasons from '../../assets/images/Seasons.png';
 import Cards from './Cards';
-import Filter from './Filter';
 
 import Languages from 'components/Languages';
 import Footer from 'components/reusable/Footer';
@@ -14,7 +14,7 @@ function ToursPage() {
       <Languages />
       <Div>
         <Header backgroundColor="#346172" page={'/Tours'} />
-        <Filter />
+        <Image src={Seasons} />
       </Div>
       <Cards />
       <Footer />
@@ -27,5 +27,11 @@ const Div = styled.div`
   position: relative;
   justify-content: center;
   margin-bottom: 20px;
+`;
+const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 430px;
 `;
 export default ToursPage;

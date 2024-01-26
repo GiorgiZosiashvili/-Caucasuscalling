@@ -231,6 +231,9 @@ const InfoContainer = styled.div`
   max-width: 1400px;
   justify-content: space-between;
   flex-wrap: wrap;
+  @media screen and (max-width: 790px) {
+    justify-content: left;
+  }
 `;
 const ContactsContainer = styled.div`
   display: flex;

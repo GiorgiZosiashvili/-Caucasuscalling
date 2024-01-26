@@ -12,13 +12,10 @@ const GoogleTranslate = () => {
           {
             pageLanguage: 'en',
             layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-            includedLanguages: 'zh-CN,az,el,ka,ru,es,hi,fr,de,it',
           },
           'google_translate_element',
         );
       };
-
-      // Check if the script has already been added to prevent duplicates
 
       const script = document.createElement('script');
       script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
