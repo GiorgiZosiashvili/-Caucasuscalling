@@ -2579,7 +2579,7 @@ const tourPackagesData = [
       { person: 'For 4-7 person', price: ['3 ⭐️ - 337$', '4 ⭐️ - 391$', '5 ⭐️ - 545$'] },
       { person: 'For 4 or less person', price: ['3 ⭐️ - 384$', '4 ⭐️ - 438$', '5 ⭐️ - 582$'] },
     ],
-    price: '275$',
+    price: '1290$',
     image: Gudauri_Slider_2,
     location: 'Tbilisi, Gudauri, Kazbegi',
     images: [
