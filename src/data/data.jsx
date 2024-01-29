@@ -1677,7 +1677,7 @@ const tourPackagesData = [
     ],
     length: '5 Day / 6 Night Tour',
     pricing: [
-      { person: 'For 35-50 + person', price: ['3 ⭐️ - 477$', '4 ⭐️ - 567$', '5 day -807$'] },
+      { person: 'For 35-50 + person', price: ['3 ⭐️ - 477$', '4 ⭐️ - 567$', '5 ⭐️ -807$'] },
       { person: 'For 20-35 person', price: ['3 ⭐️ - 483$', '4 ⭐️ - 573$', '5 ⭐️ - 813$'] },
       { person: 'For 7-20 person', price: ['3 ⭐️ - 502$', '4 ⭐️ - 592$', '5 ⭐️ - 832$'] },
       { person: 'For 4-7 person', price: ['3 ⭐️ - 600$', '4 ⭐️ - 690$', '5 ⭐️ - 930$'] },
